@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_FJux0MrsEeed2pzfoJpgBg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_FJux0crsEeed2pzfoJpgBg" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK_SP"/>
+    <contextParameter xmi:id="_FJux0srsEeed2pzfoJpgBg" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="WAMAS"/>
+    <contextParameter xmi:id="_FJux08rsEeed2pzfoJpgBg" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TblClient1"/>
+    <contextParameter xmi:id="_FJux1MrsEeed2pzfoJpgBg" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK"/>
+    <contextParameter xmi:id="_2jRcgMugEee3ktBrl7oGlA" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Tabler_Station"/>
+    <contextParameter xmi:id="_e3o2sNuQEeefjMGMeU97QA" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_out"/>
+    <contextParameter xmi:id="_xdW0oNuQEeefjMGMeU97QA" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in"/>
+    <contextParameter xmi:id="_np98ENudEeefjMGMeU97QA" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in/processed"/>
+    <contextParameter xmi:id="_Z_RVINw2EeeYUrcljCFTOQ" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in/errors"/>
+    <contextParameter xmi:id="_agubcCJKEei7QoCGKBplRQ" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="EMPTY_TrayStack"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_b6f_EEmMEei2-PYdC50HbQ" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_b6f_EUmMEei2-PYdC50HbQ" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK_SP"/>
+    <contextParameter xmi:id="_b6f_EkmMEei2-PYdC50HbQ" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="WAMAS"/>
+    <contextParameter xmi:id="_b6f_E0mMEei2-PYdC50HbQ" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TblClient1"/>
+    <contextParameter xmi:id="_b6f_FEmMEei2-PYdC50HbQ" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK"/>
+    <contextParameter xmi:id="_b6f_FUmMEei2-PYdC50HbQ" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Tabler_Station"/>
+    <contextParameter xmi:id="_b6f_FkmMEei2-PYdC50HbQ" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//TMINWTALEND01/wamas_out"/>
+    <contextParameter xmi:id="_b6f_F0mMEei2-PYdC50HbQ" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//TMINWTALEND01/wamas_in"/>
+    <contextParameter xmi:id="_b6f_GEmMEei2-PYdC50HbQ" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//TMINWTALEND01/wamas_in/processed"/>
+    <contextParameter xmi:id="_b6f_GUmMEei2-PYdC50HbQ" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//TMINWTALEND01/wamas_in/errors"/>
+    <contextParameter xmi:id="_b6f_GkmMEei2-PYdC50HbQ" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="EMPTY_TrayStack"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_zO99wBeXEeuPtO9EJ_zviA" confirmationNeeded="false" name="IQ2020x">
+    <contextParameter xmi:id="_zO99wReXEeuPtO9EJ_zviA" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK_SP"/>
+    <contextParameter xmi:id="_zO99wheXEeuPtO9EJ_zviA" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="WAMAS"/>
+    <contextParameter xmi:id="_zO99wxeXEeuPtO9EJ_zviA" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TblClient1"/>
+    <contextParameter xmi:id="_zO99xBeXEeuPtO9EJ_zviA" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TMK"/>
+    <contextParameter xmi:id="_zO99xReXEeuPtO9EJ_zviA" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Tabler_Station"/>
+    <contextParameter xmi:id="_zO99xheXEeuPtO9EJ_zviA" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_out"/>
+    <contextParameter xmi:id="_zO99xxeXEeuPtO9EJ_zviA" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in"/>
+    <contextParameter xmi:id="_zO99yBeXEeuPtO9EJ_zviA" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in/processed"/>
+    <contextParameter xmi:id="_zO99yReXEeuPtO9EJ_zviA" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//daltalend04/wamas_in/errors"/>
+    <contextParameter xmi:id="_zO99yheXEeuPtO9EJ_zviA" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="EMPTY_TrayStack"/>
+  </talendfile:ContextType>
+</xmi:XMI>

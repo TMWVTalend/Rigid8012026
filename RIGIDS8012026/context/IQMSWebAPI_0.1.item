@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_FJlA0MrsEeed2pzfoJpgBg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_FJlA0crsEeed2pzfoJpgBg" comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://dalwebtst01:8080"/>
+    <contextParameter xmi:id="_FJlA0srsEeed2pzfoJpgBg" comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="iqms"/>
+    <contextParameter xmi:id="_FJlA08rsEeed2pzfoJpgBg" comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:y1UmmsIPRwipprX2c6ryN0njQVtI8op2QHpG8sVIkj6SLQ=="/>
+    <contextParameter xmi:id="_XLNtID5iEeiM3r5QoD8QhA" comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21"/>
+    <contextParameter xmi:id="_jj2iID6AEeiM3r5QoD8QhA" comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="169"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Spr7AEmMEei2-PYdC50HbQ" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_Spr7AUmMEei2-PYdC50HbQ" comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://daliqweb02:8080"/>
+    <contextParameter xmi:id="_Spr7AkmMEei2-PYdC50HbQ" comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="iqms"/>
+    <contextParameter xmi:id="_Spr7A0mMEei2-PYdC50HbQ" comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:iKAbYpUIRxco4Ayq+1P7FzgsHwjIxf3ymKpEj2GxCS6Dp3DmBj8="/>
+    <contextParameter xmi:id="_Spr7BEmMEei2-PYdC50HbQ" comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21"/>
+    <contextParameter xmi:id="_Spr7BUmMEei2-PYdC50HbQ" comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="169"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_ackbIBeXEeuPtO9EJ_zviA" confirmationNeeded="false" name="IQ2020x">
+    <contextParameter xmi:id="_ackbIReXEeuPtO9EJ_zviA" comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://daliqwebtst10:8080"/>
+    <contextParameter xmi:id="_ackbIheXEeuPtO9EJ_zviA" comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="gstaab"/>
+    <contextParameter xmi:id="_ackbIxeXEeuPtO9EJ_zviA" comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:8P0ugbKBN35+CddHafIYnAL4j9bw053bHNpgJw1ZmzPivw=="/>
+    <contextParameter xmi:id="_ackbJBeXEeuPtO9EJ_zviA" comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="21"/>
+    <contextParameter xmi:id="_ackbJReXEeuPtO9EJ_zviA" comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="169"/>
+  </talendfile:ContextType>
+</xmi:XMI>

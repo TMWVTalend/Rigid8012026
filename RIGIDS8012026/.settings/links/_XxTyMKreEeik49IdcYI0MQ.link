@@ -1,0 +1,61 @@
+{
+  "itemId" : "_XxTyMKreEeik49IdcYI0MQ",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_J_ubkUmMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_J_ubkkmMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_J_ubk0mMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_29PmIVhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_port"
+    }, {
+      "id" : "_29PmIFhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_host"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_FJbP0crsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_FJbP0srsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_FJbP08rsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_29O_EVhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_port"
+    }, {
+      "id" : "_29O_EFhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_host"
+    } ]
+  }, {
+    "contextName" : "IQ2020x",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_swgXcReVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_swgXcheVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_swgXcxeVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_swgXdBeVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_host"
+    }, {
+      "id" : "_swgXdReVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_port"
+    } ]
+  } ]
+}

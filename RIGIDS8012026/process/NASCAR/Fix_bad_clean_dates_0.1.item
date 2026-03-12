@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="MII_EXT2" internalId="_Z6EpsE5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_Password" value="enc:system.encryption.key.v1:RbgT+qEyj4kVtkEPlalRsK5D04z8Irg5bwl2m3/rv4YuyPjG" internalId="_Z6EpsU5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://10.1.150.45:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate" internalId="_Z6Epsk5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://www.sap.com/xMII" internalId="_Z6Eps05mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="L060" internalId="_Z6EptE5mEe6VTqDMLwU7Tw"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="MII_EXT2" internalId="_Z6Eptk5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_Password" value="enc:system.encryption.key.v1:EBVxfNkf/iYOWl0Jux2y4B7E24rm2xCZitidAJGntHCCLXCE" internalId="_Z6Ept05mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://10.114.92.12:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate" internalId="_Z6EpuE5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://www.sap.com/xMII" internalId="_Z6EpuU5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="L090" internalId="_Z6Epuk5mEe6VTqDMLwU7Tw"/>
+  </context>
+  <context confirmationNeeded="false" name="IQ2020x">
+    <contextParameter comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="MII_EXT2" internalId="_Z6EpvE5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_Password" value="enc:system.encryption.key.v1:nIKOJPzeiHcjOqMc5ukYbMpJVvQk9blZ/cTiTP33o4DhE+It" internalId="_Z6EpvU5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://10.1.150.45:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate" internalId="_Z6Epvk5mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="http://www.sap.com/xMII" internalId="_Z6Epv05mEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="_JAclsFOZEei4opeylynCvg" type="id_String" value="L060" internalId="_Z6EpwE5mEe6VTqDMLwU7Tw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:X1AjRAPpwf4mwdxBkZBsZa6doS1OdvIDBeN2xSi8" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/gary.staab/workspace801/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zy7HSuO+gO4qGkLzdKwHp3/+1DQMWmKe8UqMQ2gw" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_XUYI4MriEeeCiLfyHgLrWQ" name="DataOperation"/>
+    <routinesParameter id="_XUfdoMriEeeCiLfyHgLrWQ" name="Mathematical"/>
+    <routinesParameter id="_XVnfAMriEeeCiLfyHgLrWQ" name="Numeric"/>
+    <routinesParameter id="_XVrwcMriEeeCiLfyHgLrWQ" name="Relational"/>
+    <routinesParameter id="_XNVFsMriEeeCiLfyHgLrWQ" name="SQLike"/>
+    <routinesParameter id="_XVva0MriEeeCiLfyHgLrWQ" name="StringHandling"/>
+    <routinesParameter id="_XWLfsMriEeeCiLfyHgLrWQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_XWQYMMriEeeCiLfyHgLrWQ" name="TalendDate"/>
+    <routinesParameter id="_XWfBsMriEeeCiLfyHgLrWQ" name="TalendStringUtil"/>
+    <routinesParameter id="_XWaJMMriEeeCiLfyHgLrWQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YYPLD2Lx/uAuGQ3nLsGKVnefz2NOL39w9ECd2dpX" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select&#xD;&#xA;&#x9;StackId,&#xD;&#xA;&#x9;DateCleaning as DateBad,&#xD;&#xA;    DateTimeUpdated&#xD;&#xA;&#x9;&#xD;&#xA;from IMS_WAMAS_LU&#xD;&#xA;where DateCleaning = '2019-03-19 12:12:12.000'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="StackID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateBad"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateTimeUpdated"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_1">
+      <column comment="" key="false" length="20" name="StackID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateBad" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_w5shoDjXEeurGo2TpeSVCg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="row2">
+      <column comment="" key="false" length="20" name="StackID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateBad" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="row2">
+        <mapperTableEntries name="StackID" expression="LuList.StackID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateBad" expression="LuList.DateBad " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DateTimeUpdated" expression="LuList.DateTimeUpdated " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Soap" expression="row1.Soap " type="id_Document" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="LuList" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="StackID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DateBad" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DateTimeUpdated" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="RELOAD">
+        <mapperTableEntries name="Soap" expression="" type="id_Document" nullable="true"/>
+        <globalMapKeysValues name="&quot;StackId&quot;" expression="LuList.StackID "/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Erodn+HahIDfMjVk2SROqtl7ozpyomy1DDrP9URJQld1fARWh4o=" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:B51cBvtHvCozu90oc7JfLaKjfs5THx8QkJSfib6Y" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:ITSRPB2q++tDLrHLa1uqa6qj1ZmWMPQKT0SVB2h9YviXHxZoC80=" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="context.connection_logo_LogoCleanDateEndPoint"/>
+    <elementParameter field="TEXT" name="ACTION" value="context.parameter_LogoSoapAction"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="" show="false"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; xmlns:xmii=\&quot;http://www.sap.com/xMII\&quot;>&#xD;&#xA;   &lt;soapenv:Header/>&#xD;&#xA;   &lt;soapenv:Body>&#xD;&#xA;      &lt;xmii:XacuteRequest>&#xD;&#xA;         &lt;!--Optional:-->&#xD;&#xA;         &lt;xmii:LoginName>&quot; + context.connection_logo_LogoUser + &quot;&lt;/xmii:LoginName>&#xD;&#xA;         &lt;!--Optional:-->&#xD;&#xA;         &lt;xmii:LoginPassword>&quot; + context.connection_logo_LogoPassword + &quot;&lt;/xmii:LoginPassword>&#xD;&#xA;         &lt;!--Optional:-->&#xD;&#xA;         &lt;xmii:InputParams>&#xD;&#xA;            &lt;!--Optional:-->&#xD;&#xA;            &lt;xmii:LoadUnitId>&quot; + globalMap.get(&quot;StackId&quot;) + &quot;&lt;/xmii:LoadUnitId>&#xD;&#xA;            &lt;!--Optional:-->&#xD;&#xA;            &lt;xmii:Plant>&quot; + context.parameter_LogoTMKPlant + &quot;&lt;/xmii:Plant>&#xD;&#xA;         &lt;/xmii:InputParams>&#xD;&#xA;      &lt;/xmii:XacuteRequest>&#xD;&#xA;   &lt;/soapenv:Body>&#xD;&#xA;&lt;/soapenv:Envelope>&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="cleanDate" name="cleanDate">
+      <column comment="" key="false" length="-1" name="CleanDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="StackID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateBad" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="StackID" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row2/StackID" objID="n650020866"/>
+        <nodes name="DateBad" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row2/DateBad" objID="n1273043192"/>
+        <nodes name="DateTimeUpdated" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row2/DateTimeUpdated" objID="n1119996447"/>
+        <nodes name="Soap" expression="" type="id_Document" xpath="row2/Soap" objID="n1247305350">
+          <children name="soap:Envelope" type="id_String" xpath="row2.Soap:/soap:Envelope" loop="true" main="true" objID="n1189681344">
+            <children name="soap" type="id_String" xpath="row2.Soap:/soap:Envelope/xmlns:soap" nodeType="NAME_SPACE" defaultValue="http://schemas.xmlsoap.org/soap/envelope/" objID="n795818066"/>
+            <children name="soap:Body" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body" objID="n721906723">
+              <children name="XacuteResponse" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse" objID="n16980534">
+                <children name="(default)" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/xmlns:" nodeType="NAME_SPACE" defaultValue="http://www.sap.com/xMII" objID="n630389347"/>
+                <children name="Rowset" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset" objID="n828869512">
+                  <children name="(default)" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/xmlns:" nodeType="NAME_SPACE" defaultValue="http://www.sap.com/xMII" objID="n411127548"/>
+                  <children name="Row" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row" objID="n1337876638">
+                    <children name="(default)" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row/xmlns:" nodeType="NAME_SPACE" defaultValue="http://www.sap.com/xMII" objID="n1294933243"/>
+                    <children name="NextDate" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row/NextDate" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" objID="n705782360">
+                      <children name="(default)" type="id_String" xpath="row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row/NextDate/xmlns:" nodeType="NAME_SPACE" defaultValue="http://www.sap.com/xMII" objID="n1910324356"/>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="cleanDate">
+        <nodes name="CleanDate" expression="Relational.ISNULL(Var.LogoCleanDate)?Var.NoDateCleaning:Var.LogoCleanDate " type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0 //@node.3/@nodeData/@connections.1" xpath="cleanDate/CleanDate" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" objID="n478371865"/>
+        <nodes name="StackID" expression="row2.StackID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="cleanDate/StackID" objID="n1020923050"/>
+        <nodes name="DateBad" expression="row2.DateBad" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="cleanDate/DateBad" objID="n692129649"/>
+        <nodes name="DateTimeUpdated" expression="row2.DateTimeUpdated" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="cleanDate/DateTimeUpdated" objID="n1848640301"/>
+      </outputTrees>
+      <varTables name="Var">
+        <nodes name="CleanDate" expression="Relational.ISNULL([row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row/NextDate])?null:[row2.Soap:/soap:Envelope/soap:Body/XacuteResponse/Rowset/Row/NextDate] " type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.2" nullable="true"/>
+        <nodes name="NoDateCleaning" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.addDate(TalendDate.getCurrentDate(),182,&quot;dd&quot;)) " type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1"/>
+        <nodes name="LogoCleanDate" expression="Relational.ISNULL(Var.CleanDate)?null:TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,Var.CleanDate) " type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" nullable="true"/>
+      </varTables>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.2" target="n478371865"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@varTables.0/@nodes.1" target="n478371865"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n705782360" target="//@node.3/@nodeData/@varTables.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n650020866" target="n1020923050"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1273043192" target="n692129649"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1119996447" target="n1848640301"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/badcleandate/badcleandate.xls&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CleanDate"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StackID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateBad"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateTimeUpdated"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:nfh1dnV1F7a3gRYixy/n0MZJiFqX1ee+TfiInogw" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_STRINGS_TABLE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="cleanDate" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="-1" name="CleanDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="StackID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateBad" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;TMINWTALEND01&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Talend-Rigids&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5kUcj58P1h11VNZFqcUSqumZms8zRkyeKVSd5fIl4UkjYTZk"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;Integrated Security=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="true"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;jdbc/ims&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IMS SQL server database"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="FLOW" label="LuList" lineStyle="0" metaname="tMSSqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LuList" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="row2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="8" metaname="tSOAP_1" offsetLabelX="0" offsetLabelY="0" source="tSOAP_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="cleanDate" lineStyle="0" metaname="cleanDate" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="cleanDate" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMSSqlConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

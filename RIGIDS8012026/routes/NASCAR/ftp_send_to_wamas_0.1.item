@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_0FRhkPyLEfC11OYjg9hGww" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_0FRhkfyLEfC11OYjg9hGww" confirmationNeeded="false" hide="false" name="Production">
+    <contextParameter xmi:id="_0FRhkvyLEfC11OYjg9hGww" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_PjzQUI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhk_yLEfC11OYjg9hGww" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_PjzQUY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhlPyLEfC11OYjg9hGww" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_PjzQUo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhlfyLEfC11OYjg9hGww" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_PjzQU4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhlvyLEfC11OYjg9hGww" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_PjzQVI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhl_yLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_out" internalId="_PjzQVY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhmPyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in" internalId="_PjzQVo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhmfyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/processed" internalId="_PjzQV4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhmvyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/errors" internalId="_PjzQWI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhm_yLEfC11OYjg9hGww" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_PjzQWY_LEe6AFrtCwUODaQ"/>
+  </context>
+  <context xmi:id="_0FRhnPyLEfC11OYjg9hGww" confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter xmi:id="_0FRhnfyLEfC11OYjg9hGww" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_PjzQWo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhnvyLEfC11OYjg9hGww" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_PjzQW4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhn_yLEfC11OYjg9hGww" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_PjzQXI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhoPyLEfC11OYjg9hGww" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_PjzQXY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhofyLEfC11OYjg9hGww" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_PjzQXo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhovyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out" internalId="_PjzQX4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRho_yLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in" internalId="_PjzQYI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhpPyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed" internalId="_PjzQYY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhpfyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors" internalId="_PjzQYo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhpvyLEfC11OYjg9hGww" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_PjzQY4_LEe6AFrtCwUODaQ"/>
+  </context>
+  <context xmi:id="_0FRhp_yLEfC11OYjg9hGww" confirmationNeeded="false" hide="false" name="IQ2020x">
+    <contextParameter xmi:id="_0FRhqPyLEfC11OYjg9hGww" comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_PjzQZI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhqfyLEfC11OYjg9hGww" comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_PjzQZY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhqvyLEfC11OYjg9hGww" comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_PjzQZo_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhq_yLEfC11OYjg9hGww" comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_PjzQZ4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhrPyLEfC11OYjg9hGww" comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_PjzQaI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhrfyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out" internalId="_PjzQaY_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhrvyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in" internalId="_PjzQao_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhr_yLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed" internalId="_PjzQa4_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhsPyLEfC11OYjg9hGww" comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors" internalId="_PjzQbI_LEe6AFrtCwUODaQ"/>
+    <contextParameter xmi:id="_0FRhsfyLEfC11OYjg9hGww" comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_PjzQbY_LEe6AFrtCwUODaQ"/>
+  </context>
+  <parameters xmi:id="_0FRhsvyLEfC11OYjg9hGww">
+    <elementParameter xmi:id="_0FRhs_yLEfC11OYjg9hGww" field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter xmi:id="_0FRhtPyLEfC11OYjg9hGww" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_0FRhtfyLEfC11OYjg9hGww" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_0FRhtvyLEfC11OYjg9hGww" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_0FRht_yLEfC11OYjg9hGww" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhuPyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhufyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhuvyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhu_yLEfC11OYjg9hGww" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhvPyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhvfyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhvvyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhv_yLEfC11OYjg9hGww" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhwPyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhwfyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhwvyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhw_yLEfC11OYjg9hGww" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_0FRhxPyLEfC11OYjg9hGww" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+  </parameters>
+  <node xmi:id="_0FRhxfyLEfC11OYjg9hGww" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter xmi:id="_0FRhxvyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_0FRhx_yLEfC11OYjg9hGww" field="DIRECTORY" name="URI" value="context.connection_wamas_WAMAS_Out"/>
+    <elementParameter xmi:id="_0FRhyPyLEfC11OYjg9hGww" field="CHECK" name="NOOP" value="false"/>
+    <elementParameter xmi:id="_0FRhyfyLEfC11OYjg9hGww" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_0FRhyvyLEfC11OYjg9hGww" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_0FRhy_yLEfC11OYjg9hGww" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_0FRhzPyLEfC11OYjg9hGww" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_0FRhzfyLEfC11OYjg9hGww" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_0FRhzvyLEfC11OYjg9hGww" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_0FRhz_yLEfC11OYjg9hGww" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_0FRh0PyLEfC11OYjg9hGww" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_0FRh0fyLEfC11OYjg9hGww" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_0FRh0vyLEfC11OYjg9hGww" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter xmi:id="_0FRh0_yLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_0FRh1PyLEfC11OYjg9hGww" field="TEXT" name="LOGGING_CATEGORY" value="&quot;ftp_test.cLog_1&quot;"/>
+    <elementParameter xmi:id="_0FRh1fyLEfC11OYjg9hGww" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_0FRh1vyLEfC11OYjg9hGww" field="RADIO" name="NOTHING" value="false"/>
+    <elementParameter xmi:id="_0FRh1_yLEfC11OYjg9hGww" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_0FRh2PyLEfC11OYjg9hGww" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_0FRh2fyLEfC11OYjg9hGww" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_0FRh2vyLEfC11OYjg9hGww" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_0FRh2_yLEfC11OYjg9hGww" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_0FRh3PyLEfC11OYjg9hGww" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_0FRh3fyLEfC11OYjg9hGww" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_0FRh3vyLEfC11OYjg9hGww" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_0FRh3_yLEfC11OYjg9hGww" field="RADIO" name="USE_LOGEIP" value="true"/>
+    <elementParameter xmi:id="_0FRh4PyLEfC11OYjg9hGww" field="TEXT" name="MESSAGE" value="&quot;Header:\n${headers}\nBody:\n${body}&quot;"/>
+    <elementParameter xmi:id="_0FRh4fyLEfC11OYjg9hGww" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_0FRh4vyLEfC11OYjg9hGww" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_0FRh4_yLEfC11OYjg9hGww" componentName="cFtp" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
+    <elementParameter xmi:id="_0FRh5PyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFtp_1" show="false"/>
+    <elementParameter xmi:id="_0FRh5fyLEfC11OYjg9hGww" field="CLOSED_LIST" name="TYPE" value="ftp"/>
+    <elementParameter xmi:id="_0FRh5vyLEfC11OYjg9hGww" field="TEXT" name="SERVER" value="&quot;172.28.165.10&quot;"/>
+    <elementParameter xmi:id="_0FRh5_yLEfC11OYjg9hGww" field="TEXT" name="PORT" value="&quot;21&quot;"/>
+    <elementParameter xmi:id="_0FRh6PyLEfC11OYjg9hGww" field="TEXT" name="USERNAME" value="&quot;tmksp&quot;"/>
+    <elementParameter xmi:id="_0FRh6fyLEfC11OYjg9hGww" field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:t219HPxXtuh8v5qXlbOOJ0ICbrHqlpQSODenhHqnewyrs+5C8iaUsTukeBw="/>
+    <elementParameter xmi:id="_0FRh6vyLEfC11OYjg9hGww" field="TEXT" name="DIRECTORY" value="&quot;Wamas-IN&quot;"/>
+    <elementParameter xmi:id="_0FRh6_yLEfC11OYjg9hGww" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_0FRh7PyLEfC11OYjg9hGww" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_0FRh7fyLEfC11OYjg9hGww" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <node xmi:id="_0FRh7vyLEfC11OYjg9hGww" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+    <elementParameter xmi:id="_0FRh7_yLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_0FRh8PyLEfC11OYjg9hGww" field="DIRECTORY" name="URI" value="context.connection_wamas_WAMAS_Out + &quot;/sent&quot;"/>
+    <elementParameter xmi:id="_0FRh8fyLEfC11OYjg9hGww" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_0FRh8vyLEfC11OYjg9hGww" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_0FRh8_yLEfC11OYjg9hGww" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_0FRh9PyLEfC11OYjg9hGww" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_0FRh9fyLEfC11OYjg9hGww" field="ENCODING_TYPE" name="ENCODING" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_0FRh9vyLEfC11OYjg9hGww" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter xmi:id="_0FRh9_yLEfC11OYjg9hGww" field="TEXT" name="FILENAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_0FRh-PyLEfC11OYjg9hGww" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_0FRh-fyLEfC11OYjg9hGww" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_0FRh-vyLEfC11OYjg9hGww" field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;"/>
+  </node>
+  <connection xmi:id="_0FRh-_yLEfC11OYjg9hGww" connectorName="ROUTE" label="route1" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cFile_1" target="cLog_1">
+    <elementParameter xmi:id="_0FRh_PyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <connection xmi:id="_0FRh_fyLEfC11OYjg9hGww" connectorName="ROUTE" label="route2" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cLog_1" target="cFtp_1">
+    <elementParameter xmi:id="_0FRh_vyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_0FRh__yLEfC11OYjg9hGww" connectorName="ROUTE" label="route3" lineStyle="14" offsetLabelX="0" offsetLabelY="0" source="cFtp_1" target="cFile_2">
+    <elementParameter xmi:id="_0FRiAPyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="route3" show="false"/>
+  </connection>
+  <subjob xmi:id="_0FRiAfyLEfC11OYjg9hGww">
+    <elementParameter xmi:id="_0FRiAvyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_0FRiA_yLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_0FRiBPyLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_0FRiBfyLEfC11OYjg9hGww">
+    <elementParameter xmi:id="_0FRiBvyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_0FRiB_yLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_0FRiCPyLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_0FRiCfyLEfC11OYjg9hGww">
+    <elementParameter xmi:id="_0FRiCvyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFtp_1" show="false"/>
+    <elementParameter xmi:id="_0FRiC_yLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_0FRiDPyLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_0FRiDfyLEfC11OYjg9hGww">
+    <elementParameter xmi:id="_0FRiDvyLEfC11OYjg9hGww" field="TEXT" name="UNIQUE_NAME" value="cFile_2" show="false"/>
+    <elementParameter xmi:id="_0FRiD_yLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_0FRiEPyLEfC11OYjg9hGww" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

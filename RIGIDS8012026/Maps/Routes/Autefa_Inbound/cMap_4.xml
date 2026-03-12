@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/autefaOPC3.xml' outStruct='Structures/autefa-json.xml' inputRep='177' outputRep='177' nextMap='' inputStructUserName='autefaOPC3' outputStructUserName='autefa-json' V1='4' name='cMap_4' incarnation='2131'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='653' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='574' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='autefaOPC'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='batch'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='lineid'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='quantity'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='stackid'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag3'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag4'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag5'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag6'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='itemnumber'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='15' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='linetype'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='16' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='IQMSWorkCenterID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='17' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='WorkOrder'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='18' V200='8' input='true' structElemExists='true' usedCount='40' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='proditemnowamas'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='19' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperItemNoWamas1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='20' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperQtyReq1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='21' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperQtyDel1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='22' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperItemNoWamas2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='23' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperQtyReq2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='24' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperQtyDel2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='25' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='26' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='id1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='50' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperComplete1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='51' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='tipperComplete2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='63' V200='8' input='true' structElemExists='true' usedCount='32' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='proditemcuredays'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='64' V200='8' input='true' structElemExists='true' usedCount='32' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='proditemshelflife'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='67' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ludatecuring'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='68' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ludateexpiry'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='69' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='proditemnoiqms'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='73' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='luitem'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='186' V200='8' input='true' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='QAHold'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='27' V200='8' structElemExists='true' usedCount='725' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_null='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/Root,{Filter},{Sort Keys},{Contexts})</loop>
+    <null>IsNull(in$/Root)</null>
+    <child t='200' id='28' V200='8' structElemExists='true' usedCount='644' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' modifiedFromParent_null='true' V1='4' name='StackComplete'>
+      <mapNode t='190' idref='1'/>
+      <emit>IsPresent(in$/Root/autefaOPC)</emit>
+      <null>IsNull(in$/Root/autefaOPC)</null>
+      <child t='200' id='29' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='StackId'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/stackid</value>
+      </child>
+      <child t='200' id='30' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ItemNumber'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/proditemnowamas</value>
+      </child>
+      <child t='200' id='31' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Station'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/lineid</value>
+      </child>
+      <child t='200' id='32' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Quantity'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/quantity,Constant([value="0",dataType="2"],)),Constant([value="1",dataType="2"],),in$/Root/autefaOPC/quantity)</value>
+      </child>
+      <child t='200' id='33' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TrayFlags'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='34' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='Workorder'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/WorkOrder</value>
+      </child>
+      <child t='200' id='35' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag1'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag1,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='36' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag2'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag2,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='37' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag3'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag3,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='38' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag4'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag4,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='39' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag5'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag5,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='40' V200='8' structElemExists='true' usedCount='41' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TrayFlag6'>
+        <mapNode t='190' idref='1'/>
+        <value>IfThenElse(Equal(in$/Root/autefaOPC/TrayFlag6,Constant([value="1",dataType="2"],)),Constant([value="0",dataType="2"],),Constant([value="1",dataType="2"],))</value>
+      </child>
+      <child t='200' id='41' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RetryCount'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='56' V200='8' structElemExists='true' usedCount='33' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='DateProd'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="ProdDate"],)</value>
+      </child>
+      <child t='200' id='57' V200='8' structElemExists='true' usedCount='33' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='CureDays'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/proditemcuredays</value>
+      </child>
+      <child t='200' id='58' V200='8' structElemExists='true' usedCount='33' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ShelfLife'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/proditemshelflife</value>
+      </child>
+      <child t='200' id='179' V200='8' structElemExists='true' usedCount='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='MessageSource'>
+        <mapNode t='190' idref='1'/>
+        <value>Constant([value="Autefa",dataType="2"],)</value>
+      </child>
+      <child t='200' id='192' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='QAHold'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/autefaOPC/QAHold</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='188' V697='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='193' V697='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='190' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='194' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='46' V1='4' name='Document Bindings'>
+    <child t='166' id='71' V166='5' docType='1' docReposPath='/TECHNIMARK_RIGIDS/Sample Data/autefaOPC3/autefaOPC' V1='4' name='in$/Root'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='48' V166='5' docType='2' docReposPath='/TECHNIMARK_RIGIDS/Sample Data/autefa-json/autefa-json' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='27'/>
+    </child>
+  </child>
+  <child t='201' id='72' V1='4' name='Inherits From'>
+  </child>
+</root>

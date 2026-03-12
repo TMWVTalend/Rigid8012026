@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/Sample_status_message.xml' outStruct='Structures/inventoryqatransfer.xml' inputRep='172' outputRep='177' nextMap='' inputStructUserName='Sample_status_message' outputStructUserName='inventoryqatransfer' V1='4' name='cMap_10' incarnation='937'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='61' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DI_TELEGRAM'>
+    <mapNode t='190' idref='1'/>
+  </inputMapElem>
+  <outputMapElem t='200' id='3' V200='8' structElemExists='true' usedCount='662' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/DI_TELEGRAM,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='4' V200='8' structElemExists='true' usedCount='601' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='IQMSInventoryTransferQA'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='5' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_arinv_id'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_arinv_id"],)</value>
+      </child>
+      <child t='200' id='6' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_fgmulti_id'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_fgmulti_id"],)</value>
+      </child>
+      <child t='200' id='7' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_in_qa'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_in_qa"],)</value>
+      </child>
+      <child t='200' id='8' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_itemno'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_itemno"],)</value>
+      </child>
+      <child t='200' id='9' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_loc_id'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_loc_id"],)</value>
+      </child>
+      <child t='200' id='10' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_on_hand'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="sQuantity"],)</value>
+      </child>
+      <child t='200' id='11' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_stack_id'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_stack_id"],)</value>
+      </child>
+      <child t='200' id='12' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_lotno'>
+        <mapNode t='190' idref='1'/>
+        <value>GetMapProperty([property="qa_lotno"],)</value>
+      </child>
+      <child t='200' id='13' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='qa_type'>
+        <mapNode t='190' idref='1'/>
+        <value>Constant([value="FromQA",dataType="2"],)</value>
+      </child>
+      <child t='200' id='14' V200='8' structElemExists='true' usedCount='61' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='RetryCount'>
+        <mapNode t='190' idref='1'/>
+        <value>Constant([value="1",dataType="2"],)</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='692' id='112' V692='1' unnamedElemsNamespace='1' V690='1'>
+    <namespaceContainers t='220' ref='Namespace Containers/Sample_status_message.xml'/>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='113' V697='1' V690='1' padOutput='true' encoding='UTF-8'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' idref='112'/>
+  <outputXmlRepRuntime t='692' id='114' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='16' V1='4' name='Document Bindings'>
+    <child t='166' id='17' V166='5' docType='1' docReposPath='/TECHNIMARK_RIGIDS/Sample Data/Sample_status_message/Sample_status_message' V1='4' name='in$/DI_TELEGRAM'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='18' V166='5' docType='2' docReposPath='/TECHNIMARK_RIGIDS/Sample Data/inventoryqatransfer/inventoryqatransfer' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='3'/>
+    </child>
+  </child>
+  <child t='201' id='19' V1='4' name='Inherits From'>
+  </child>
+</root>

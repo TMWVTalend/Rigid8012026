@@ -1,0 +1,163 @@
+{
+  "itemId" : "_XVWzwDa8EemFuZ45CktiQQ",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_J_ubkUmMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_J_ubkkmMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_J_ubk0mMEei2-PYdC50HbQ",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_29PmIFhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_host"
+    }, {
+      "id" : "_29PmIVhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_port"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_9KGr8KIyEeerxqYTCUbwMQ",
+    "parameterList" : [ {
+      "id" : "_b6f_EUmMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMASpartnerID"
+    }, {
+      "id" : "_b6f_FkmMEei2-PYdC50HbQ",
+      "name" : "connection_wamas_WAMAS_Out"
+    }, {
+      "id" : "_b6f_F0mMEei2-PYdC50HbQ",
+      "name" : "connection_wamas_WAMAS_In"
+    }, {
+      "id" : "_b6f_EkmMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMASID"
+    }, {
+      "id" : "_b6f_FEmMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMASvariant"
+    }, {
+      "id" : "_b6f_GEmMEei2-PYdC50HbQ",
+      "name" : "connection_wamas_WAMAS_Processed"
+    }, {
+      "id" : "_b6f_GkmMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMAS_Empty_item"
+    }, {
+      "id" : "_b6f_E0mMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMASclientID"
+    }, {
+      "id" : "_b6f_GUmMEei2-PYdC50HbQ",
+      "name" : "connection_wamas_WAMAS_Error"
+    }, {
+      "id" : "_b6f_FUmMEei2-PYdC50HbQ",
+      "name" : "parameter_WAMASwhLoc"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_FJbP0crsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_FJbP0srsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_FJbP08rsEeed2pzfoJpgBg",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_29O_EFhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_host"
+    }, {
+      "id" : "_29O_EVhSEeiZN4PYz84nFg",
+      "name" : "connection_activemq_port"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_9KGr8KIyEeerxqYTCUbwMQ",
+    "parameterList" : [ {
+      "id" : "_FJux0crsEeed2pzfoJpgBg",
+      "name" : "parameter_WAMASpartnerID"
+    }, {
+      "id" : "_e3o2sNuQEeefjMGMeU97QA",
+      "name" : "connection_wamas_WAMAS_Out"
+    }, {
+      "id" : "_xdW0oNuQEeefjMGMeU97QA",
+      "name" : "connection_wamas_WAMAS_In"
+    }, {
+      "id" : "_FJux0srsEeed2pzfoJpgBg",
+      "name" : "parameter_WAMASID"
+    }, {
+      "id" : "_FJux1MrsEeed2pzfoJpgBg",
+      "name" : "parameter_WAMASvariant"
+    }, {
+      "id" : "_np98ENudEeefjMGMeU97QA",
+      "name" : "connection_wamas_WAMAS_Processed"
+    }, {
+      "id" : "_agubcCJKEei7QoCGKBplRQ",
+      "name" : "parameter_WAMAS_Empty_item"
+    }, {
+      "id" : "_FJux08rsEeed2pzfoJpgBg",
+      "name" : "parameter_WAMASclientID"
+    }, {
+      "id" : "_Z_RVINw2EeeYUrcljCFTOQ",
+      "name" : "connection_wamas_WAMAS_Error"
+    }, {
+      "id" : "_2jRcgMugEee3ktBrl7oGlA",
+      "name" : "parameter_WAMASwhLoc"
+    } ]
+  }, {
+    "contextName" : "IQ2020x",
+    "repoId" : "_9KGr8KIyEeerxqYTCUbwMQ",
+    "parameterList" : [ {
+      "id" : "_zO99wReXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMASpartnerID"
+    }, {
+      "id" : "_zO99xheXEeuPtO9EJ_zviA",
+      "name" : "connection_wamas_WAMAS_Out"
+    }, {
+      "id" : "_zO99xxeXEeuPtO9EJ_zviA",
+      "name" : "connection_wamas_WAMAS_In"
+    }, {
+      "id" : "_zO99wheXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMASID"
+    }, {
+      "id" : "_zO99xBeXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMASvariant"
+    }, {
+      "id" : "_zO99yBeXEeuPtO9EJ_zviA",
+      "name" : "connection_wamas_WAMAS_Processed"
+    }, {
+      "id" : "_zO99yheXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMAS_Empty_item"
+    }, {
+      "id" : "_zO99wxeXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMASclientID"
+    }, {
+      "id" : "_zO99yReXEeuPtO9EJ_zviA",
+      "name" : "connection_wamas_WAMAS_Error"
+    }, {
+      "id" : "_zO99xReXEeuPtO9EJ_zviA",
+      "name" : "parameter_WAMASwhLoc"
+    } ]
+  }, {
+    "contextName" : "IQ2020x",
+    "repoId" : "_u6QcIK3lEeexPsTk8PUL-Q",
+    "parameterList" : [ {
+      "id" : "_swgXcReVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_Broker_URL"
+    }, {
+      "id" : "_swgXcheVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_username"
+    }, {
+      "id" : "_swgXcxeVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_password"
+    }, {
+      "id" : "_swgXdBeVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_host"
+    }, {
+      "id" : "_swgXdReVEeuPtO9EJ_zviA",
+      "name" : "connection_activemq_port"
+    } ]
+  } ]
+}

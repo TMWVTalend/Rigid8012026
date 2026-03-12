@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_JAtrcFOZEei4opeylynCvg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_JAuSgFOZEei4opeylynCvg" comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MII_EXT2"/>
+    <contextParameter xmi:id="_JAuSgVOZEei4opeylynCvg" comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qfEL4tr3wum3pjq2nEEkMMxbvsDzAv9Bp9ZOkr7iKZurXNSP"/>
+    <contextParameter xmi:id="_JAuSglOZEei4opeylynCvg" comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://10.1.150.45:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate"/>
+    <contextParameter xmi:id="_JAuSg1OZEei4opeylynCvg" comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://www.sap.com/xMII"/>
+    <contextParameter xmi:id="_q3EIkFOeEei4opeylynCvg" comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="L060"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_mVtPgFOZEei4opeylynCvg" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_mVtPgVOZEei4opeylynCvg" comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MII_EXT2"/>
+    <contextParameter xmi:id="_mVtPglOZEei4opeylynCvg" comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:gCgJNC0HI+0FX75r38L2hU++2pMhPtev4GKpuo5zh7POwwdT"/>
+    <contextParameter xmi:id="_mVtPg1OZEei4opeylynCvg" comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://10.114.92.12:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate"/>
+    <contextParameter xmi:id="_mVtPhFOZEei4opeylynCvg" comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://www.sap.com/xMII"/>
+    <contextParameter xmi:id="_q3EvoFOeEei4opeylynCvg" comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="L090"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_m3iuEBeXEeuPtO9EJ_zviA" confirmationNeeded="false" name="IQ2020x">
+    <contextParameter xmi:id="_m3iuEReXEeuPtO9EJ_zviA" comment="" name="connection_logo_LogoUser" prompt="connection_logo_LogoUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MII_EXT2"/>
+    <contextParameter xmi:id="_m3iuEheXEeuPtO9EJ_zviA" comment="" name="connection_logo_LogoPassword" prompt="connection_logo_LogoPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:KBaJb2evVpD5wE5IjJtZ8zXoaHq1Ic0TFyBbZRI4V3yIejGU"/>
+    <contextParameter xmi:id="_m3iuExeXEeuPtO9EJ_zviA" comment="" name="connection_logo_LogoCleanDateEndPoint" prompt="connection_logo_LogoCleanDateEndPoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://10.1.150.45:50000/XMII/SOAPRunner/WestVirginia/BLS/BLS_LoadUnit_GetNextDate"/>
+    <contextParameter xmi:id="_m3iuFBeXEeuPtO9EJ_zviA" comment="" name="parameter_LogoSoapAction" prompt="parameter_LogoSoapAction?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="http://www.sap.com/xMII"/>
+    <contextParameter xmi:id="_m3iuFReXEeuPtO9EJ_zviA" comment="" name="parameter_LogoTMKPlant" prompt="parameter_LogoTMKPlant?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="L060"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_81zg8fu4EfCYrdOIiA1BIw" label="Rigids8012026" description="Update to latest to patch - Camel 3 to 4" language="java" technicalLabel="RIGIDS8012026" author="_81zg8vu4EfCYrdOIiA1BIw" productVersion="Talend Cloud API Services Platform-8.0.1.20260122_0939-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/TMWVTalend/Rigid8012026.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="_83VK8Pu4EfCYrdOIiA1BIw" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_81zg8vu4EfCYrdOIiA1BIw" login="gstaab@technimark.com" firstName="Gary" lastName="Staab" type="DQ"/>
+  <TalendProperties:User xmi:id="_eHPrcPvEEfCagL2oefKi5A" login="scottharris@technimark.com" firstName="scott" lastName="harris" type="DQ"/>
+  <TalendProperties:User xmi:id="_eHPrcfvEEfCagL2oefKi5A" login="kevin.eaton@technimark.com" firstName="Kevin" lastName="Eaton" type="DQ"/>
+</xmi:XMI>

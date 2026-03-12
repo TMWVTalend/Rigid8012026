@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/IQMSInventoryTransfer.xml' outStruct='Structures/MovetoLocation.xml' inputRep='177' outputRep='177' nextMap='' inputStructUserName='IQMSInventoryTransfer' outputStructUserName='MovetoLocation' V1='4' name='cMap_1' incarnation='316'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='32' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='IQMSInventoryTransfer'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LineId'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Station'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ItemNo'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Batch'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='StackID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='9' V200='8' input='true' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='22' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Quantity'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='10' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag1'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='11' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag2'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='12' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag3'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='13' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag4'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='14' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag5'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='15' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TrayFlag6'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='16' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RetryCount'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='17' V200='8' structElemExists='true' usedCount='124' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/Root,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='18' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='arinvtId'>
+      <mapNode t='190' idref='1'/>
+      <value>GetMapProperty([property="ArinvtId"],)</value>
+    </child>
+    <child t='200' id='20' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='sourceFgMultiId'>
+      <mapNode t='190' idref='1'/>
+      <value>GetMapProperty([property="valid_fgmulti_id_from"],)</value>
+    </child>
+    <child t='200' id='21' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='targetFgMultiId'>
+      <mapNode t='190' idref='1'/>
+      <value>GetMapProperty([property="valid_fgmulti_id_to"],)</value>
+    </child>
+    <child t='200' id='22' V200='8' structElemExists='true' usedCount='17' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='22' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='quantity'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/Root/IQMSInventoryTransfer/Quantity</value>
+    </child>
+    <child t='200' id='23' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='rgQuantity'>
+      <mapNode t='190' idref='1'/>
+      <value>Constant([value="0",dataType="2"],)</value>
+    </child>
+    <child t='200' id='24' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='reason'>
+      <mapNode t='190' idref='1'/>
+      <value>Constant([value="OBDACK",dataType="2"],)</value>
+    </child>
+    <child t='200' id='25' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='origDateIn'>
+      <mapNode t='190' idref='1'/>
+      <value>GetCurrentDateTime()</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='26' V697='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='27' V697='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='28' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='29' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='30' V1='4' name='Document Bindings'>
+    <child t='166' id='31' V166='5' docType='1' V1='4' name='in$/Root'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='32' V166='5' docType='2' docReposPath='/TECHNIMARK_RIGIDS/Sample Data/MovetoLocation/MovetoLocation' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='17'/>
+    </child>
+  </child>
+  <child t='201' id='33' V1='4' name='Inherits From'>
+  </child>
+</root>

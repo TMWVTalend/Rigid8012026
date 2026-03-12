@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Production">
+    <contextParameter comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://daliqweb02:8080" internalId="_iIZEEE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="iqms" internalId="_iIZEEU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:AO2yv2ZJUSm2jtd4QtPzd2MBFttiJxZ2o19OOb1igntnH/sUsx4=" internalId="_iIZrIE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21" internalId="_iIZrIU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169" internalId="_iIZrIk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms" internalId="_iIZrI05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521" internalId="_iIZrJE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:uysG6F4qmHY5r0qD4WqSx4JrGZkcHDWCB80ThMJR3DqN60JwIbM=" internalId="_iIZrJU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdb01" internalId="_iIZrJk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_iIZrJ05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_out" internalId="_iIZrKE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in" internalId="_iIZrKU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_iIZrKk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_iIZrK05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/processed" internalId="_iIZrLE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_iIZrLU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_iIZrLk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/errors" internalId="_iIZrL05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_iIZrME5oEe6VTqDMLwU7Tw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://dalwebtst01:8080" internalId="_iIZrMU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="iqms" internalId="_iIZrMk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:Y9/zG75fYXYN34eIhe8iNvThoH/F+MERD0yTqJ4RsSzNMQ==" internalId="_iIZrM05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21" internalId="_iIZrNE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169" internalId="_iIZrNU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms" internalId="_iIZrNk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521" internalId="_iIZrN05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:0Y7fk4+zwoBv+yFWc9CShjJoIQKQ8vFqHmRhAd4XHuM2aQ==" internalId="_iIZrOE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdbtst01" internalId="_iIZrOU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_iIZrOk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out" internalId="_iIZrO05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in" internalId="_iIZrPE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_iIZrPU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_iIZrPk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed" internalId="_iIZrP05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_iIZrQE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_iIZrQU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors" internalId="_iIZrQk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_iIZrQ05oEe6VTqDMLwU7Tw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="IQ2020x">
+    <contextParameter comment="" name="connection_webapi_WebAPI_URL" prompt="connection_webapi_WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://daliqwebtst10:8080" internalId="_iIZrRE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_username" prompt="connection_webapi_WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="gstaab" internalId="_iIZrRU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_webapi_WebAPI_password" prompt="connection_webapi_WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:Vi5Flp0BCj7UPZZahRe0WXZn+ZKsaBsyYRfPFN3NQPBdkw==" internalId="_iIZrRk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_eplant_id" prompt="parameter_WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21" internalId="_iIZrR05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WebAPI_png_adj_trans_code" prompt="parameter_WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169" internalId="_iIZrSE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_iIZrSU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Out" prompt="connection_wamas_WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out" internalId="_iIZrSk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_In" prompt="connection_wamas_WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in" internalId="_iIZrS05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_iIZrTE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASvariant" prompt="parameter_WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK" internalId="_iIZrTU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Processed" prompt="connection_wamas_WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed" internalId="_iIZrTk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMAS_Empty_item" prompt="parameter_WAMAS_Empty_item?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="EMPTY_TrayStack" internalId="_iIZrT05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_iIZrUE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_wamas_WAMAS_Error" prompt="connection_wamas_WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors" internalId="_iIZrUU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="parameter_WAMASwhLoc" prompt="parameter_WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station" internalId="_iIZrUk5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="10.150.10.50" internalId="_iIZrU05oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521" internalId="_iIZrVE5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms" internalId="_iIZrVU5oEe6VTqDMLwU7Tw"/>
+    <contextParameter comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:CqHpJy/pUVOUzaPWl5gkzsxCn3QNwDAbfnxn6eN/hijTzuE=" internalId="_iIZrVk5oEe6VTqDMLwU7Tw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Svwnvx4zdU3UCZn9u+XcK7Hsak8mER6+Wr9gXLri" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hPsRpUASsYZ9wdSqTtgmXh+XSU5QjPZT3/7BQJWw" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JovuEMrcEeegkf46nwJaMQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;DALTALEND04&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Talend-Rigids&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OWP2QN5x+S008kAQxhXGsaj2uzbUYOzjVciUtUBW1rBsweiq"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;Integrated Security=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="true"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;jdbc/ims&quot;"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/iqmswr&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="wamasRequest" id="0"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/wamasRequest&quot;" id="2"/>
+      <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="4"/>
+      <elementValue elementRef="STREAMING" value="false" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
+    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:d/Q9D35iHJQWg13BMXsNPOt3sLD1BIkJPGHytetf" show="false"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;IQMS_Rest_Services_wamasrequest&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="ATTRIBUTES_TO_ELEMENTS" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_OPENAPI" value="false"/>
+    <elementParameter field="TABLE" name="JAXRS_PROPS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="workCenterSetup" name="workCenterSetup"/>
+    <metadata connector="FLOW" label="wamasRequest" name="wamasRequest">
+      <column comment="query" key="false" length="-1" name="item" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_6" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_6"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qjEGZi9gRE9Gx5mBrbSW7es05qn4++T4a6UXuJVi" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select top 500&#xD;&#xA; iws.LineID,&#xD;&#xA; isi.IQMSWorkCenterID,&#xD;&#xA; isi.LineType,&#xD;&#xA; isi.LineDesc,&#xD;&#xA; iws.WAMASTransactionType,&#xD;&#xA; iws.WAMASTransactionID,&#xD;&#xA; iws.CurrentStatus,&#xD;&#xA; iws.DateTimeReceived,&#xD;&#xA; iws.DateTimeUpdated,&#xD;&#xA; iws.JSONData&#xD;&#xA;from &#xD;&#xA; IMS_WAMAS_Trans_Status iws &#xD;&#xA;join IMS_Station_ID isi on isi.LineID = iws.LineID&#xD;&#xA;order by iws.datetimereceived desc&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IQMSWorkCenterID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineType" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineDesc" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAMASTransactionType" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAMASTransactionID" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrentStatus" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateTimeReceived" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateTimeUpdated" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JSONData" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="wamas request"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlInput_3">
+      <column comment="" key="false" length="20" name="LineID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="IQMSWorkCenterID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LineType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="LineDesc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="WAMASTransactionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="WAMASTransactionID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CurrentStatus" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeReceived" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="JSONData" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;output_row.LineID = input_row.LineID;&#xD;&#xA;output_row.IQMSWorkCenterID = input_row.IQMSWorkCenterID;&#xD;&#xA;output_row.LineType = input_row.LineType;&#xD;&#xA;output_row.LineDesc = input_row.LineDesc;&#xD;&#xA;output_row.WAMASTransactionType = input_row.WAMASTransactionType;&#xD;&#xA;output_row.WAMASTransactionID = input_row.WAMASTransactionID;&#xD;&#xA;output_row.CurrentStatus = input_row.CurrentStatus;&#xD;&#xA;output_row.DateTimeReceived = input_row.DateTimeReceived;&#xD;&#xA;output_row.DateTimeUpdated = input_row.DateTimeUpdated;&#xD;&#xA;//output_row.ItemNo = input_row.JSONData;&#xD;&#xA;JSONObject obj = new JSONObject(input_row.JSONData);&#xA;//JSONObject Stack = obj.getJSONObject(&quot;StackComplete&quot;);&#xA;//System.out.println(&quot;Json Parsing:&quot;);&#xA;//System.out.println(Stack.get(&quot;ItemNumber&quot;).toString());&#xA;String valueINeed=&quot;&quot;;&#xA;int count = 0;&#xA;for (Object key : obj.keySet()) {&#xA;            //based on you key types&#xA;            String keyStr = (String)key;&#xA;            Object keyvalue = obj.get(keyStr);&#xA;&#xA;            valueINeed = keyStr;&#xA;            count++;&#xA;&#xA;            /*check here for the appropriate value and do whatever you want*/&#xA;            //Print key and value&#xA;            //System.out.println(&quot;key: &quot;+ keyStr + &quot; value: &quot; + keyvalue);&#xA;&#xA;            if(count==1)&#xA;                break;&#xA;&#xA;        }&#xA;&#xA;//System.out.println(valueINeed);&#xA;&#xA;output_row.ItemNo = &quot;&quot;;&#xA;output_row.StackId = &quot;&quot;;&#xA;&#xA;&#xA;// pull item from IBDRequest JSON - Stack complete&#xA;// need to check if item number missing on insp return so we can pull item from luitem field instead (mssql database)&#xA;if (valueINeed.equals(&quot;StackComplete&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;StackComplete&quot;);&#xA;output_row.StackId = Stack.get(&quot;StackId&quot;).toString();&#xA;try{&#xA;&#x9;output_row.ItemNo = Stack.get(&quot;ItemNumber&quot;).toString();&#xA;&#x9;}&#xA;catch (Exception e) {&#xA;&#x9;output_row.ItemNo = Stack.get(&quot;luitem&quot;).toString();&#xA;&#x9;}&#x9;&#xA;}&#xA;&#xA;// special logic for errors when testing insp return at startup //&#xA;if (valueINeed.equals(&quot;StackCompletex&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;StackCompletex&quot;);&#xA;output_row.StackId = Stack.get(&quot;StackId&quot;).toString();&#xA;try{&#xA;&#x9;output_row.ItemNo = Stack.get(&quot;ItemNumber&quot;).toString();&#xA;&#x9;}&#xA;catch (Exception e) {&#xA;&#x9;output_row.ItemNo = Stack.get(&quot;luitem&quot;).toString();&#xA;&#x9;}&#x9;&#xA;}&#xA;&#xA;// pull item from OBDRequest JSON&#xA;if (valueINeed.equals(&quot;OBDRequest&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;OBDRequest&quot;);&#xA;output_row.ItemNo = Stack.get(&quot;ItemNumber&quot;).toString();&#xA;}&#xA;&#xA;// pull stackid from transfer &#xA;if (valueINeed.equals(&quot;LUTransfer&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;LUTransfer&quot;);&#xA;output_row.StackId = Stack.get(&quot;StackId&quot;).toString();&#xA;}&#xA;&#xA;// pull ibd id from ibd cancel&#xA;if (valueINeed.equals(&quot;IBDCancel&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;IBDCancel&quot;);&#xA;output_row.StackId = Stack.get(&quot;TransID&quot;).toString();&#xA;}&#xA;&#xA;// pull obd id from obd cancel&#xA;if (valueINeed.equals(&quot;OBDCancel&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;OBDCancel&quot;);&#xA;output_row.StackId = Stack.get(&quot;TransID&quot;).toString();&#xA;}&#xA;&#xA;// pull obd id from obd cancel&#xA;if (valueINeed.equals(&quot;LUTransferCancel&quot;))&#xA;{&#xA;JSONObject Stack = obj.getJSONObject(&quot;LUTransferCancel&quot;);&#xA;output_row.StackId = Stack.get(&quot;TransID&quot;).toString();&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;&#xA;import org.json.JSONArray;&#xA;import org.json.JSONException;&#xA;import org.json.JSONObject;"/>
+    <elementParameter field="TEXT" name="LABEL" value="extract info from JSON"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="row14" name="tJavaRow_1">
+      <column comment="" key="false" length="20" name="LineID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="IQMSWorkCenterID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LineType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="LineDesc" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="WAMASTransactionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="WAMASTransactionID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CurrentStatus" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeReceived" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DateTimeUpdated" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="ItemNo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StackId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_8" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="map wamas requests"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="wamasRequestOut">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row14" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="LineID" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.0" xpath="row14/LineID" objID="n903168655"/>
+        <nodes name="IQMSWorkCenterID" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.1" xpath="row14/IQMSWorkCenterID" objID="n1182660091"/>
+        <nodes name="LineType" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.2" xpath="row14/LineType" objID="n2139125723"/>
+        <nodes name="LineDesc" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.3" xpath="row14/LineDesc" objID="n1432441600"/>
+        <nodes name="WAMASTransactionType" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.4" xpath="row14/WAMASTransactionType" objID="n1307087268"/>
+        <nodes name="WAMASTransactionID" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.5" xpath="row14/WAMASTransactionID" objID="n2062966237"/>
+        <nodes name="CurrentStatus" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.6" xpath="row14/CurrentStatus" objID="n1752650637"/>
+        <nodes name="DateTimeReceived" type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.7" xpath="row14/DateTimeReceived" objID="n834327154"/>
+        <nodes name="DateTimeUpdated" type="id_Date" outgoingConnections="//@node.6/@nodeData/@connections.8" xpath="row14/DateTimeUpdated" objID="n1914053610"/>
+        <nodes name="ItemNo" type="id_String" xpath="row14/ItemNo" lookupOutgoingConnections="//@node.6/@nodeData/@connections.9" objID="n1938068466"/>
+        <nodes name="StackId" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.13" xpath="row14/StackId" objID="n63972340"/>
+      </inputTrees>
+      <inputTrees activateCondensedTool="true" name="row13" lookup="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <nodes name="ID" expression="row14.ItemNo" type="id_String" xpath="row13/ID" lookupIncomingConnections="//@node.6/@nodeData/@connections.9" objID="n2105100128"/>
+        <nodes name="ITEMNO" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.10" xpath="row13/ITEMNO" nullable="false" objID="n1527927995"/>
+        <nodes name="DESCRIP" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.11" xpath="row13/DESCRIP" nullable="false" objID="n1633306719"/>
+        <nodes name="DESCRIP2" type="id_String" outgoingConnections="//@node.6/@nodeData/@connections.12" xpath="row13/DESCRIP2" objID="n1427659442"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="wamasRequestOut" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="wamasRequestOut/body" objID="n1414913510">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="wamasRequestList" expression="" type="id_String" xpath="wamasRequestOut.body:/wamasRequestList" main="true" objID="n1804840498">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="wamasRequest" expression="" type="id_String" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest" loop="true" main="true" objID="n1363865829">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LineID" expression="row14.LineID" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.0" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/LineID" objID="n459351877"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="IQMSWorkCenterID" expression="row14.IQMSWorkCenterID" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.1" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/IQMSWorkCenterID" objID="n1139928767"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LineType" expression="row14.LineType" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.2" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/LineType" objID="n1161404879"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LineDesc" expression="row14.LineDesc" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.3" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/LineDesc" objID="n535277599"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="WAMASTransactionType" expression="row14.WAMASTransactionType" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.4" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/WAMASTransactionType" objID="n1977577664"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="WAMASTransactionID" expression="row14.WAMASTransactionID" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.5" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/WAMASTransactionID" objID="n321670982"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CurrentStatus" expression="row14.CurrentStatus" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.6" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/CurrentStatus" objID="n741350855"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateTimeReceived" expression="Relational.ISNULL(row9.DateTimeReceived)?null:TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,row14.DateTimeReceived) " type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.7" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/DateTimeReceived" objID="n348211616"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateTimeUpdated" expression="Relational.ISNULL(row9.DateTimeUpdated)?null:TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,row14.DateTimeUpdated) " type="id_Date" incomingConnections="//@node.6/@nodeData/@connections.8" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/DateTimeUpdated" objID="n529619331"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMNO" expression="row13.ITEMNO" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.10" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/ITEMNO" objID="n1281680563"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DESCRIP" expression="row13.DESCRIP" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.11" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/DESCRIP" objID="n127654890"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="DESCRIP2" expression="row13.DESCRIP2" type="id_String" incomingConnections="//@node.6/@nodeData/@connections.12" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/DESCRIP2" objID="n1764232168"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="StackId" expression="Relational.ISNULL(row14.StackId)?null:row14.StackId.trim() " type="id_String" incomingConnections="//@node.6/@nodeData/@connections.13" xpath="wamasRequestOut.body:/wamasRequestList/wamasRequest/StackId" objID="n379848949"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n903168655" target="n459351877"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1182660091" target="n1139928767"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2139125723" target="n1161404879"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1432441600" target="n535277599"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1307087268" target="n1977577664"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2062966237" target="n321670982"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1752650637" target="n741350855"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n834327154" target="n348211616"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1914053610" target="n529619331"/>
+      <connections xsi:type="TalendXMLMap:LookupConnection" source="n1938068466" target="n2105100128"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1527927995" target="n1281680563"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1633306719" target="n127654890"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1427659442" target="n1764232168"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n63972340" target="n379848949"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1400" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_7" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Access-Control-Allow-Origin&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="&quot;*&quot;" id="1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="wamasRequest"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_7">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_iqms_IQMSJDBCHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_iqms_IQMSJDBCPort"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;iqms&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;IQMS&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_iqms_IQMSJDBCUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.connection_iqms_IQMSJDBCPass"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#xD;&#xA;  cast(id as varchar(15)) id , &#xD;&#xA;  itemno, &#xD;&#xA;  descrip,&#xD;&#xA;  descrip2&#xD;&#xA;from arinvt&#xD;&#xA;where eplant_id =  &quot; + context.parameter_WebAPI_eplant_id + &#xD;&#xA;&quot; and itemno &lt; '4'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="get IQMS itemno and desc"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_7">
+      <column comment="" key="false" length="15" name="ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP2" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value="mvn:org.talend.libraries/org.json/6.0.0-SNAPSHOT/jar"/>
+    <elementParameter field="TABLE" name="HOTLIBS"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tMSSqlConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="wamasRequest" lineStyle="0" metaname="wamasRequest" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wamasRequest" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_6" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_6" target="tMSSqlInput_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tMSSqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlInput_3" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tXMLMap_8">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="StackId" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="wamasRequestOut" lineStyle="0" metaname="wamasRequestOut" offsetLabelX="50" offsetLabelY="-13" source="tXMLMap_8" target="tRESTResponse_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="wamasRequestOut" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row13" lineStyle="8" metaname="tOracleInput_7" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_7" target="tXMLMap_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tRESTRequest_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+</talendfile:ProcessType>

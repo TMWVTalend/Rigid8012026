@@ -1,0 +1,61 @@
+{
+  "itemId" : "_w5shoDjXEeurGo2TpeSVCg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_JAclsFOZEei4opeylynCvg",
+    "parameterList" : [ {
+      "id" : "_JAuSgFOZEei4opeylynCvg",
+      "name" : "connection_logo_LogoUser"
+    }, {
+      "id" : "_JAuSgVOZEei4opeylynCvg",
+      "name" : "connection_logo_LogoPassword"
+    }, {
+      "id" : "_JAuSglOZEei4opeylynCvg",
+      "name" : "connection_logo_LogoCleanDateEndPoint"
+    }, {
+      "id" : "_JAuSg1OZEei4opeylynCvg",
+      "name" : "parameter_LogoSoapAction"
+    }, {
+      "id" : "_q3EIkFOeEei4opeylynCvg",
+      "name" : "parameter_LogoTMKPlant"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_JAclsFOZEei4opeylynCvg",
+    "parameterList" : [ {
+      "id" : "_mVtPgVOZEei4opeylynCvg",
+      "name" : "connection_logo_LogoUser"
+    }, {
+      "id" : "_mVtPglOZEei4opeylynCvg",
+      "name" : "connection_logo_LogoPassword"
+    }, {
+      "id" : "_mVtPg1OZEei4opeylynCvg",
+      "name" : "connection_logo_LogoCleanDateEndPoint"
+    }, {
+      "id" : "_mVtPhFOZEei4opeylynCvg",
+      "name" : "parameter_LogoSoapAction"
+    }, {
+      "id" : "_q3EvoFOeEei4opeylynCvg",
+      "name" : "parameter_LogoTMKPlant"
+    } ]
+  }, {
+    "contextName" : "IQ2020x",
+    "repoId" : "_JAclsFOZEei4opeylynCvg",
+    "parameterList" : [ {
+      "id" : "_m3iuEReXEeuPtO9EJ_zviA",
+      "name" : "connection_logo_LogoUser"
+    }, {
+      "id" : "_m3iuEheXEeuPtO9EJ_zviA",
+      "name" : "connection_logo_LogoPassword"
+    }, {
+      "id" : "_m3iuExeXEeuPtO9EJ_zviA",
+      "name" : "connection_logo_LogoCleanDateEndPoint"
+    }, {
+      "id" : "_m3iuFBeXEeuPtO9EJ_zviA",
+      "name" : "parameter_LogoSoapAction"
+    }, {
+      "id" : "_m3iuFReXEeuPtO9EJ_zviA",
+      "name" : "parameter_LogoTMKPlant"
+    } ]
+  } ]
+}

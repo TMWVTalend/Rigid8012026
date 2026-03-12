@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_tjnpwJv9EeiNB_8JhUg6cQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_tjnpwZv9EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="daliqdbtst01"/>
+    <contextParameter xmi:id="_tjnpwpv9EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_tjnpw5v9EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="iqms"/>
+    <contextParameter xmi:id="_tjnpxJv9EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cH2iYwlyiFCLcOoxvcrAyIeuiROWkjIDS7/Twvr12hSoYw=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Hii0cJv_EeiNB_8JhUg6cQ" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_Hii0cZv_EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="daliqdb01"/>
+    <contextParameter xmi:id="_Hii0cpv_EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_Hii0c5v_EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="iqms"/>
+    <contextParameter xmi:id="_Hii0dJv_EeiNB_8JhUg6cQ" comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:YgVcHYxYNc4rdqBDk+RZI+ViYibChHBRvx3RrTZoSyRQx2V6pIY="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_DOvCkBeXEeuPtO9EJ_zviA" confirmationNeeded="false" name="IQ2020x">
+    <contextParameter xmi:id="_DOvCkReXEeuPtO9EJ_zviA" comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.150.10.50"/>
+    <contextParameter xmi:id="_DOvCkheXEeuPtO9EJ_zviA" comment="" name="connection_iqms_IQMSJDBCPort" prompt="connection_iqms_IQMSJDBCPort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_DOvCkxeXEeuPtO9EJ_zviA" comment="" name="connection_iqms_IQMSJDBCUser" prompt="connection_iqms_IQMSJDBCUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="iqms"/>
+    <contextParameter xmi:id="_DOvClBeXEeuPtO9EJ_zviA" comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:GX0MOC78rrKdoxVoUwBQBWUpJ0FMBgGLaUk1WyvekOupl9U="/>
+  </talendfile:ContextType>
+</xmi:XMI>

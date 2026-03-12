@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="IQ2020x">
+    <contextParameter comment="" name="Broker_URL" prompt="Broker_URL?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="tcp://DALTALEND04:61616"/>
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="admin"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_Password" value="enc:system.encryption.key.v1:0DmsZ8ukSCVGzu7i9bi37QWSvVIQNWJuweKfWgEjr8RZ"/>
+    <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="DALTALEND04"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="61616"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="Broker_URL" prompt="Broker_URL?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="tcp://TMINWTALEND01:61616"/>
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="admin"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_Password" value="enc:system.encryption.key.v1:aA2D8fUPq0Ds1ZBvl+KYhOZeRTjRtOUmNJWMNqvYxHih"/>
+    <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="TMINWTALEND01"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="61616"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Broker_URL" prompt="Broker_URL?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="tcp://DALTALEND04:61616"/>
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="admin"/>
+    <contextParameter comment="" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_Password" value="enc:system.encryption.key.v1:TYnqQuy5ju6dOAF2xOimxN7FtBgvpLtP/vbKjuOR9uBI"/>
+    <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="DALTALEND04"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_u6QcIK3lEeexPsTk8PUL-Q" type="id_String" value="61616"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:ed6QBA6E6EGUAQ5tYtpfdxhijeOGopmKxYRQ6qUk" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/scott.harris/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YWWd5r+A0DGSCB4Y91OLN0ObLBavS83M3hzQrdiy" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_XUYI4MriEeeCiLfyHgLrWQ" name="DataOperation"/>
+    <routinesParameter id="_XUfdoMriEeeCiLfyHgLrWQ" name="Mathematical"/>
+    <routinesParameter id="_XVnfAMriEeeCiLfyHgLrWQ" name="Numeric"/>
+    <routinesParameter id="_XVrwcMriEeeCiLfyHgLrWQ" name="Relational"/>
+    <routinesParameter id="_XNVFsMriEeeCiLfyHgLrWQ" name="SQLike"/>
+    <routinesParameter id="_XVva0MriEeeCiLfyHgLrWQ" name="StringHandling"/>
+    <routinesParameter id="_XWLfsMriEeeCiLfyHgLrWQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_XWQYMMriEeeCiLfyHgLrWQ" name="TalendDate"/>
+    <routinesParameter id="_XWfBsMriEeeCiLfyHgLrWQ" name="TalendStringUtil"/>
+    <routinesParameter id="_XWaJMMriEeeCiLfyHgLrWQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://&quot; + context.host + &quot;:8040/services/iqmsnl&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;workCenterJobs&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:dRuTm19uiBNuyfYfA0nGjveD3aO5CixQBrhDetTExQ9pxFnABME=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value=""/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:RDg0ef7RG7RONHpoXpUJqb6m3or8L7CfErxOvUTB" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="statusCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="WCList" name="WCList">
+      <column comment="" key="false" length="-1" name="EQNO" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODITEMCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMNO1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMARINVTID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHELFLIFE" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUREDAYS" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STACKQTY" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUTOWOSTART" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOLINEID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMWEIGHTAVG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="statusCode" type="id_Integer" xpath="row2/statusCode" objID="n503469385"/>
+        <nodes name="body" expression="" type="id_Document" xpath="row2/body" objID="n425177421">
+          <children name="root" expression="" type="id_String" xpath="row2.body:/root" main="true" objID="n133580087">
+            <children name="workcenter" expression="" type="id_String" xpath="row2.body:/root/workcenter" loop="true" main="true" objID="n1438314828">
+              <children name="EQNO" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="row2.body:/root/workcenter/EQNO" objID="n829277680"/>
+              <children name="WORKORDERID1" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="row2.body:/root/workcenter/WORKORDERID1" objID="n1843746732"/>
+              <children name="WORKORDERCURRENT" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="row2.body:/root/workcenter/WORKORDERCURRENT" objID="n69389669"/>
+              <children name="PRODITEMCURRENT" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3 //@node.2/@nodeData/@connections.17" xpath="row2.body:/root/workcenter/PRODITEMCURRENT" objID="n27309195"/>
+              <children name="ITEMNO1" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.4 //@node.2/@nodeData/@connections.16 //@node.2/@nodeData/@connections.18 //@node.2/@nodeData/@connections.19 //@node.2/@nodeData/@connections.20 //@node.2/@nodeData/@connections.23" xpath="row2.body:/root/workcenter/ITEMNO1" objID="n528415239"/>
+              <children name="ITEMARINVTID1" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="row2.body:/root/workcenter/ITEMARINVTID1" objID="n1903650734"/>
+              <children name="W1COMP1ARINVTID" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="row2.body:/root/workcenter/W1COMP1ARINVTID" objID="n1695115620"/>
+              <children name="W1COMP2ARINVTID" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="row2.body:/root/workcenter/W1COMP2ARINVTID" objID="n817809841"/>
+              <children name="W1COMP1" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.8" xpath="row2.body:/root/workcenter/W1COMP1" objID="n164652751"/>
+              <children name="W1COMP2" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.9" xpath="row2.body:/root/workcenter/W1COMP2" objID="n1424652809"/>
+              <children name="W1COMP1PTSREQ" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.10" xpath="row2.body:/root/workcenter/W1COMP1PTSREQ" objID="n1240136868"/>
+              <children name="W1COMP2PTSREQ" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.11" xpath="row2.body:/root/workcenter/W1COMP2PTSREQ" objID="n240028236"/>
+              <children name="SHELFLIFE" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.12" xpath="row2.body:/root/workcenter/SHELFLIFE" objID="n493329973"/>
+              <children name="CUREDAYS" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.13" xpath="row2.body:/root/workcenter/CUREDAYS" objID="n119054809"/>
+              <children name="STACKQTY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.14" xpath="row2.body:/root/workcenter/STACKQTY" objID="n616154903"/>
+              <children name="AUTOWOSTART" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.15" xpath="row2.body:/root/workcenter/AUTOWOSTART" objID="n1827879741"/>
+              <children name="LOLINEID" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.21" xpath="row2.body:/root/workcenter/LOLINEID" objID="n239015788"/>
+              <children name="ITEMWEIGHTAVG" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.22" xpath="row2.body:/root/workcenter/ITEMWEIGHTAVG" objID="n643783838"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row2/string" objID="n584053989"/>
+      </inputTrees>
+      <outputTrees name="WCList">
+        <nodes name="EQNO" expression="[row2.body:/root/workcenter/EQNO]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="WCList/EQNO" objID="n943188863"/>
+        <nodes name="WORKORDERID1" expression="StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/WORKORDERID1] : &quot;0&quot;" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1 //@node.2/@nodeData/@connections.16" xpath="WCList/WORKORDERID1" objID="n69328944"/>
+        <nodes name="WORKORDERCURRENT" expression="StringHandling.INDEX([row2.body:/root/workcenter/PRODITEMCURRENT],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/WORKORDERCURRENT] : &quot;0&quot; " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2 //@node.2/@nodeData/@connections.17" xpath="WCList/WORKORDERCURRENT" objID="n1070997484"/>
+        <nodes name="PRODITEMCURRENT" expression=" [row2.body:/root/workcenter/PRODITEMCURRENT]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="WCList/PRODITEMCURRENT" objID="n1292885694"/>
+        <nodes name="ITEMNO1" expression="StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/ITEMNO1] : &quot;INSPECT&quot; " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="WCList/ITEMNO1" objID="n248394065"/>
+        <nodes name="ITEMARINVTID1" expression="StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ?  [row2.body:/root/workcenter/ITEMARINVTID1] : &quot;0&quot;" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5 //@node.2/@nodeData/@connections.20" xpath="WCList/ITEMARINVTID1" objID="n1536174723"/>
+        <nodes name="W1COMP1ARINVTID" expression=" [row2.body:/root/workcenter/W1COMP1ARINVTID]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="WCList/W1COMP1ARINVTID" objID="n876367361"/>
+        <nodes name="W1COMP2ARINVTID" expression=" [row2.body:/root/workcenter/W1COMP2ARINVTID]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="WCList/W1COMP2ARINVTID" objID="n540057418"/>
+        <nodes name="W1COMP1" expression=" StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/W1COMP1] : &quot;&quot;" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.8 //@node.2/@nodeData/@connections.18" xpath="WCList/W1COMP1" objID="n1183071137"/>
+        <nodes name="W1COMP2" expression="StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/W1COMP2]: &quot;&quot;" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.9 //@node.2/@nodeData/@connections.19" xpath="WCList/W1COMP2" objID="n999522337"/>
+        <nodes name="W1COMP1PTSREQ" expression="[row2.body:/root/workcenter/W1COMP1PTSREQ]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.10" xpath="WCList/W1COMP1PTSREQ" objID="n777283669"/>
+        <nodes name="W1COMP2PTSREQ" expression="[row2.body:/root/workcenter/W1COMP2PTSREQ] " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.11" xpath="WCList/W1COMP2PTSREQ" objID="n2044571420"/>
+        <nodes name="SHELFLIFE" expression="[row2.body:/root/workcenter/SHELFLIFE]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.12" xpath="WCList/SHELFLIFE" objID="n1955547291"/>
+        <nodes name="CUREDAYS" expression="[row2.body:/root/workcenter/CUREDAYS]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.13" xpath="WCList/CUREDAYS" objID="n344770316"/>
+        <nodes name="STACKQTY" expression="[row2.body:/root/workcenter/STACKQTY]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.14" xpath="WCList/STACKQTY" objID="n1064580780"/>
+        <nodes name="AUTOWOSTART" expression="[row2.body:/root/workcenter/AUTOWOSTART]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.15" xpath="WCList/AUTOWOSTART" objID="n391583789"/>
+        <nodes name="LOLINEID" expression=" [row2.body:/root/workcenter/LOLINEID]" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.21" xpath="WCList/LOLINEID" pattern="" objID="n2060002894"/>
+        <nodes name="ITEMWEIGHTAVG" expression="StringHandling.INDEX([row2.body:/root/workcenter/ITEMNO1],&quot;INSPECT&quot;) == -1 ? [row2.body:/root/workcenter/ITEMWEIGHTAVG]: null " type="id_String" incomingConnections="//@node.2/@nodeData/@connections.22 //@node.2/@nodeData/@connections.23" xpath="WCList/ITEMWEIGHTAVG" pattern="" objID="n579458414"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n829277680" target="n943188863"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1843746732" target="n69328944"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n69389669" target="n1070997484"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n27309195" target="n1292885694"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n248394065"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1903650734" target="n1536174723"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1695115620" target="n876367361"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n817809841" target="n540057418"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n164652751" target="n1183071137"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1424652809" target="n999522337"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1240136868" target="n777283669"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n240028236" target="n2044571420"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n493329973" target="n1955547291"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n119054809" target="n344770316"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n616154903" target="n1064580780"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1827879741" target="n391583789"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n69328944"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n27309195" target="n1070997484"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n1183071137"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n999522337"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n1536174723"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n239015788" target="n2060002894"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n643783838" target="n579458414"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n528415239" target="n579458414"/>
+    </nodeData>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_5" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="WORKORDERCURRENT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="!="/>
+      <elementValue elementRef="RVALUE" value="WCList.WORKORDERID1"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AUTOWOSTART"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="&quot;AUTO&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="WCList" name="tFilterRow_5">
+      <column comment="" key="false" length="-1" name="EQNO" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODITEMCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMNO1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMARINVTID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHELFLIFE" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUREDAYS" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STACKQTY" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUTOWOSTART" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOLINEID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMWEIGHTAVG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="WCList" name="FILTER">
+      <column comment="" key="false" length="-1" name="EQNO" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODITEMCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMNO1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMARINVTID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHELFLIFE" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUREDAYS" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STACKQTY" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUTOWOSTART" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOLINEID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMWEIGHTAVG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="WCList" name="REJECT">
+      <column comment="" key="false" length="-1" name="EQNO" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODITEMCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMNO1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMARINVTID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHELFLIFE" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUREDAYS" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STACKQTY" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUTOWOSTART" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOLINEID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMWEIGHTAVG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EQNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WORKORDERID1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WORKORDERCURRENT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODITEMCURRENT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMARINVTID1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP1ARINVTID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP2ARINVTID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP1PTSREQ"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="W1COMP2PTSREQ"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELFLIFE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUREDAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STACKQTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTOWOSTART"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOLINEID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMWEIGHTAVG"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="WCList" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="EQNO" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WORKORDERCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODITEMCURRENT" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMNO1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMARINVTID1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2ARINVTID" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP1PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="W1COMP2PTSREQ" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SHELFLIFE" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUREDAYS" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STACKQTY" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AUTOWOSTART" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOLINEID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ITEMWEIGHTAVG" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="jsonOut">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="itemWeight" name="itemWeight">
+      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="EQNO" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.0 //@node.5/@nodeData/@connections.18" xpath="row4/EQNO" objID="n124323095"/>
+        <nodes name="WORKORDERID1" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.1" xpath="row4/WORKORDERID1" objID="n1700633825"/>
+        <nodes name="WORKORDERCURRENT" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" xpath="row4/WORKORDERCURRENT" objID="n1657013131"/>
+        <nodes name="PRODITEMCURRENT" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" xpath="row4/PRODITEMCURRENT" objID="n1217615821"/>
+        <nodes name="ITEMNO1" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.4" filterOutGoingConnections="//@node.5/@nodeData/@connections.19" xpath="row4/ITEMNO1" objID="n2119307664"/>
+        <nodes name="ITEMARINVTID1" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.5" xpath="row4/ITEMARINVTID1" objID="n2118190923"/>
+        <nodes name="W1COMP1ARINVTID" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.6" xpath="row4/W1COMP1ARINVTID" objID="n2061757180"/>
+        <nodes name="W1COMP2ARINVTID" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.7" xpath="row4/W1COMP2ARINVTID" objID="n683177352"/>
+        <nodes name="W1COMP1" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.8" xpath="row4/W1COMP1" objID="n1994703205"/>
+        <nodes name="W1COMP2" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.9" xpath="row4/W1COMP2" objID="n622547654"/>
+        <nodes name="W1COMP1PTSREQ" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.10" xpath="row4/W1COMP1PTSREQ" objID="n216165894"/>
+        <nodes name="W1COMP2PTSREQ" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.11" xpath="row4/W1COMP2PTSREQ" objID="n1619788658"/>
+        <nodes name="SHELFLIFE" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.12" xpath="row4/SHELFLIFE" objID="n700618417"/>
+        <nodes name="CUREDAYS" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.13" xpath="row4/CUREDAYS" objID="n311319733"/>
+        <nodes name="STACKQTY" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.14" xpath="row4/STACKQTY" objID="n1161678053"/>
+        <nodes name="AUTOWOSTART" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.15" xpath="row4/AUTOWOSTART" objID="n289200017"/>
+        <nodes name="LOLINEID" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.17" xpath="row4/LOLINEID" objID="n1029950142"/>
+        <nodes name="ITEMWEIGHTAVG" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.16" xpath="row4/ITEMWEIGHTAVG" objID="n167219088"/>
+      </inputTrees>
+      <outputTrees name="jsonOut">
+        <nodes name="body" expression="" type="id_Document" xpath="jsonOut/body" objID="n123695894">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="JobStart" expression="" type="id_String" xpath="jsonOut.body:/JobStart" loop="true" main="true" objID="n984402523">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="EQNO" expression="row4.EQNO" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="jsonOut.body:/JobStart/EQNO" objID="n30278181"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="WORKORDERID1" expression="row4.WORKORDERID1" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="jsonOut.body:/JobStart/WORKORDERID1" objID="n717784106"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="WORKORDERCURRENT" expression="row4.WORKORDERCURRENT" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="jsonOut.body:/JobStart/WORKORDERCURRENT" objID="n783194929"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="PRODITEMCURRENT" expression="row4.PRODITEMCURRENT" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="jsonOut.body:/JobStart/PRODITEMCURRENT" objID="n932315594"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMNO1" expression="row4.ITEMNO1" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="jsonOut.body:/JobStart/ITEMNO1" objID="n1108924900"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMARINVTID1" expression="row4.ITEMARINVTID1" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.5" xpath="jsonOut.body:/JobStart/ITEMARINVTID1" objID="n2104308626"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP1ARINVTID" expression="row4.W1COMP1ARINVTID" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.6" xpath="jsonOut.body:/JobStart/W1COMP1ARINVTID" objID="n2087665805"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP2ARINVTID" expression="row4.W1COMP2ARINVTID" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.7" xpath="jsonOut.body:/JobStart/W1COMP2ARINVTID" objID="n378873319"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP1" expression="row4.W1COMP1" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.8" xpath="jsonOut.body:/JobStart/W1COMP1" objID="n1015865988"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP2" expression="row4.W1COMP2" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.9" xpath="jsonOut.body:/JobStart/W1COMP2" objID="n239539827"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP1PTSREQ" expression="row4.W1COMP1PTSREQ" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.10" xpath="jsonOut.body:/JobStart/W1COMP1PTSREQ" objID="n2776847"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="W1COMP2PTSREQ" expression="row4.W1COMP2PTSREQ" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.11" xpath="jsonOut.body:/JobStart/W1COMP2PTSREQ" objID="n1767688575"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="SHELFLIFE" expression="row4.SHELFLIFE" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.12" xpath="jsonOut.body:/JobStart/SHELFLIFE" objID="n1962129656"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CUREDAYS" expression="row4.CUREDAYS" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.13" xpath="jsonOut.body:/JobStart/CUREDAYS" objID="n1054636089"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="STACKQTY" expression="row4.STACKQTY" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.14" xpath="jsonOut.body:/JobStart/STACKQTY" objID="n1759880999"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="AUTOWOSTART" expression="row4.AUTOWOSTART" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.15" xpath="jsonOut.body:/JobStart/AUTOWOSTART" objID="n538993573"/>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="jsonOut/string" objID="n562166103"/>
+      </outputTrees>
+      <outputTrees expressionFilter="row4.ITEMNO1 != &quot;INSPECT&quot;" name="itemWeight" filterIncomingConnections="//@node.5/@nodeData/@connections.19">
+        <nodes name="body" expression="" type="id_Document" xpath="itemWeight/body" pattern="" objID="n310563859">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="Settings" expression="" type="id_String" xpath="itemWeight.body:/Settings" loop="true" main="true" objID="n409306182">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LineID" expression="row4.LOLINEID" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.17" xpath="itemWeight.body:/Settings/LineID" objID="n1832040626"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="IQMSWorkCenterID" expression="row4.EQNO" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.18" xpath="itemWeight.body:/Settings/IQMSWorkCenterID" objID="n1502971198"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ItemWeightGrams" expression="row4.ITEMWEIGHTAVG" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.16" xpath="itemWeight.body:/Settings/ItemWeightGrams" objID="n406582811"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="InboundDisable" expression="true" type="id_String" xpath="itemWeight.body:/Settings/InboundDisable" objID="n539858667"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="OutboundDisable" expression="true" type="id_String" xpath="itemWeight.body:/Settings/OutboundDisable" objID="n727858189"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n124323095" target="n30278181"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1700633825" target="n717784106"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1657013131" target="n783194929"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1217615821" target="n932315594"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2119307664" target="n1108924900"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2118190923" target="n2104308626"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2061757180" target="n2087665805"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n683177352" target="n378873319"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1994703205" target="n1015865988"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n622547654" target="n239539827"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n216165894" target="n2776847"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1619788658" target="n1767688575"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n700618417" target="n1962129656"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n311319733" target="n1054636089"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1161678053" target="n1759880999"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n289200017" target="n538993573"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n167219088" target="n406582811"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1029950142" target="n1832040626"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n124323095" target="n1502971198"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="n2119307664" target="//@node.5/@nodeData/@outputTrees.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_2" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://&quot; + context.host + &quot;:8040/services/ims&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;saveJob&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:IQeM5lAzlC5GKjpc5Rj+WGCPeN2hx3QlqD2GeT5Zl1PY3OR6Tpc=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value=""/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:P3Xwbe57+eekH92EI3BBQeyiGbW/V5X1/A+tkSlp" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_3" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://&quot; + context.host + &quot;:8040/services/ims&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;saveWCsettings&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:8JfcLd39nhDapJzDVMYnDNSsr4YicnCjcU+troTLL+m6wvpTrCw=" show="false"/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROLE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="true"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value=""/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:h8pl8lJ8RFJILB5p7WoW4GtppZSYet3NfPkjqLyh" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="-2" offsetLabelY="-24" source="tLogRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="WCList" lineStyle="0" metaname="WCList" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFilterRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="WCList" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row3" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_5" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="jsonOut" lineStyle="0" metaname="jsonOut" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_2" target="tRESTClient_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jsonOut" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="itemWeight" lineStyle="0" metaname="itemWeight" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_2" target="tRESTClient_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="itemWeight" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

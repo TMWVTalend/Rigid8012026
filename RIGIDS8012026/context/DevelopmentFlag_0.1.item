@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_6T8F0DpIEeurGo2TpeSVCg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_6T8F0TpIEeurGo2TpeSVCg" comment="Used to indicate Dev mod" name="parameter_DevMode" prompt="parameter_DevMode?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="true"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Ghm8kDpJEeurGo2TpeSVCg" confirmationNeeded="false" name="IQ2020x">
+    <contextParameter xmi:id="_Ghm8kTpJEeurGo2TpeSVCg" comment="Used to indicate Dev mod" name="parameter_DevMode" prompt="parameter_DevMode?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="true"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Ghm8kjpJEeurGo2TpeSVCg" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_Ghm8kzpJEeurGo2TpeSVCg" comment="Used to indicate Dev mod" name="parameter_DevMode" prompt="parameter_DevMode?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="false"/>
+  </talendfile:ContextType>
+</xmi:XMI>

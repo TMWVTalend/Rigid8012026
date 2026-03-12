@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="IQ2020x" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="WAMASpartnerID" prompt="WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP"/>
+    <contextParameter comment="" name="WAMASID" prompt="WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS"/>
+    <contextParameter comment="" name="WAMASclientID" prompt="WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1"/>
+    <contextParameter comment="" name="WAMASvariant" prompt="WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK"/>
+    <contextParameter comment="" name="WAMAS_Out" prompt="WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out"/>
+    <contextParameter comment="" name="WAMAS_In" prompt="WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in"/>
+    <contextParameter comment="" name="WAMAS_Processed" prompt="WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed"/>
+    <contextParameter comment="" name="WAMAS_Error" prompt="WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors"/>
+    <contextParameter comment="" name="WAMASwhLoc" prompt="WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station"/>
+    <contextParameter comment="" name="WebAPI_eplant_id" prompt="WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21"/>
+    <contextParameter comment="" name="WebAPI_username" prompt="WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="iqms"/>
+    <contextParameter comment="" name="WebAPI_URL" prompt="WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://dalwebtst01:8080"/>
+    <contextParameter comment="" name="WebAPI_png_adj_trans_code" prompt="WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169"/>
+    <contextParameter comment="" name="WebAPI_password" prompt="WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:8kVI+yeTZptgwSujOz8pe644/oygihae9srjCHHv9CdeTA=="/>
+    <contextParameter comment="" name="IQMSJDBCUser" prompt="IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms"/>
+    <contextParameter comment="" name="IQMSJDBCPort" prompt="IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521"/>
+    <contextParameter comment="" name="IQMSJDBCPass" prompt="IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:gKZ3PTCLEoq7LDbiG9XUMpwiWD4oegu4WOe+6IHNlV3Llg=="/>
+    <contextParameter comment="" name="IQMSJDBCHost" prompt="IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdbtst01"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="WAMASpartnerID" prompt="WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP"/>
+    <contextParameter comment="" name="WAMASID" prompt="WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS"/>
+    <contextParameter comment="" name="WAMASclientID" prompt="WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1"/>
+    <contextParameter comment="" name="WAMASvariant" prompt="WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK"/>
+    <contextParameter comment="" name="WAMASwhLoc" prompt="WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station"/>
+    <contextParameter comment="" name="WAMAS_Out" prompt="WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_out"/>
+    <contextParameter comment="" name="WAMAS_In" prompt="WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in"/>
+    <contextParameter comment="" name="WAMAS_Processed" prompt="WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/processed"/>
+    <contextParameter comment="" name="WAMAS_Error" prompt="WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//TMINWTALEND01/wamas_in/errors"/>
+    <contextParameter comment="" name="WebAPI_eplant_id" prompt="WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21"/>
+    <contextParameter comment="" name="WebAPI_username" prompt="WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="iqms"/>
+    <contextParameter comment="" name="WebAPI_URL" prompt="WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://daliqweb02:8080"/>
+    <contextParameter comment="" name="WebAPI_png_adj_trans_code" prompt="WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169"/>
+    <contextParameter comment="" name="WebAPI_password" prompt="WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:aq3R3jKr9xlXx2UIGA2Ha+/cUmagh13BvVh3op9nrevQxAO3z+8="/>
+    <contextParameter comment="" name="IQMSJDBCUser" prompt="IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms"/>
+    <contextParameter comment="" name="IQMSJDBCPort" prompt="IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521"/>
+    <contextParameter comment="" name="IQMSJDBCPass" prompt="IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:mAMoQO7tsUNvVQhA1yYg7oI3iq4w3bbyR3/ILjTYdljRieZOX+g="/>
+    <contextParameter comment="" name="IQMSJDBCHost" prompt="IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdb01"/>
+  </context>
+  <context confirmationNeeded="false" name="IQ2020x">
+    <contextParameter comment="" name="WAMASpartnerID" prompt="WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP"/>
+    <contextParameter comment="" name="WAMASID" prompt="WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS"/>
+    <contextParameter comment="" name="WAMASclientID" prompt="WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1"/>
+    <contextParameter comment="" name="WAMASvariant" prompt="WAMASvariant?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK"/>
+    <contextParameter comment="" name="WAMAS_Out" prompt="WAMAS_Out?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_out"/>
+    <contextParameter comment="" name="WAMAS_In" prompt="WAMAS_In?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in"/>
+    <contextParameter comment="" name="WAMAS_Processed" prompt="WAMAS_Processed?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/processed"/>
+    <contextParameter comment="" name="WAMAS_Error" prompt="WAMAS_Error?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="//daltalend04/wamas_in/errors"/>
+    <contextParameter comment="" name="WAMASwhLoc" prompt="WAMASwhLoc?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="Tabler_Station"/>
+    <contextParameter comment="" name="WebAPI_eplant_id" prompt="WebAPI_eplant_id?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="21"/>
+    <contextParameter comment="" name="WebAPI_username" prompt="WebAPI_username?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="gstaab"/>
+    <contextParameter comment="" name="WebAPI_URL" prompt="WebAPI_URL?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="http://daliqweb01:8080"/>
+    <contextParameter comment="" name="WebAPI_png_adj_trans_code" prompt="WebAPI_png_adj_trans_code?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_String" value="169"/>
+    <contextParameter comment="" name="WebAPI_password" prompt="WebAPI_password?" promptNeeded="false" repositoryContextId="_BsvNQK3yEeePEcHNWzdD2A" type="id_Password" value="enc:system.encryption.key.v1:oxE+bPEiRFRiIWZqr9eA0rcWVVjYt3WItx9lvrQKCW+8wQ=="/>
+    <contextParameter comment="" name="IQMSJDBCHost" prompt="IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="10.150.10.22"/>
+    <contextParameter comment="" name="IQMSJDBCPort" prompt="IQMSJDBCPort?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="1521"/>
+    <contextParameter comment="" name="IQMSJDBCUser" prompt="IQMSJDBCUser?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="iqms"/>
+    <contextParameter comment="" name="IQMSJDBCPass" prompt="IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:IEqJ895C2eP1aZpCHeCFwwW7RUrqZcaINey4FhqWFOrTxto="/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:yOegwE0IfdcQCqYNVqZSoCIY6iK/sO0KwMmYNnIh" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/scott.harris/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ho5XAmz0JPUT0Lx6dp5ZGjbGQ023v8QT5/kbyQ6J" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_GK2BAK3WEeeb6ZualHvuhg" name="DQTechnical"/>
+    <routinesParameter id="_GJIw0K3WEeeb6ZualHvuhg" name="DataMasking"/>
+    <routinesParameter id="_GICkoK3WEeeb6ZualHvuhg" name="DataOperation"/>
+    <routinesParameter id="_GJUXAK3WEeeb6ZualHvuhg" name="DataQualityDependencies"/>
+    <routinesParameter id="_GJQFkK3WEeeb6ZualHvuhg" name="DataQuality"/>
+    <routinesParameter id="_GJeIAK3WEeeb6ZualHvuhg" name="DqStringHandling"/>
+    <routinesParameter id="_GIQnEK3WEeeb6ZualHvuhg" name="Mathematical"/>
+    <routinesParameter id="_GIc0UK3WEeeb6ZualHvuhg" name="Numeric"/>
+    <routinesParameter id="_GInMYK3WEeeb6ZualHvuhg" name="Relational"/>
+    <routinesParameter id="_GGfFcK3WEeeb6ZualHvuhg" name="SQLike"/>
+    <routinesParameter id="_GIsE4K3WEeeb6ZualHvuhg" name="StringHandling"/>
+    <routinesParameter id="_GIw9YK3WEeeb6ZualHvuhg" name="TalendDataGenerator"/>
+    <routinesParameter id="_GI114K3WEeeb6ZualHvuhg" name="TalendDate"/>
+    <routinesParameter id="_GJD4UK3WEeeb6ZualHvuhg" name="TalendStringUtil"/>
+    <routinesParameter id="_GI7VcK3WEeeb6ZualHvuhg" name="TalendString"/>
+  </parameters>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.IQMSJDBCHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.IQMSJDBCPort"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;iqms&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;IQMS&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.IQMSJDBCUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.IQMSJDBCPass"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;jdbc/iqms&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.IQMSJDBCHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.IQMSJDBCPort"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;iqms&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;IQMS&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.IQMSJDBCUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="context.IQMSJDBCPass"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ARINVT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select a.id,&#xD;&#xA;   a.id,&#xD;&#xA;   a.class,&#xD;&#xA;a.itemno,&#xD;&#xA;a.descrip,&#xD;&#xA;a.descrip2,&#xD;&#xA;&#x9;a.loose_weight, &#xD;&#xA;&#x9;b.uom, b.conv_value, c.cust_itemno  &#xD;&#xA;    from arinvt a&#xD;&#xA;join arinvt_uom_conv b on b.arinvt_id = a.id &#xD;&#xA;join aka c on c.arinvt_id = a.id &#xD;&#xA;where a.eplant_id = '&quot; + context.WebAPI_eplant_id + &quot;' &#xD;&#xA;and a.itemno &lt; '5.' &#xD;&#xA;and not (a.itemno like '%EXP%'  or a.itemno like '%IMP%')&#xD;&#xA;and (pk_hide = 'N' or pk_hide IS NULL)&#xD;&#xA;order by a.id, b.uom&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="query arinvt aka and uom"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="15" name="ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ID1" nullable="false" originalDbColumnName="ID" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="_CLASS" nullable="false" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP2" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_WEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONV_VALUE" nullable="true" pattern="" precision="10" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CUST_ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplace_1" show="false"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" value="Simple mode works with regex expression(in last version)" show="false"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="_CLASS"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;WP&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;WIP&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="translate iqms to wamas"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tReplace_1">
+      <column comment="" defaultValue="" key="false" length="15" name="ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ID1" nullable="false" originalDbColumnName="ID" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="_CLASS" nullable="true" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP2" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_WEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONV_VALUE" nullable="true" pattern="" precision="10" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CUST_ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="generate wamas item00008"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Item_XML" name="Item_XML">
+      <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="arinvt_uom_aka" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="ID" type="id_BigDecimal" outgoingConnections="//@node.4/@nodeData/@connections.3 //@node.4/@nodeData/@connections.4 //@node.4/@nodeData/@connections.5 //@node.4/@nodeData/@connections.6 //@node.4/@nodeData/@connections.7 //@node.4/@nodeData/@connections.16" xpath="arinvt_uom_aka/ID" nullable="false" objID="n1732741630"/>
+        <nodes name="ID1" type="id_BigDecimal" xpath="arinvt_uom_aka/ID1" nullable="false" objID="n667751897"/>
+        <nodes name="_CLASS" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.2" xpath="arinvt_uom_aka/_CLASS" nullable="false" objID="n169846653"/>
+        <nodes name="ITEMNO" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.8" xpath="arinvt_uom_aka/ITEMNO" nullable="false" objID="n2114527722"/>
+        <nodes name="DESCRIP" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="arinvt_uom_aka/DESCRIP" nullable="false" objID="n1026023362"/>
+        <nodes name="DESCRIP2" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.1" xpath="arinvt_uom_aka/DESCRIP2" objID="n1767885556"/>
+        <nodes name="LOOSE_WEIGHT" type="id_BigDecimal" outgoingConnections="//@node.4/@nodeData/@connections.13 //@node.4/@nodeData/@connections.14" xpath="arinvt_uom_aka/LOOSE_WEIGHT" objID="n1020781678"/>
+        <nodes name="UOM" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.10 //@node.4/@nodeData/@connections.12" xpath="arinvt_uom_aka/UOM" objID="n1812901801"/>
+        <nodes name="CONV_VALUE" type="id_BigDecimal" outgoingConnections="//@node.4/@nodeData/@connections.11 //@node.4/@nodeData/@connections.15" xpath="arinvt_uom_aka/CONV_VALUE" objID="n507871632"/>
+        <nodes name="CUST_ITEMNO" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.9" xpath="arinvt_uom_aka/CUST_ITEMNO" nullable="false" objID="n184025966"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="Item_XML" allInOne="true">
+        <nodes name="payload" expression="" type="id_Document" xpath="Item_XML/payload" pattern="" objID="n420049916">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="DI_TELEGRAM" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM" main="true" objID="n238216753">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="header" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/header" objID="n219035283">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FULL" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL" objID="n418336263">
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HEADER_SOURCE" expression="context.WAMASpartnerID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL/HEADER_SOURCE" objID="n1353013841"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HEADER_DESTINATION" expression="context.WAMASID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL/HEADER_DESTINATION" objID="n1585123331"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HEADER_CREATIONTIME" expression="TalendDate.getCurrentDate() " type="id_Long" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL/HEADER_CREATIONTIME" objID="n937283129"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HEADER_SEQUENCE" expression="&quot;0&quot;" type="id_Integer" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL/HEADER_SEQUENCE" objID="n1596821313"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="HEADER_RECORDTYPENAME" expression="&quot;ITEM00008&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/header/FULL/HEADER_RECORDTYPENAME" objID="n1635990906"/>
+              </children>
+            </children>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="body" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body" main="true" objID="n1426640990">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEM00008" expression="" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008" group="true" main="true" objID="n244160503">
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientId" expression="context.WAMASclientID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/clientId" objID="n79641488"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemNo" expression=" arinvt_uom_aka.ID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.3" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemNo" objID="n675238087"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="variant" expression="context.WAMASvariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/variant" objID="n1038396422"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="baseQtyUnit" expression="&quot;EA&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/baseQtyUnit" objID="n702227043"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="whQtyUnit" expression="&quot;EA&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/whQtyUnit" objID="n1769650635"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="dualItem" expression="&quot;0&quot;" type="id_Integer" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/dualItem" objID="n463070311"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="dualQtyUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/dualQtyUnit" objID="n1290201160"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="whDualQtyUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/whDualQtyUnit" objID="n497951304"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="lowerEntryTolAbsolute" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/lowerEntryTolAbsolute" objID="n1232468411"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="lowerEntryTolPercentage" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/lowerEntryTolPercentage" objID="n1386621341"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="upperEntryTolAbsolute" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/upperEntryTolAbsolute" objID="n980737999"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="upperEntryTolPercentage" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/upperEntryTolPercentage" objID="n1581422958"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="autoConvMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/autoConvMode" objID="n1383283337"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="editBaseQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/editBaseQty" objID="n1241545734"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="editDualQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/editDualQty" objID="n1887750912"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="goodsCategory" expression="arinvt_uom_aka._CLASS" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.2" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/goodsCategory" objID="n1619081707"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="assortment" expression="&quot;CAPS&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/assortment" objID="n517029790"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="billingcategory" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/billingcategory" objID="n1887964220"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemType" expression="&quot;ME&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemType" objID="n2027366857"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="goodsValue" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/goodsValue" objID="n622062111"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="goodsValueUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/goodsValueUnit" objID="n461539950"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="bbDateStockMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/bbDateStockMode" objID="n1812797613"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="batchStockMode" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/batchStockMode" objID="n2063570938"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="prodDateStockMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/prodDateStockMode" objID="n1898544561"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode01" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode01" objID="n127749004"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode02" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode02" objID="n957848450"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode03" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode03" objID="n233956126"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode04" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode04" objID="n1891100364"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode05" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode05" objID="n1582720880"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode06" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode06" objID="n1393341537"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode07" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode07" objID="n799826197"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode08" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode08" objID="n1179010035"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode09" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode09" objID="n934137778"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode10" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode10" objID="n1735809854"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode11" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode11" objID="n2126839064"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode12" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode12" objID="n1836227880"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode13" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode13" objID="n1644194303"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode14" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode14" objID="n323321743"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode15" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode15" objID="n1837755828"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode16" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode16" objID="n1808344797"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode17" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode17" objID="n1439869002"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode18" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode18" objID="n280127041"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode19" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode19" objID="n129239766"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaStockMode20" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaStockMode20" objID="n358075240"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="loadAidId" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/loadAidId" objID="n249434275"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemWeight" expression="arinvt_uom_aka.LOOSE_WEIGHT" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.13" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemWeight" objID="n1113052072"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemWeightUnit" expression="&quot;g&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemWeightUnit" objID="n746876330"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="packSequence" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/packSequence" objID="n114990167"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemEquivPeriod" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemEquivPeriod" objID="n1888142688"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemEquivPeriodUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemEquivPeriodUnit" objID="n631513717"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemClass" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/itemClass" objID="n691396192"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="timeBasedAccMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/timeBasedAccMode" objID="n1355199899"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igAutoConvMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igAutoConvMode" objID="n62370674"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igEditBaseQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igEditBaseQty" objID="n219067189"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igEditDualQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igEditDualQty" objID="n2006611306"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igBbDateRegistration" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igBbDateRegistration" objID="n2104673587"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igBatchRegistration" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igBatchRegistration" objID="n639721238"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igProdDateRegistration" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igProdDateRegistration" objID="n1631680664"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration01" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration01" objID="n1754038381"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration02" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration02" objID="n1934705723"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration03" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration03" objID="n111825336"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration04" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration04" objID="n993847151"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration05" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration05" objID="n504797117"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration06" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration06" objID="n350023868"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration07" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration07" objID="n100450003"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration08" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration08" objID="n1542199833"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration09" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration09" objID="n1318675692"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration10" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration10" objID="n1639025045"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration11" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration11" objID="n1163481532"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration12" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration12" objID="n890769416"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration13" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration13" objID="n458580368"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration14" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration14" objID="n1721672846"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration15" expression="&quot;MANDATORY&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration15" objID="n1799036545"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration16" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration16" objID="n71209077"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration17" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration17" objID="n1872816492"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration18" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration18" objID="n16557668"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration19" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration19" objID="n399467044"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaIgRegistration20" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaIgRegistration20" objID="n36713504"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="transferIbdl" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/transferIbdl" objID="n905617482"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igRemLifeCheck" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igRemLifeCheck" objID="n462909792"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igMinRemLife" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igMinRemLife" objID="n1742817425"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igMinRemLifeUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igMinRemLifeUnit" objID="n1216688234"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igMaxRemLife" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igMaxRemLife" objID="n1588683164"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igMaxRemLifeUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igMaxRemLifeUnit" objID="n968123662"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igItemMonitoringKind" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igItemMonitoringKind" objID="n396031310"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igItemMonInterval" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igItemMonInterval" objID="n276221263"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igItemMonIntervalUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igItemMonIntervalUnit" objID="n7826598"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igOverDeliveryAllowed" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igOverDeliveryAllowed" objID="n1716831427"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igGtinConrolIntKind" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igGtinConrolIntKind" objID="n194361171"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igGtinVerificationInt" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igGtinVerificationInt" objID="n1470103929"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="igGtinVerificationIntUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/igGtinVerificationIntUnit" objID="n431048295"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogAutoConvMode" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogAutoConvMode" objID="n1694663093"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogEditBaseQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogEditBaseQty" objID="n1319348411"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogEditDualQty" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogEditDualQty" objID="n1300408661"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogBbDateRegistration" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogBbDateRegistration" objID="n1880159927"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogBatchRegistration" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogBatchRegistration" objID="n93315923"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogProdDateRegistration" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogProdDateRegistration" objID="n357705248"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration01" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration01" objID="n466110203"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration02" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration02" objID="n841379217"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration03" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration03" objID="n416548109"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration04" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration04" objID="n372272212"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration05" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration05" objID="n1187959773"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration06" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration06" objID="n511929961"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration07" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration07" objID="n938792469"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration08" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration08" objID="n76989034"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration09" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration09" objID="n884534843"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration10" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration10" objID="n1930219089"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration11" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration11" objID="n758051418"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration12" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration12" objID="n1813158186"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration13" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration13" objID="n267757706"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration14" expression="&quot;OPTIONAL&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration14" objID="n1783006064"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration15" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration15" objID="n626470974"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration16" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration16" objID="n1060871328"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration17" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration17" objID="n1108134033"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration18" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration18" objID="n342197431"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration19" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration19" objID="n586256407"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="csiaOgRegistration20" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/csiaOgRegistration20" objID="n418727870"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogAvailabilityCheck" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogAvailabilityCheck" objID="n1907830574"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogObdBlock" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogObdBlock" objID="n2130223012"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogRemLifeCheck" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogRemLifeCheck" objID="n1225249622"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogRemainingLife" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogRemainingLife" objID="n1174806807"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ogRemainingLifeUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ogRemainingLifeUnit" objID="n854042922"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="deliveryToleranceUpper" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/deliveryToleranceUpper" objID="n1868442620"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="deliveryToleranceLower" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/deliveryToleranceLower" objID="n1718466067"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="stackingCatorgy" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/stackingCatorgy" objID="n723738743"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="customsTariffNo" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/customsTariffNo" objID="n941477104"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="countryOrigin" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/countryOrigin" objID="n1687557956"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="recordState" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/recordState" objID="n576823761"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMDESC00005" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005" objID="n1356994921">
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientId" expression="context.WAMASclientID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/clientId" objID="n412252338"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemNo" expression=" arinvt_uom_aka.ID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.4" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/itemNo" objID="n853988314"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="variant" expression="context.WAMASvariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/variant" objID="n1578000657"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="description" expression="StringHandling.LEFT(arinvt_uom_aka.DESCRIP,40) " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/description" objID="n535782434"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="description2" expression="StringHandling.LEFT(arinvt_uom_aka.DESCRIP2,40) " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.1" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/description2" objID="n961208315"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="language" expression="&quot;eng-US&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/language" objID="n1579748620"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="recordState" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMDESC00005/recordState" objID="n103714498"/>
+                </children>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMQTYUNIT00007" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007" loop="true" main="true" objID="n556929863">
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientId" expression="context.WAMASclientID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/clientId" objID="n1327932134"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemNo" expression=" arinvt_uom_aka.ID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.5" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/itemNo" objID="n116060133"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="variant" expression="context.WAMASvariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/variant" objID="n13252221"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="denominator" expression="&quot;1&quot;" type="id_Float" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/denominator" objID="n124515022"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="qtyUnit" expression=" arinvt_uom_aka.UOM" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.10" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/qtyUnit" objID="n582850540"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="numerator" expression="arinvt_uom_aka.CONV_VALUE" type="id_Float" incomingConnections="//@node.4/@nodeData/@connections.11" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/numerator" objID="n101961786"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="referenceQtyUnit" expression="&quot;EA&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/referenceQtyUnit" objID="n1090770658"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="grossWeight" expression="arinvt_uom_aka.LOOSE_WEIGHT.multiply(arinvt_uom_aka.CONV_VALUE) " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.14 //@node.4/@nodeData/@connections.15" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/grossWeight" objID="n1162847643"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="grossWeightUnit" expression="&quot;g&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/grossWeightUnit" objID="n116372262"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="length" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/length" objID="n967449504"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="lengthUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/lengthUnit" objID="n568402872"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="width" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/width" objID="n1323063988"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="widthUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/widthUnit" objID="n1812877828"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="height" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/height" objID="n1658842383"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="heightUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/heightUnit" objID="n1830981366"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="volume" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/volume" objID="n269701572"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="volumeUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/volumeUnit" objID="n333095759"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="stackingFactor" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/stackingFactor" objID="n205946896"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="wholeLu" expression="arinvt_uom_aka.UOM.equals(&quot;STK&quot;)?&quot;1&quot;:&quot;0&quot;" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.12" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/wholeLu" objID="n1008678112"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="loadUnitCubature" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/loadUnitCubature" objID="n1468065981"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="emptiesItemNo" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/emptiesItemNo" objID="n2066944526"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="emptiesVariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/emptiesVariant" objID="n2108942418"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="isSalesQtyUnit" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/isSalesQtyUnit" objID="n1308557868"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="recordState" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMQTYUNIT00007/recordState" objID="n234493367"/>
+                </children>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMALIAS00006" expression="" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006" objID="n222669388">
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientId" expression="context.WAMASclientID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/clientId" objID="n1364250409"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemNo" expression=" arinvt_uom_aka.ID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.7" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/itemNo" objID="n1630955713"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="variant" expression="context.WAMASvariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/variant" objID="n1640775188"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemAliasNo" expression="arinvt_uom_aka.ITEMNO" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.8" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/itemAliasNo" objID="n826453778"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="kind" expression="&quot;ALIAS&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/kind" objID="n43415969"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="qtyUnit" expression="&quot;PCS&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/qtyUnit" objID="n723177617"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="numBquWqu" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/numBquWqu" objID="n694986778"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="recordState" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/recordState" objID="n1101370319"/>
+                </children>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="ITEMALIAS00006" expression="" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006" objID="n857114598">
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="clientId" expression="context.WAMASclientID" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/clientId" objID="n296601517"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemNo" expression=" arinvt_uom_aka.ID" type="id_String" incomingConnections="//@node.4/@nodeData/@connections.6" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/itemNo" objID="n405842472"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="variant" expression="context.WAMASvariant" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/variant" objID="n26731774"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="itemAliasNo" expression="Relational.ISNULL(arinvt_uom_aka.CUST_ITEMNO)?&quot;WIP&quot; + arinvt_uom_aka.ID:arinvt_uom_aka.CUST_ITEMNO " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.9 //@node.4/@nodeData/@connections.16" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/itemAliasNo" objID="n810714272"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="kind" expression="&quot;ALIAS&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/kind" objID="n1451250424"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="qtyUnit" expression="&quot;PCS&quot;" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/qtyUnit" objID="n115076472"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="numBquWqu" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/numBquWqu" objID="n937427373"/>
+                  <children xsi:type="TalendXMLMap:OutputTreeNode" name="recordState" type="id_String" xpath="Item_XML.payload:/DI_TELEGRAM/body/ITEM00008/ITEMALIAS00006/recordState" objID="n717649221"/>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1026023362" target="n535782434"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1767885556" target="n961208315"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n169846653" target="n1619081707"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n675238087"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n853988314"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n116060133"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n405842472"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n1630955713"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n2114527722" target="n826453778"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n184025966" target="n810714272"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1812901801" target="n582850540"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n507871632" target="n101961786"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1812901801" target="n1008678112"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1020781678" target="n1113052072"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1020781678" target="n1162847643"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n507871632" target="n1162847643"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="n1732741630" target="n810714272"/>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.WAMAS_Out + &quot;/hold/itm-extract.xml&quot;"/>
+    <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="payload"/>
+    <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="TABLE" name="ROOT_TAGS" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="output to xml file"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Item_XML" name="tFileOutputXML_1">
+      <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARCUSTO_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AVG_COST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BLEND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOM_ACTIVE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONHAND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RG_ONHAND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_SALABLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_CONFORM_TOTAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALIZED"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_ORDER_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ORDER_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MULTIPLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTDQTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PTDQTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBUY_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_TIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPG"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTEMP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RGPRCNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MJO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_QUAN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUX_AMT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STDQUAN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_LEVEL_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_FAMILY_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRAWING"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_PRICE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STANDARD_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SALES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SPLIT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_PER_1000"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMIS_PRCNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNQUE_DATE_IN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDATE_TIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECOPY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PPV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_OH_DISPO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_LABOR_DISPO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_HOLDING"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM_TYPE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NMFC_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_REORD_POINT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_ORDER_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_LEAD_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EPLANT_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSIONS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST_CONTROL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SCOPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SAFETY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MOVE_RANGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_IMAGE_FILENAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER5"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER6"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER8"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER9"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER10"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER4"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER5"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER6"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER8"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER9"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER10"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MX_GROUP_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESS_SAFETY_STOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_GROUP_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SETUP_CHARGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_TIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CARTONS_PALLET"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PIECES_CARTON"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_FIRM_WO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLOOR_BACKFLUSH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUM_LEADTIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRITICAL_FENCE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HIDE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PRODVAR"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_ONHAND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_LABELS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRIVE_PHANTOM_NEGATIVE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_STDCOST_RECALC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INTPLANT_SALES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_FILENAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_ALLOCATE_TOTAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_THRES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_COUNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FUTURE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FUTURE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FUTURE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_CODE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_DISPO_FLOOR_PARTIAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_SO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_PO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_RECEIPT_TIME_PPV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_MATERIAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MIN_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MULTIPLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUYER_CODE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_BATCH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INTRASTAT_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FAB_START"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SAFETY_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLANNER_CODE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_MANDATORY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_PTSPER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_SCHED_FORECAST_WO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_PALLET"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_AUTO_RT_LABELS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LINKED_TO_SERIAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_INCLUDE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_CPK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_LAST_PRINT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_PRINT_INTERVAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COC_EXCLUDE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REORD_POINT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REPLENISH_SCOPE_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_LEAD_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_TO_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_KANBAN_LOT_SIZE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_FIRE_TRIGGER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLOR_GROUP_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_TIME_FENCE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_LENGTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WIDTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_LENGTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WIDTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_HEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_VOLUME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PTSPER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LENGTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WIDTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GAUGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_BY_PRODUCT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_FROM_COMMISSIONS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_RT_LABELS_PK_SEQ"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PATTERN_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEB_SALABLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MULTIPLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO_THRESHOLD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FORECAST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_BUDGET"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FORECAST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_BUDGET"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FORECAST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_BUDGET"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEEP_LABEL_BOM_INTERPLANT_TRAN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECO_ORIG_CLASS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_WIP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRV32_NO_PLAN_WO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_REC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_DATE_MANDATORY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_THIS_UOM_FOR_MRP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAIT_TIME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOL_CALC_OVERRIDE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RFQ_USE_STD_COST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PHYS_VAR"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV_COST_REV"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_BACKFLUSH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SHIPMENT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_EXCLUDE_HARD_ALLOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_PPK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_RULES"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RTPM_TRG_RTLABEL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REBATE_PARAMS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TARIFF_CODE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEBDIRECT_LEAD_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_COST_DEFAULT_STANDARD_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_GROUP_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLONED_FROM_ARINVT_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_LOT_CHARGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_CHARGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIQUE_DISPO_LOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEIJUNKA_SINCE_SCHED_DEMAND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIG_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI_MFG_CALC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_SCOPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_APPLY_TO_SCHED_ALLOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_COMPONENTS_ON_SO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SCHED_CASCADE_PARENT_MTO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_POP_SERV_CTR"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_MARK_WO_MAT_XCPT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_ALC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MARK_ORD_DETAIL_MTO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_AUTHORABLE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_MSDS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_UPLOAD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE_PO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OVERRIDE_REC_LOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_LAST_PRINT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_DROP_SHIP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_PALLET_STACK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_INV_MOVE_CLASS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_INV_MOVE_CLASS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_INV_MOVE_CLASS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_UNIT_TYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_COUNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_COUNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_COUNT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_WORKORDER_MAT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECV_LOCATION_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPC_INSPECTION_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AR_DISCOUNT_WATERFALL_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMS_INV_GROUP_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_LOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_LOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_LOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_FROM_CTP_EXCEPTION"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CORE_SIZE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PS_CONVERT_INFO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_RANK_LOCK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_SELL_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_LEAD_DAYS"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_VOLUME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_LENGTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WIDTH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_HEIGHT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_EXPIRY_DATE_MANDATORY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_TRUCK_PTSPER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_USER_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_AUTO_MRP_ORDER_QTY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_PULL_DEMAND"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_USE_QC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_LOC_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HARD_ALLOC_ROUND_PRECISION"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH_BY_SERIAL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GROUP_CODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_EFFECT_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_DEACTIVE_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEMAND_CHANGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAX_CLASS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISCOUNT_GROUPS_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHYS_CHAR_VOLUME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_KIT_USE_COMP_PRICE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ASSY1_EXCLUDE_FORECAST_WO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_DEMAND_CHANGE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_RECIPE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="15" name="ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ARCUSTO_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="_CLASS" nullable="false" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REV" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="DESCRIP2" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="AVG_COST" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="VENDOR_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UNIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BLEND" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER1" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER2" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER3" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER1" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER2" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER3" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BOM_ACTIVE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="ONHAND" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="RG_ONHAND" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="NON_SALABLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="NON_CONFORM_TOTAL" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SERIALIZED" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="SAFETY_STOCK" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MIN_ORDER_QTY" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MAX_ORDER_QTY" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MULTIPLE" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="YTDQTY" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="PTDQTY" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LDATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LBUY_DATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SERIES" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LEAD_DAYS" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LEAD_TIME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="SPG" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="DRYTIME" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DRYTEMP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RGPRCNT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AUTO_MJO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MFG_QUAN" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="AUX_AMT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="STDQUAN" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LOW_LEVEL_CODE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MPS_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ARINVT_FAMILY_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BACKFLUSH" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DRAWING" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ECNO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="STD_PRICE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="STD_COST" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="STANDARD_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_SALES" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_INV" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MFG_SPLIT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PRICE_PER_1000" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COMIS_PRCNT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UNQUE_DATE_IN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="SHELF_LIFE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ECODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="EID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EDATE_TIME" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ECOPY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_PPV" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_OH_DISPO" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_LABOR_DISPO" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_HOLDING" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ITEM_TYPE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NMFC_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="VOLUME" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="AUTO_MRP_REORD_POINT" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="AUTO_MRP_ORDER_QTY" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="AUTO_MRP_LEAD_DAYS" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="EPLANT_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COMMISSIONS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="STD_COST_CONTROL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PO_SCOPE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PO_SAFETY" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="PO_MOVE_RANGE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LM_IMAGE_FILENAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CYCLE_COUNT_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER4" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER5" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER6" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER7" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER8" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER9" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="CUSER10" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER4" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER5" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER6" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER7" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER8" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER9" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="NUSER10" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="MX_GROUP_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PROCESS_SAFETY_STOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="FR_GROUP_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="SETUP_CHARGE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="MOVE_TIME" nullable="true" pattern="" precision="3" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CARTONS_PALLET" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PIECES_CARTON" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_MRP_FIRM_WO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FLOOR_BACKFLUSH" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MPS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="CUM_LEADTIME" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PHANTOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="CRITICAL_FENCE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="USER_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PK_HIDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_PRODVAR" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="PHANTOM_ONHAND" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LM_LABELS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DRIVE_PHANTOM_NEGATIVE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="NO_STDCOST_RECALC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_INTPLANT_SALES" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="IMAGE_FILENAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="NON_ALLOCATE_TOTAL" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INSP_RECEIPT_THRES" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INSP_RECEIPT_COUNT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COST_STANDARD_ID_FUTURE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COST_STANDARD_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="COST_DESCRIP_FUTURE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="COST_DESCRIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COST_CALC_DATE_FUTURE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COST_CALC_DATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_MRP_INCLUDE_VMI" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PROD_CODE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DO_NOT_DISPO_FLOOR_PARTIAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INFO_SO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INFO_PO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCL_RECEIPT_TIME_PPV" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CYCLE_COUNT_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CYCLE_COUNT_DATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="NON_MATERIAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MFG_MIN_QTY" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MFG_MULTIPLE" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="BUYER_CODE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COST_CALC_BATCH" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="INTRASTAT_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FAB_START" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MFG_SAFETY_QTY" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PLANNER_CODE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_LOT_MANDATORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="13" name="PK_WEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PK_PTSPER" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DO_NOT_SCHED_FORECAST_WO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_PALLET" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_AUTO_RT_LABELS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_LINKED_TO_SERIAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FR_INCLUDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="MIN_CPK" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LBL_ASSIST_LAST_PRINT" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LBL_ASSIST_PRINT_INTERVAL" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="COC_EXCLUDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="ICT_REORD_POINT" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="ICT_REPLENISH_SCOPE_DAYS" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="ICT_LEAD_DAYS" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ICT_SHIP_TO_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="AUTO_MRP_KANBAN_LOT_SIZE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ICT_FIRE_TRIGGER" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COLOR_GROUP_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="FR_WO_TIME_FENCE" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PK_LENGTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PK_WIDTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PK_HEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_LENGTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_WIDTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_HEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_VOLUME" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_PTSPER" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_WEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LENGTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="WIDTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GAUGE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_BY_PRODUCT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCLUDE_FROM_COMMISSIONS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="AUTO_RT_LABELS_PK_SEQ" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_PATTERN_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="WEB_SALABLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="PO_MULTIPLE" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="FIFO_THRESHOLD" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COST_STANDARD_ID_FORECAST" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COST_STANDARD_ID_BUDGET" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="COST_DESCRIP_FORECAST" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="COST_DESCRIP_BUDGET" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COST_CALC_DATE_FORECAST" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="COST_CALC_DATE_BUDGET" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="KEEP_LABEL_BOM_INTERPLANT_TRAN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ECO_ORIG_CLASS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_WIP" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IRV32_NO_PLAN_WO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INFO_REC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_LOT_DATE_MANDATORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="USE_THIS_UOM_FOR_MRP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="WAIT_TIME" nullable="true" pattern="" precision="3" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BOL_CALC_OVERRIDE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="RFQ_USE_STD_COST" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_PHYS_VAR" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_INV_COST_REV" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCLUDE_BACKFLUSH" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="NONTAXABLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACCT_ID_SHIPMENT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_MRP_EXCLUDE_HARD_ALLOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="MIN_PPK" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="RUN_RULES" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="RTPM_TRG_RTLABEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REBATE_PARAMS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TARIFF_CODE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="WEBDIRECT_LEAD_DAYS" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="USE_COST_DEFAULT_STANDARD_ID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ARINVT_GROUP_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CLONED_FROM_ARINVT_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="USE_LOT_CHARGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOT_CHARGE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="UNIQUE_DISPO_LOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="HEIJUNKA_SINCE_SCHED_DEMAND" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CONFIG_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_MRP_INCLUDE_VMI_MFG_CALC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="FR_WO_SCOPE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_MRP_APPLY_TO_SCHED_ALLOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PHANTOM_COMPONENTS_ON_SO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SCHED_CASCADE_PARENT_MTO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="AUTO_POP_SERV_CTR" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCL_MARK_WO_MAT_XCPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_ALC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MARK_ORD_DETAIL_MTO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MSDS_AUTHORABLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_MSDS" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="MSDS_UPLOAD" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="NONTAXABLE_PO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="OVERRIDE_REC_LOC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LBL_LAST_PRINT" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_DROP_SHIP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="MAX_PALLET_STACK" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_INV_MOVE_CLASS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PACK_INV_MOVE_CLASS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_INV_MOVE_CLASS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PK_UNIT_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_MOVE_RANK_COUNT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PACK_MOVE_RANK_COUNT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PALLET_MOVE_RANK_COUNT" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCL_WORKORDER_MAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="FIFO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="COMPANY_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="RECV_LOCATION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="SPC_INSPECTION_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="AR_DISCOUNT_WATERFALL_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="WMS_INV_GROUP_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LOOSE_MOVE_RANK_LOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PACK_MOVE_RANK_LOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PALLET_MOVE_RANK_LOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="EXCL_FROM_CTP_EXCEPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="CORE_SIZE" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="OD" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="PS_CONVERT_INFO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CYCLE_COUNT_RANK_LOCK" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="MIN_SELL_QTY" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="INSP_LEAD_DAYS" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_WEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_VOLUME" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_LENGTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_WIDTH" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="LOOSE_HEIGHT" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="IS_LOT_EXPIRY_DATE_MANDATORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ICT_TRUCK_PTSPER" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="14" name="SAFETY_STOCK2" nullable="true" pattern="" precision="4" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="COST_CALC_USER_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="SHELF_LIFE2" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="ICT_AUTO_MRP_ORDER_QTY" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ICT_SHIP_PULL_DEMAND" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PLT_WRP_USE_QC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PLT_WRP_LOC_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="HARD_ALLOC_ROUND_PRECISION" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="BACKFLUSH_BY_SERIAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="GROUP_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PROPRIETARY_EFFECT_DATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PROPRIETARY_DEACTIVE_DATE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DEMAND_CHANGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="TAX_CLASS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="DISCOUNT_GROUPS_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PHYS_CHAR_VOLUME" nullable="true" pattern="" precision="6" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PHANTOM_KIT_USE_COMP_PRICE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ASSY1_EXCLUDE_FORECAST_WO" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="LAST_DEMAND_CHANGE" nullable="true" pattern="" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ARINVT_RECIPE_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="UOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONV_VALUE" nullable="true" pattern="" precision="10" sourceType="DEC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CUST_ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.WAMAS_Out + &quot;/hold/itm-extract.xml&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
+    <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" value="&quot;C:/Users/gary.staab/workspace&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="DESTINATION" value="context.WAMAS_Out "/>
+    <elementParameter field="CHECK" name="RENAME" value="true"/>
+    <elementParameter field="TEXT" name="DESTINATION_RENAME" value="&quot;/itm&quot; + TalendDate.getDate(&quot;yyyyMMddHHmmssSSS&quot;) + &quot;.xml&quot;"/>
+    <elementParameter field="CHECK" name="REMOVE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="REPLACE_FILE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_DIRECTORY" value="true"/>
+    <elementParameter field="CHECK" name="FAILON" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="FORCE_COPY_DELETE" value="true"/>
+    <elementParameter field="CHECK" name="PRESERVE_LAST_MODIFIED_TIME" value="true"/>
+    <metadata connector="FLOW" name="tFileCopy_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tOracleConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tReplace_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="arinvt_uom_aka" lineStyle="0" metaname="tReplace_1" offsetLabelX="0" offsetLabelY="0" source="tReplace_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="arinvt_uom_aka" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Item_XML" lineStyle="0" metaname="Item_XML" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tFileOutputXML_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Item_XML" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputXML_1" target="tFileCopy_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <note opaque="true" posX="640" posY="32" sizeHeight="129" sizeWidth="289" text="WAMAS Item Master extract&#xD;&#xA;from IQMS 8/5/2019 16:25&#xD;&#xA;3/11/2020 - Temporarily push to&#xD;&#xA;./hold directory so we can manually &#xD;&#xA;copy to out directory"/>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
