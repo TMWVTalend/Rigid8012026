@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default">
+  <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_4ls0EE5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_4ls0EU5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_4ls0Ek5nEe6VTqDMLwU7Tw"/>
@@ -20,7 +20,7 @@
     <contextParameter comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:tseoZoXVv247ziIUmjBCEuTxwTrXgsrwkVXyqfusbMHrJA==" internalId="_4luCMk5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdbtst01" internalId="_4luCM05nEe6VTqDMLwU7Tw"/>
   </context>
-  <context confirmationNeeded="false" name="Production">
+  <context confirmationNeeded="false" hide="false" name="Production">
     <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_4luCNE5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_4luCNU5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_4luCNk5nEe6VTqDMLwU7Tw"/>
@@ -40,7 +40,7 @@
     <contextParameter comment="" name="connection_iqms_IQMSJDBCPass" prompt="connection_iqms_IQMSJDBCPass?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_Password" value="enc:system.encryption.key.v1:uy8YObfp06USeKkVahWL3sUwBeOiiPkYdv6rw9Sh13a+uZoBoqk=" internalId="_4luCRE5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="connection_iqms_IQMSJDBCHost" prompt="connection_iqms_IQMSJDBCHost?" promptNeeded="false" repositoryContextId="_tjcDkJv9EeiNB_8JhUg6cQ" type="id_String" value="daliqdb01" internalId="_4luCRU5nEe6VTqDMLwU7Tw"/>
   </context>
-  <context confirmationNeeded="false" name="IQ2020x">
+  <context confirmationNeeded="false" hide="false" name="IQ2020x">
     <contextParameter comment="" name="parameter_WAMASpartnerID" prompt="parameter_WAMASpartnerID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TMK_SP" internalId="_4luCRk5nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASID" prompt="parameter_WAMASID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="WAMAS" internalId="_4luCR05nEe6VTqDMLwU7Tw"/>
     <contextParameter comment="" name="parameter_WAMASclientID" prompt="parameter_WAMASclientID?" promptNeeded="false" repositoryContextId="_9KGr8KIyEeerxqYTCUbwMQ" type="id_String" value="TblClient1" internalId="_4luCSE5nEe6VTqDMLwU7Tw"/>
@@ -103,7 +103,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:X1AjRAPpwf4mwdxBkZBsZa6doS1OdvIDBeN2xSi8" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Svwnvx4zdU3UCZn9u+XcK7Hsak8mER6+Wr9gXLri" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -118,7 +118,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/gary.staab/workspace801/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -126,7 +126,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
@@ -138,7 +138,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zy7HSuO+gO4qGkLzdKwHp3/+1DQMWmKe8UqMQ2gw" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hPsRpUASsYZ9wdSqTtgmXh+XSU5QjPZT3/7BQJWw" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -157,18 +157,8 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <routinesParameter id="_GICkoK3WEeeb6ZualHvuhg" name="DataOperation"/>
-    <routinesParameter id="_GIQnEK3WEeeb6ZualHvuhg" name="Mathematical"/>
-    <routinesParameter id="_GIc0UK3WEeeb6ZualHvuhg" name="Numeric"/>
-    <routinesParameter id="_GInMYK3WEeeb6ZualHvuhg" name="Relational"/>
-    <routinesParameter id="_GGfFcK3WEeeb6ZualHvuhg" name="SQLike"/>
-    <routinesParameter id="_GIsE4K3WEeeb6ZualHvuhg" name="StringHandling"/>
-    <routinesParameter id="_GIw9YK3WEeeb6ZualHvuhg" name="TalendDataGenerator"/>
-    <routinesParameter id="_GI114K3WEeeb6ZualHvuhg" name="TalendDate"/>
-    <routinesParameter id="_GJD4UK3WEeeb6ZualHvuhg" name="TalendStringUtil"/>
-    <routinesParameter id="_GI7VcK3WEeeb6ZualHvuhg" name="TalendString"/>
   </parameters>
-  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="32">
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
@@ -203,15 +193,15 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;jdbc/iqms&quot;" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;" show="false"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1" show="false"/>
@@ -247,593 +237,593 @@
     <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARCUSTO_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AVG_COST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BLEND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER3"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER1"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER3"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BOM_ACTIVE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ONHAND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RG_ONHAND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_SALABLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_CONFORM_TOTAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALIZED"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_ORDER_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ORDER_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MULTIPLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="YTDQTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PTDQTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LDATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBUY_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SERIES"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_TIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SPG"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTEMP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RGPRCNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MJO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_QUAN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUX_AMT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STDQUAN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_LEVEL_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MPS_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_FAMILY_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRAWING"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECNO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_PRICE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STANDARD_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SALES"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SPLIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_PER_1000"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMIS_PRCNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNQUE_DATE_IN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDATE_TIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECOPY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PPV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_OH_DISPO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_LABOR_DISPO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_HOLDING"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM_TYPE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NMFC_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_REORD_POINT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_ORDER_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_LEAD_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EPLANT_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSIONS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST_CONTROL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SCOPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SAFETY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MOVE_RANGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LM_IMAGE_FILENAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER4"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER5"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER6"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER7"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER8"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER9"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER10"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER4"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER5"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER6"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER7"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER8"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER9"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER10"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MX_GROUP_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESS_SAFETY_STOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_GROUP_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SETUP_CHARGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_TIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CARTONS_PALLET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PIECES_CARTON"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_FIRM_WO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FLOOR_BACKFLUSH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MPS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUM_LEADTIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CRITICAL_FENCE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USER_NAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HIDE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PRODVAR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_ONHAND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LM_LABELS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRIVE_PHANTOM_NEGATIVE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NO_STDCOST_RECALC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INTPLANT_SALES"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_FILENAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_ALLOCATE_TOTAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_THRES"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_COUNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FUTURE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FUTURE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FUTURE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_CODE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_DISPO_FLOOR_PARTIAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_SO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_PO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_RECEIPT_TIME_PPV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_MATERIAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MIN_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MULTIPLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BUYER_CODE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_BATCH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INTRASTAT_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FAB_START"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SAFETY_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLANNER_CODE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_MANDATORY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_PTSPER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_SCHED_FORECAST_WO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_PALLET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_AUTO_RT_LABELS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LINKED_TO_SERIAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_INCLUDE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_CPK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_LAST_PRINT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_PRINT_INTERVAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COC_EXCLUDE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REORD_POINT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REPLENISH_SCOPE_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_LEAD_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_TO_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_KANBAN_LOT_SIZE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_FIRE_TRIGGER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COLOR_GROUP_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_TIME_FENCE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_LENGTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WIDTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_LENGTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WIDTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_HEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_VOLUME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PTSPER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LENGTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WIDTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GAUGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_BY_PRODUCT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_FROM_COMMISSIONS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_RT_LABELS_PK_SEQ"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PATTERN_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WEB_SALABLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MULTIPLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO_THRESHOLD"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FORECAST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_BUDGET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FORECAST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_BUDGET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FORECAST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_BUDGET"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="KEEP_LABEL_BOM_INTERPLANT_TRAN"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECO_ORIG_CLASS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_WIP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IRV32_NO_PLAN_WO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_REC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_DATE_MANDATORY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_THIS_UOM_FOR_MRP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WAIT_TIME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BOL_CALC_OVERRIDE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RFQ_USE_STD_COST"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PHYS_VAR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV_COST_REV"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_BACKFLUSH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SHIPMENT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_EXCLUDE_HARD_ALLOC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_PPK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_RULES"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RTPM_TRG_RTLABEL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REBATE_PARAMS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TARIFF_CODE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WEBDIRECT_LEAD_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_COST_DEFAULT_STANDARD_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_GROUP_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLONED_FROM_ARINVT_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_LOT_CHARGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_CHARGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIQUE_DISPO_LOC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HEIJUNKA_SINCE_SCHED_DEMAND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIG_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI_MFG_CALC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_SCOPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_APPLY_TO_SCHED_ALLOC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_COMPONENTS_ON_SO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SCHED_CASCADE_PARENT_MTO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_POP_SERV_CTR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_MARK_WO_MAT_XCPT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_ALC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MARK_ORD_DETAIL_MTO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_AUTHORABLE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_MSDS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_UPLOAD"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE_PO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OVERRIDE_REC_LOC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_LAST_PRINT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_DROP_SHIP"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_PALLET_STACK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_UNIT_TYPE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_WORKORDER_MAT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RECV_LOCATION_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SPC_INSPECTION_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AR_DISCOUNT_WATERFALL_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WMS_INV_GROUP_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_FROM_CTP_EXCEPTION"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CORE_SIZE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OD"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PS_CONVERT_INFO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_RANK_LOCK"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_SELL_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_LEAD_DAYS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_VOLUME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_LENGTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WIDTH"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_HEIGHT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_EXPIRY_DATE_MANDATORY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_TRUCK_PTSPER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_USER_NAME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE2"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_AUTO_MRP_ORDER_QTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_PULL_DEMAND"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_USE_QC"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_LOC_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HARD_ALLOC_ROUND_PRECISION"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH_BY_SERIAL"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GROUP_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_EFFECT_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_DEACTIVE_DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEMAND_CHANGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TAX_CLASS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DISCOUNT_GROUPS_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHYS_CHAR_VOLUME"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_KIT_USE_COMP_PRICE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ASSY1_EXCLUDE_FORECAST_WO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_DEMAND_CHANGE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_RECIPE_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BRAND_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WAMAS_ASSORTMENT"/>
-      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARCUSTO_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REV" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AVG_COST" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR_ID" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BLEND" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER1" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER2" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER3" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER1" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER2" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER3" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOM_ACTIVE" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONHAND" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RG_ONHAND" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_SALABLE" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_CONFORM_TOTAL" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALIZED" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_ORDER_QTY" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ORDER_QTY" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MULTIPLE" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTDQTY" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PTDQTY" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODE" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDATE" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBUY_DATE" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIES" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_DAYS" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_TIME" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPG" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTIME" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTEMP" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RGPRCNT" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MJO" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_QUAN" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUX_AMT" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STDQUAN" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_LEVEL_CODE" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS_CODE" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_FAMILY_ID" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRAWING" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECNO" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_PRICE" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STANDARD_ID" id="104"/>
+      <elementValue elementRef="TRIM" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SALES" id="106"/>
+      <elementValue elementRef="TRIM" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV" id="108"/>
+      <elementValue elementRef="TRIM" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SPLIT" id="110"/>
+      <elementValue elementRef="TRIM" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_PER_1000" id="112"/>
+      <elementValue elementRef="TRIM" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMIS_PRCNT" id="114"/>
+      <elementValue elementRef="TRIM" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNQUE_DATE_IN" id="116"/>
+      <elementValue elementRef="TRIM" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE" id="118"/>
+      <elementValue elementRef="TRIM" value="false" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECODE" id="120"/>
+      <elementValue elementRef="TRIM" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EID" id="122"/>
+      <elementValue elementRef="TRIM" value="false" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDATE_TIME" id="124"/>
+      <elementValue elementRef="TRIM" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECOPY" id="126"/>
+      <elementValue elementRef="TRIM" value="false" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PPV" id="128"/>
+      <elementValue elementRef="TRIM" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_OH_DISPO" id="130"/>
+      <elementValue elementRef="TRIM" value="false" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_LABOR_DISPO" id="132"/>
+      <elementValue elementRef="TRIM" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_HOLDING" id="134"/>
+      <elementValue elementRef="TRIM" value="false" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM_TYPE_ID" id="136"/>
+      <elementValue elementRef="TRIM" value="false" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NMFC_ID" id="138"/>
+      <elementValue elementRef="TRIM" value="false" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME" id="140"/>
+      <elementValue elementRef="TRIM" value="false" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_REORD_POINT" id="142"/>
+      <elementValue elementRef="TRIM" value="false" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_ORDER_QTY" id="144"/>
+      <elementValue elementRef="TRIM" value="false" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_LEAD_DAYS" id="146"/>
+      <elementValue elementRef="TRIM" value="false" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EPLANT_ID" id="148"/>
+      <elementValue elementRef="TRIM" value="false" id="149"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSIONS_ID" id="150"/>
+      <elementValue elementRef="TRIM" value="false" id="151"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST_CONTROL" id="152"/>
+      <elementValue elementRef="TRIM" value="false" id="153"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SCOPE" id="154"/>
+      <elementValue elementRef="TRIM" value="false" id="155"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SAFETY" id="156"/>
+      <elementValue elementRef="TRIM" value="false" id="157"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MOVE_RANGE" id="158"/>
+      <elementValue elementRef="TRIM" value="false" id="159"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_IMAGE_FILENAME" id="160"/>
+      <elementValue elementRef="TRIM" value="false" id="161"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_CODE" id="162"/>
+      <elementValue elementRef="TRIM" value="false" id="163"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER4" id="164"/>
+      <elementValue elementRef="TRIM" value="false" id="165"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER5" id="166"/>
+      <elementValue elementRef="TRIM" value="false" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER6" id="168"/>
+      <elementValue elementRef="TRIM" value="false" id="169"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER7" id="170"/>
+      <elementValue elementRef="TRIM" value="false" id="171"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER8" id="172"/>
+      <elementValue elementRef="TRIM" value="false" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER9" id="174"/>
+      <elementValue elementRef="TRIM" value="false" id="175"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER10" id="176"/>
+      <elementValue elementRef="TRIM" value="false" id="177"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER4" id="178"/>
+      <elementValue elementRef="TRIM" value="false" id="179"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER5" id="180"/>
+      <elementValue elementRef="TRIM" value="false" id="181"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER6" id="182"/>
+      <elementValue elementRef="TRIM" value="false" id="183"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER7" id="184"/>
+      <elementValue elementRef="TRIM" value="false" id="185"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER8" id="186"/>
+      <elementValue elementRef="TRIM" value="false" id="187"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER9" id="188"/>
+      <elementValue elementRef="TRIM" value="false" id="189"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER10" id="190"/>
+      <elementValue elementRef="TRIM" value="false" id="191"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MX_GROUP_ID" id="192"/>
+      <elementValue elementRef="TRIM" value="false" id="193"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESS_SAFETY_STOCK" id="194"/>
+      <elementValue elementRef="TRIM" value="false" id="195"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_GROUP_ID" id="196"/>
+      <elementValue elementRef="TRIM" value="false" id="197"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SETUP_CHARGE" id="198"/>
+      <elementValue elementRef="TRIM" value="false" id="199"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_TIME" id="200"/>
+      <elementValue elementRef="TRIM" value="false" id="201"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CARTONS_PALLET" id="202"/>
+      <elementValue elementRef="TRIM" value="false" id="203"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PIECES_CARTON" id="204"/>
+      <elementValue elementRef="TRIM" value="false" id="205"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_FIRM_WO" id="206"/>
+      <elementValue elementRef="TRIM" value="false" id="207"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLOOR_BACKFLUSH" id="208"/>
+      <elementValue elementRef="TRIM" value="false" id="209"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS" id="210"/>
+      <elementValue elementRef="TRIM" value="false" id="211"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUM_LEADTIME" id="212"/>
+      <elementValue elementRef="TRIM" value="false" id="213"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM" id="214"/>
+      <elementValue elementRef="TRIM" value="false" id="215"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRITICAL_FENCE" id="216"/>
+      <elementValue elementRef="TRIM" value="false" id="217"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_NAME" id="218"/>
+      <elementValue elementRef="TRIM" value="false" id="219"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HIDE" id="220"/>
+      <elementValue elementRef="TRIM" value="false" id="221"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PRODVAR" id="222"/>
+      <elementValue elementRef="TRIM" value="false" id="223"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_ONHAND" id="224"/>
+      <elementValue elementRef="TRIM" value="false" id="225"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_LABELS_ID" id="226"/>
+      <elementValue elementRef="TRIM" value="false" id="227"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRIVE_PHANTOM_NEGATIVE" id="228"/>
+      <elementValue elementRef="TRIM" value="false" id="229"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_STDCOST_RECALC" id="230"/>
+      <elementValue elementRef="TRIM" value="false" id="231"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INTPLANT_SALES" id="232"/>
+      <elementValue elementRef="TRIM" value="false" id="233"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_FILENAME" id="234"/>
+      <elementValue elementRef="TRIM" value="false" id="235"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_ALLOCATE_TOTAL" id="236"/>
+      <elementValue elementRef="TRIM" value="false" id="237"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_THRES" id="238"/>
+      <elementValue elementRef="TRIM" value="false" id="239"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_COUNT" id="240"/>
+      <elementValue elementRef="TRIM" value="false" id="241"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FUTURE" id="242"/>
+      <elementValue elementRef="TRIM" value="false" id="243"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID" id="244"/>
+      <elementValue elementRef="TRIM" value="false" id="245"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FUTURE" id="246"/>
+      <elementValue elementRef="TRIM" value="false" id="247"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP" id="248"/>
+      <elementValue elementRef="TRIM" value="false" id="249"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FUTURE" id="250"/>
+      <elementValue elementRef="TRIM" value="false" id="251"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE" id="252"/>
+      <elementValue elementRef="TRIM" value="false" id="253"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI" id="254"/>
+      <elementValue elementRef="TRIM" value="false" id="255"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_CODE_ID" id="256"/>
+      <elementValue elementRef="TRIM" value="false" id="257"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_DISPO_FLOOR_PARTIAL" id="258"/>
+      <elementValue elementRef="TRIM" value="false" id="259"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_SO" id="260"/>
+      <elementValue elementRef="TRIM" value="false" id="261"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_PO" id="262"/>
+      <elementValue elementRef="TRIM" value="false" id="263"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_RECEIPT_TIME_PPV" id="264"/>
+      <elementValue elementRef="TRIM" value="false" id="265"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_ID" id="266"/>
+      <elementValue elementRef="TRIM" value="false" id="267"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_DATE" id="268"/>
+      <elementValue elementRef="TRIM" value="false" id="269"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_MATERIAL" id="270"/>
+      <elementValue elementRef="TRIM" value="false" id="271"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MIN_QTY" id="272"/>
+      <elementValue elementRef="TRIM" value="false" id="273"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MULTIPLE" id="274"/>
+      <elementValue elementRef="TRIM" value="false" id="275"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUYER_CODE_ID" id="276"/>
+      <elementValue elementRef="TRIM" value="false" id="277"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_BATCH" id="278"/>
+      <elementValue elementRef="TRIM" value="false" id="279"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INTRASTAT_CODE" id="280"/>
+      <elementValue elementRef="TRIM" value="false" id="281"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FAB_START" id="282"/>
+      <elementValue elementRef="TRIM" value="false" id="283"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SAFETY_QTY" id="284"/>
+      <elementValue elementRef="TRIM" value="false" id="285"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLANNER_CODE_ID" id="286"/>
+      <elementValue elementRef="TRIM" value="false" id="287"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_MANDATORY" id="288"/>
+      <elementValue elementRef="TRIM" value="false" id="289"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WEIGHT" id="290"/>
+      <elementValue elementRef="TRIM" value="false" id="291"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_PTSPER" id="292"/>
+      <elementValue elementRef="TRIM" value="false" id="293"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_SCHED_FORECAST_WO" id="294"/>
+      <elementValue elementRef="TRIM" value="false" id="295"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_PALLET" id="296"/>
+      <elementValue elementRef="TRIM" value="false" id="297"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_AUTO_RT_LABELS" id="298"/>
+      <elementValue elementRef="TRIM" value="false" id="299"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LINKED_TO_SERIAL" id="300"/>
+      <elementValue elementRef="TRIM" value="false" id="301"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_INCLUDE" id="302"/>
+      <elementValue elementRef="TRIM" value="false" id="303"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_CPK" id="304"/>
+      <elementValue elementRef="TRIM" value="false" id="305"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_LAST_PRINT" id="306"/>
+      <elementValue elementRef="TRIM" value="false" id="307"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_PRINT_INTERVAL" id="308"/>
+      <elementValue elementRef="TRIM" value="false" id="309"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COC_EXCLUDE" id="310"/>
+      <elementValue elementRef="TRIM" value="false" id="311"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REORD_POINT" id="312"/>
+      <elementValue elementRef="TRIM" value="false" id="313"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REPLENISH_SCOPE_DAYS" id="314"/>
+      <elementValue elementRef="TRIM" value="false" id="315"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_LEAD_DAYS" id="316"/>
+      <elementValue elementRef="TRIM" value="false" id="317"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_TO_ID" id="318"/>
+      <elementValue elementRef="TRIM" value="false" id="319"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_KANBAN_LOT_SIZE" id="320"/>
+      <elementValue elementRef="TRIM" value="false" id="321"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_FIRE_TRIGGER" id="322"/>
+      <elementValue elementRef="TRIM" value="false" id="323"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLOR_GROUP_ID" id="324"/>
+      <elementValue elementRef="TRIM" value="false" id="325"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_TIME_FENCE" id="326"/>
+      <elementValue elementRef="TRIM" value="false" id="327"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_LENGTH" id="328"/>
+      <elementValue elementRef="TRIM" value="false" id="329"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WIDTH" id="330"/>
+      <elementValue elementRef="TRIM" value="false" id="331"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HEIGHT" id="332"/>
+      <elementValue elementRef="TRIM" value="false" id="333"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_LENGTH" id="334"/>
+      <elementValue elementRef="TRIM" value="false" id="335"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WIDTH" id="336"/>
+      <elementValue elementRef="TRIM" value="false" id="337"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_HEIGHT" id="338"/>
+      <elementValue elementRef="TRIM" value="false" id="339"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_VOLUME" id="340"/>
+      <elementValue elementRef="TRIM" value="false" id="341"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PTSPER" id="342"/>
+      <elementValue elementRef="TRIM" value="false" id="343"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WEIGHT" id="344"/>
+      <elementValue elementRef="TRIM" value="false" id="345"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LENGTH" id="346"/>
+      <elementValue elementRef="TRIM" value="false" id="347"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WIDTH" id="348"/>
+      <elementValue elementRef="TRIM" value="false" id="349"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GAUGE" id="350"/>
+      <elementValue elementRef="TRIM" value="false" id="351"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_BY_PRODUCT" id="352"/>
+      <elementValue elementRef="TRIM" value="false" id="353"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_FROM_COMMISSIONS" id="354"/>
+      <elementValue elementRef="TRIM" value="false" id="355"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_RT_LABELS_PK_SEQ" id="356"/>
+      <elementValue elementRef="TRIM" value="false" id="357"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PATTERN_ID" id="358"/>
+      <elementValue elementRef="TRIM" value="false" id="359"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEB_SALABLE" id="360"/>
+      <elementValue elementRef="TRIM" value="false" id="361"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MULTIPLE" id="362"/>
+      <elementValue elementRef="TRIM" value="false" id="363"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO_THRESHOLD" id="364"/>
+      <elementValue elementRef="TRIM" value="false" id="365"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FORECAST" id="366"/>
+      <elementValue elementRef="TRIM" value="false" id="367"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_BUDGET" id="368"/>
+      <elementValue elementRef="TRIM" value="false" id="369"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FORECAST" id="370"/>
+      <elementValue elementRef="TRIM" value="false" id="371"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_BUDGET" id="372"/>
+      <elementValue elementRef="TRIM" value="false" id="373"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FORECAST" id="374"/>
+      <elementValue elementRef="TRIM" value="false" id="375"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_BUDGET" id="376"/>
+      <elementValue elementRef="TRIM" value="false" id="377"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEEP_LABEL_BOM_INTERPLANT_TRAN" id="378"/>
+      <elementValue elementRef="TRIM" value="false" id="379"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECO_ORIG_CLASS" id="380"/>
+      <elementValue elementRef="TRIM" value="false" id="381"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_WIP" id="382"/>
+      <elementValue elementRef="TRIM" value="false" id="383"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRV32_NO_PLAN_WO" id="384"/>
+      <elementValue elementRef="TRIM" value="false" id="385"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_REC" id="386"/>
+      <elementValue elementRef="TRIM" value="false" id="387"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_DATE_MANDATORY" id="388"/>
+      <elementValue elementRef="TRIM" value="false" id="389"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_THIS_UOM_FOR_MRP" id="390"/>
+      <elementValue elementRef="TRIM" value="false" id="391"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAIT_TIME" id="392"/>
+      <elementValue elementRef="TRIM" value="false" id="393"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOL_CALC_OVERRIDE" id="394"/>
+      <elementValue elementRef="TRIM" value="false" id="395"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RFQ_USE_STD_COST" id="396"/>
+      <elementValue elementRef="TRIM" value="false" id="397"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PHYS_VAR" id="398"/>
+      <elementValue elementRef="TRIM" value="false" id="399"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV_COST_REV" id="400"/>
+      <elementValue elementRef="TRIM" value="false" id="401"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_BACKFLUSH" id="402"/>
+      <elementValue elementRef="TRIM" value="false" id="403"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE" id="404"/>
+      <elementValue elementRef="TRIM" value="false" id="405"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SHIPMENT" id="406"/>
+      <elementValue elementRef="TRIM" value="false" id="407"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_EXCLUDE_HARD_ALLOC" id="408"/>
+      <elementValue elementRef="TRIM" value="false" id="409"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_PPK" id="410"/>
+      <elementValue elementRef="TRIM" value="false" id="411"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_RULES" id="412"/>
+      <elementValue elementRef="TRIM" value="false" id="413"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RTPM_TRG_RTLABEL" id="414"/>
+      <elementValue elementRef="TRIM" value="false" id="415"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REBATE_PARAMS_ID" id="416"/>
+      <elementValue elementRef="TRIM" value="false" id="417"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TARIFF_CODE_ID" id="418"/>
+      <elementValue elementRef="TRIM" value="false" id="419"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEBDIRECT_LEAD_DAYS" id="420"/>
+      <elementValue elementRef="TRIM" value="false" id="421"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_COST_DEFAULT_STANDARD_ID" id="422"/>
+      <elementValue elementRef="TRIM" value="false" id="423"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_GROUP_ID" id="424"/>
+      <elementValue elementRef="TRIM" value="false" id="425"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLONED_FROM_ARINVT_ID" id="426"/>
+      <elementValue elementRef="TRIM" value="false" id="427"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_LOT_CHARGE" id="428"/>
+      <elementValue elementRef="TRIM" value="false" id="429"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_CHARGE" id="430"/>
+      <elementValue elementRef="TRIM" value="false" id="431"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIQUE_DISPO_LOC" id="432"/>
+      <elementValue elementRef="TRIM" value="false" id="433"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEIJUNKA_SINCE_SCHED_DEMAND" id="434"/>
+      <elementValue elementRef="TRIM" value="false" id="435"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIG_CODE" id="436"/>
+      <elementValue elementRef="TRIM" value="false" id="437"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI_MFG_CALC" id="438"/>
+      <elementValue elementRef="TRIM" value="false" id="439"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_SCOPE" id="440"/>
+      <elementValue elementRef="TRIM" value="false" id="441"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_APPLY_TO_SCHED_ALLOC" id="442"/>
+      <elementValue elementRef="TRIM" value="false" id="443"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_COMPONENTS_ON_SO" id="444"/>
+      <elementValue elementRef="TRIM" value="false" id="445"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SCHED_CASCADE_PARENT_MTO" id="446"/>
+      <elementValue elementRef="TRIM" value="false" id="447"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_POP_SERV_CTR" id="448"/>
+      <elementValue elementRef="TRIM" value="false" id="449"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_MARK_WO_MAT_XCPT" id="450"/>
+      <elementValue elementRef="TRIM" value="false" id="451"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_ALC" id="452"/>
+      <elementValue elementRef="TRIM" value="false" id="453"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MARK_ORD_DETAIL_MTO" id="454"/>
+      <elementValue elementRef="TRIM" value="false" id="455"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_AUTHORABLE" id="456"/>
+      <elementValue elementRef="TRIM" value="false" id="457"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_MSDS" id="458"/>
+      <elementValue elementRef="TRIM" value="false" id="459"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_UPLOAD" id="460"/>
+      <elementValue elementRef="TRIM" value="false" id="461"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE_PO" id="462"/>
+      <elementValue elementRef="TRIM" value="false" id="463"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OVERRIDE_REC_LOC" id="464"/>
+      <elementValue elementRef="TRIM" value="false" id="465"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_LAST_PRINT" id="466"/>
+      <elementValue elementRef="TRIM" value="false" id="467"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_DROP_SHIP" id="468"/>
+      <elementValue elementRef="TRIM" value="false" id="469"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_PALLET_STACK" id="470"/>
+      <elementValue elementRef="TRIM" value="false" id="471"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_INV_MOVE_CLASS_ID" id="472"/>
+      <elementValue elementRef="TRIM" value="false" id="473"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_INV_MOVE_CLASS_ID" id="474"/>
+      <elementValue elementRef="TRIM" value="false" id="475"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_INV_MOVE_CLASS_ID" id="476"/>
+      <elementValue elementRef="TRIM" value="false" id="477"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_UNIT_TYPE" id="478"/>
+      <elementValue elementRef="TRIM" value="false" id="479"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_COUNT" id="480"/>
+      <elementValue elementRef="TRIM" value="false" id="481"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_COUNT" id="482"/>
+      <elementValue elementRef="TRIM" value="false" id="483"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_COUNT" id="484"/>
+      <elementValue elementRef="TRIM" value="false" id="485"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_WORKORDER_MAT" id="486"/>
+      <elementValue elementRef="TRIM" value="false" id="487"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO" id="488"/>
+      <elementValue elementRef="TRIM" value="false" id="489"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID" id="490"/>
+      <elementValue elementRef="TRIM" value="false" id="491"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECV_LOCATION_ID" id="492"/>
+      <elementValue elementRef="TRIM" value="false" id="493"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPC_INSPECTION_ID" id="494"/>
+      <elementValue elementRef="TRIM" value="false" id="495"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AR_DISCOUNT_WATERFALL_ID" id="496"/>
+      <elementValue elementRef="TRIM" value="false" id="497"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMS_INV_GROUP_ID" id="498"/>
+      <elementValue elementRef="TRIM" value="false" id="499"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_LOCK" id="500"/>
+      <elementValue elementRef="TRIM" value="false" id="501"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_LOCK" id="502"/>
+      <elementValue elementRef="TRIM" value="false" id="503"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_LOCK" id="504"/>
+      <elementValue elementRef="TRIM" value="false" id="505"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_FROM_CTP_EXCEPTION" id="506"/>
+      <elementValue elementRef="TRIM" value="false" id="507"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CORE_SIZE" id="508"/>
+      <elementValue elementRef="TRIM" value="false" id="509"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OD" id="510"/>
+      <elementValue elementRef="TRIM" value="false" id="511"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PS_CONVERT_INFO" id="512"/>
+      <elementValue elementRef="TRIM" value="false" id="513"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_RANK_LOCK" id="514"/>
+      <elementValue elementRef="TRIM" value="false" id="515"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_SELL_QTY" id="516"/>
+      <elementValue elementRef="TRIM" value="false" id="517"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_LEAD_DAYS" id="518"/>
+      <elementValue elementRef="TRIM" value="false" id="519"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT" id="520"/>
+      <elementValue elementRef="TRIM" value="false" id="521"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_VOLUME" id="522"/>
+      <elementValue elementRef="TRIM" value="false" id="523"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_LENGTH" id="524"/>
+      <elementValue elementRef="TRIM" value="false" id="525"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WIDTH" id="526"/>
+      <elementValue elementRef="TRIM" value="false" id="527"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_HEIGHT" id="528"/>
+      <elementValue elementRef="TRIM" value="false" id="529"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_EXPIRY_DATE_MANDATORY" id="530"/>
+      <elementValue elementRef="TRIM" value="false" id="531"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_TRUCK_PTSPER" id="532"/>
+      <elementValue elementRef="TRIM" value="false" id="533"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK2" id="534"/>
+      <elementValue elementRef="TRIM" value="false" id="535"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_USER_NAME" id="536"/>
+      <elementValue elementRef="TRIM" value="false" id="537"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE2" id="538"/>
+      <elementValue elementRef="TRIM" value="false" id="539"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_AUTO_MRP_ORDER_QTY" id="540"/>
+      <elementValue elementRef="TRIM" value="false" id="541"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_PULL_DEMAND" id="542"/>
+      <elementValue elementRef="TRIM" value="false" id="543"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_USE_QC" id="544"/>
+      <elementValue elementRef="TRIM" value="false" id="545"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_LOC_ID" id="546"/>
+      <elementValue elementRef="TRIM" value="false" id="547"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HARD_ALLOC_ROUND_PRECISION" id="548"/>
+      <elementValue elementRef="TRIM" value="false" id="549"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH_BY_SERIAL" id="550"/>
+      <elementValue elementRef="TRIM" value="false" id="551"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GROUP_CODE" id="552"/>
+      <elementValue elementRef="TRIM" value="false" id="553"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_EFFECT_DATE" id="554"/>
+      <elementValue elementRef="TRIM" value="false" id="555"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_DEACTIVE_DATE" id="556"/>
+      <elementValue elementRef="TRIM" value="false" id="557"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEMAND_CHANGE" id="558"/>
+      <elementValue elementRef="TRIM" value="false" id="559"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAX_CLASS_ID" id="560"/>
+      <elementValue elementRef="TRIM" value="false" id="561"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISCOUNT_GROUPS_ID" id="562"/>
+      <elementValue elementRef="TRIM" value="false" id="563"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHYS_CHAR_VOLUME" id="564"/>
+      <elementValue elementRef="TRIM" value="false" id="565"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_KIT_USE_COMP_PRICE" id="566"/>
+      <elementValue elementRef="TRIM" value="false" id="567"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ASSY1_EXCLUDE_FORECAST_WO" id="568"/>
+      <elementValue elementRef="TRIM" value="false" id="569"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_DEMAND_CHANGE" id="570"/>
+      <elementValue elementRef="TRIM" value="false" id="571"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_RECIPE_ID" id="572"/>
+      <elementValue elementRef="TRIM" value="false" id="573"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOM" id="574"/>
+      <elementValue elementRef="TRIM" value="false" id="575"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE" id="576"/>
+      <elementValue elementRef="TRIM" value="false" id="577"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO" id="578"/>
+      <elementValue elementRef="TRIM" value="false" id="579"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BRAND_CODE" id="580"/>
+      <elementValue elementRef="TRIM" value="false" id="581"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAMAS_ASSORTMENT" id="582"/>
+      <elementValue elementRef="TRIM" value="false" id="583"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="query arinvt aka and uom"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tOracleInput_1">
@@ -1131,25 +1121,25 @@
       <column comment="" key="false" length="250" name="WAMAS_ASSORTMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplace_1" show="false"/>
     <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
     <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" value="Simple mode works with regex expression(in last version)" show="false"/>
     <elementParameter field="TABLE" name="SUBSTITUTIONS">
-      <elementValue elementRef="INPUT_COLUMN" value="_CLASS"/>
-      <elementValue elementRef="SEARCH_PATTERN" value="&quot;WP&quot;"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;WIP&quot;"/>
-      <elementValue elementRef="WHOLE_WORD" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="USE_GLOB" value="false"/>
-      <elementValue elementRef="COMMENT" value=""/>
-      <elementValue elementRef="INPUT_COLUMN" value="WAMAS_ASSORTMENT"/>
-      <elementValue elementRef="SEARCH_PATTERN" value="null"/>
-      <elementValue elementRef="REPLACE_STRING" value="&quot;CAPS&quot;"/>
-      <elementValue elementRef="WHOLE_WORD" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="USE_GLOB" value="false"/>
-      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="_CLASS" id="0"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;WP&quot;" id="1"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;WIP&quot;" id="2"/>
+      <elementValue elementRef="WHOLE_WORD" value="true" id="3"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false" id="4"/>
+      <elementValue elementRef="USE_GLOB" value="false" id="5"/>
+      <elementValue elementRef="COMMENT" value="" id="6"/>
+      <elementValue elementRef="INPUT_COLUMN" value="WAMAS_ASSORTMENT" id="7"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="null" id="8"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;CAPS&quot;" id="9"/>
+      <elementValue elementRef="WHOLE_WORD" value="true" id="10"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false" id="11"/>
+      <elementValue elementRef="USE_GLOB" value="false" id="12"/>
+      <elementValue elementRef="COMMENT" value="" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="STRICT_MATCH" value="true" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_MODE" value="false"/>
@@ -1451,7 +1441,7 @@
       <column comment="" key="false" length="250" name="WAMAS_ASSORTMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_2" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_2">
@@ -1749,10 +1739,12 @@
       <column comment="" key="false" length="250" name="WAMAS_ASSORTMENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="224">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="generate wamas item00008"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -2277,7 +2269,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="n1654034859" target="n464624163"/>
     </nodeData>
   </node>
-  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="224">
+  <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.connection_wamas_WAMAS_Out + &quot;/hold/itm-extract.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
@@ -2288,10 +2280,10 @@
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="TABLE" name="ROOT_TAGS" show="false"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
-      <elementValue elementRef="AS_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true"/>
-      <elementValue elementRef="LABEL" value="&quot;label&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload" id="0"/>
+      <elementValue elementRef="AS_ATTRIBUTE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN_NAME" value="true" id="2"/>
+      <elementValue elementRef="LABEL" value="&quot;label&quot;" id="3"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_DYNAMIC_GROUPING" value="false" show="false"/>
     <elementParameter field="TABLE" name="GROUP_BY" show="false"/>
@@ -2310,7 +2302,7 @@
       <column comment="" key="false" length="-1" name="payload" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="384">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -2656,7 +2648,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="384">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JovuEMrcEeegkf46nwJaMQ" show="false"/>
@@ -2686,8 +2678,11 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;Integrated Security=true&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;Integrated Security=true;autoReconnect=true&quot;"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
     <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -2696,41 +2691,41 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="true"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="false"/>
-      <elementValue elementRef="INSERTABLE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="arinvt_id"/>
-      <elementValue elementRef="UPDATE_KEY" value="true"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ItemNo"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Descrip"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QtyFullStack"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DesignWeight"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BrandCode"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="false" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="false" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arinvt_id" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="true" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ItemNo" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Descrip" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QtyFullStack" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DesignWeight" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BrandCode" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
     </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
@@ -2791,7 +2786,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="32">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
@@ -2807,586 +2802,586 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARCUSTO_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REV"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AVG_COST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BLEND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER1"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER3"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER1"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER3"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BOM_ACTIVE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ONHAND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RG_ONHAND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_SALABLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_CONFORM_TOTAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALIZED"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_ORDER_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ORDER_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MULTIPLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="YTDQTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PTDQTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LDATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBUY_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SERIES"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SPG"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTEMP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RGPRCNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MJO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_QUAN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUX_AMT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STDQUAN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_LEVEL_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MPS_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_FAMILY_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRAWING"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECNO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_PRICE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STANDARD_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SALES"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SPLIT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_PER_1000"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMIS_PRCNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNQUE_DATE_IN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EDATE_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECOPY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PPV"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_OH_DISPO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_LABOR_DISPO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_HOLDING"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM_TYPE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NMFC_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_REORD_POINT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_ORDER_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_LEAD_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EPLANT_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSIONS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST_CONTROL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SCOPE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SAFETY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MOVE_RANGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LM_IMAGE_FILENAME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER4"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER5"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER6"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER7"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER8"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER9"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER10"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER4"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER5"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER6"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER7"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER8"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER9"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER10"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MX_GROUP_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESS_SAFETY_STOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_GROUP_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SETUP_CHARGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CARTONS_PALLET"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PIECES_CARTON"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_FIRM_WO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FLOOR_BACKFLUSH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MPS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUM_LEADTIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CRITICAL_FENCE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USER_NAME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HIDE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PRODVAR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_ONHAND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LM_LABELS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRIVE_PHANTOM_NEGATIVE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NO_STDCOST_RECALC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INTPLANT_SALES"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_FILENAME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_ALLOCATE_TOTAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_THRES"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_COUNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FUTURE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FUTURE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FUTURE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_CODE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_DISPO_FLOOR_PARTIAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_SO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_PO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_RECEIPT_TIME_PPV"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NON_MATERIAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MIN_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MULTIPLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BUYER_CODE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_BATCH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INTRASTAT_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FAB_START"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SAFETY_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLANNER_CODE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_MANDATORY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_PTSPER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_SCHED_FORECAST_WO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_PALLET"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_AUTO_RT_LABELS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LINKED_TO_SERIAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_INCLUDE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_CPK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_LAST_PRINT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_PRINT_INTERVAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COC_EXCLUDE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REORD_POINT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REPLENISH_SCOPE_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_LEAD_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_TO_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_KANBAN_LOT_SIZE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_FIRE_TRIGGER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COLOR_GROUP_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_TIME_FENCE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_LENGTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WIDTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_LENGTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WIDTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_HEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_VOLUME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PTSPER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LENGTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WIDTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GAUGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_BY_PRODUCT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_FROM_COMMISSIONS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_RT_LABELS_PK_SEQ"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PATTERN_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WEB_SALABLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MULTIPLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO_THRESHOLD"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FORECAST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_BUDGET"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FORECAST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_BUDGET"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FORECAST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_BUDGET"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="KEEP_LABEL_BOM_INTERPLANT_TRAN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ECO_ORIG_CLASS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_WIP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IRV32_NO_PLAN_WO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_REC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_DATE_MANDATORY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_THIS_UOM_FOR_MRP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WAIT_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BOL_CALC_OVERRIDE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RFQ_USE_STD_COST"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PHYS_VAR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV_COST_REV"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_BACKFLUSH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SHIPMENT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_EXCLUDE_HARD_ALLOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_PPK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_RULES"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RTPM_TRG_RTLABEL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REBATE_PARAMS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TARIFF_CODE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WEBDIRECT_LEAD_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_COST_DEFAULT_STANDARD_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_GROUP_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLONED_FROM_ARINVT_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USE_LOT_CHARGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_CHARGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIQUE_DISPO_LOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HEIJUNKA_SINCE_SCHED_DEMAND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIG_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI_MFG_CALC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_SCOPE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_APPLY_TO_SCHED_ALLOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_COMPONENTS_ON_SO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SCHED_CASCADE_PARENT_MTO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_POP_SERV_CTR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_MARK_WO_MAT_XCPT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_ALC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MARK_ORD_DETAIL_MTO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_AUTHORABLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_MSDS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_UPLOAD"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE_PO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OVERRIDE_REC_LOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_LAST_PRINT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_DROP_SHIP"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_PALLET_STACK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_INV_MOVE_CLASS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_UNIT_TYPE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_COUNT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_WORKORDER_MAT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RECV_LOCATION_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SPC_INSPECTION_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AR_DISCOUNT_WATERFALL_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="WMS_INV_GROUP_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_LOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_FROM_CTP_EXCEPTION"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CORE_SIZE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OD"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PS_CONVERT_INFO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_RANK_LOCK"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_SELL_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_LEAD_DAYS"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_VOLUME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_LENGTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WIDTH"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_HEIGHT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_EXPIRY_DATE_MANDATORY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_TRUCK_PTSPER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_USER_NAME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE2"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_AUTO_MRP_ORDER_QTY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_PULL_DEMAND"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_USE_QC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_LOC_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HARD_ALLOC_ROUND_PRECISION"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH_BY_SERIAL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GROUP_CODE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_EFFECT_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_DEACTIVE_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DEMAND_CHANGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TAX_CLASS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DISCOUNT_GROUPS_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHYS_CHAR_VOLUME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_KIT_USE_COMP_PRICE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ASSY1_EXCLUDE_FORECAST_WO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_DEMAND_CHANGE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_RECIPE_ID"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UOM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO"/>
-      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARCUSTO_ID" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_CLASS" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEMNO" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REV" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DESCRIP2" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AVG_COST" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VENDOR_ID" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BLEND" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER1" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER2" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER3" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER1" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER2" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER3" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOM_ACTIVE" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ONHAND" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RG_ONHAND" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_SALABLE" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_CONFORM_TOTAL" id="42"/>
+      <elementValue elementRef="LENGTH" value="10" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIALIZED" id="44"/>
+      <elementValue elementRef="LENGTH" value="10" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK" id="46"/>
+      <elementValue elementRef="LENGTH" value="10" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_ORDER_QTY" id="48"/>
+      <elementValue elementRef="LENGTH" value="10" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ORDER_QTY" id="50"/>
+      <elementValue elementRef="LENGTH" value="10" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MULTIPLE" id="52"/>
+      <elementValue elementRef="LENGTH" value="10" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YTDQTY" id="54"/>
+      <elementValue elementRef="LENGTH" value="10" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PTDQTY" id="56"/>
+      <elementValue elementRef="LENGTH" value="10" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODE" id="58"/>
+      <elementValue elementRef="LENGTH" value="10" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDATE" id="60"/>
+      <elementValue elementRef="LENGTH" value="10" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBUY_DATE" id="62"/>
+      <elementValue elementRef="LENGTH" value="10" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE" id="64"/>
+      <elementValue elementRef="LENGTH" value="10" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIES" id="66"/>
+      <elementValue elementRef="LENGTH" value="10" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_DAYS" id="68"/>
+      <elementValue elementRef="LENGTH" value="10" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEAD_TIME" id="70"/>
+      <elementValue elementRef="LENGTH" value="10" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPG" id="72"/>
+      <elementValue elementRef="LENGTH" value="10" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTIME" id="74"/>
+      <elementValue elementRef="LENGTH" value="10" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRYTEMP" id="76"/>
+      <elementValue elementRef="LENGTH" value="10" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RGPRCNT" id="78"/>
+      <elementValue elementRef="LENGTH" value="10" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MJO" id="80"/>
+      <elementValue elementRef="LENGTH" value="10" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_QUAN" id="82"/>
+      <elementValue elementRef="LENGTH" value="10" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUX_AMT" id="84"/>
+      <elementValue elementRef="LENGTH" value="10" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STDQUAN" id="86"/>
+      <elementValue elementRef="LENGTH" value="10" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_LEVEL_CODE" id="88"/>
+      <elementValue elementRef="LENGTH" value="10" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS_CODE" id="90"/>
+      <elementValue elementRef="LENGTH" value="10" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_FAMILY_ID" id="92"/>
+      <elementValue elementRef="LENGTH" value="10" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH" id="94"/>
+      <elementValue elementRef="LENGTH" value="10" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRAWING" id="96"/>
+      <elementValue elementRef="LENGTH" value="10" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECNO" id="98"/>
+      <elementValue elementRef="LENGTH" value="10" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_PRICE" id="100"/>
+      <elementValue elementRef="LENGTH" value="10" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST" id="102"/>
+      <elementValue elementRef="LENGTH" value="10" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STANDARD_ID" id="104"/>
+      <elementValue elementRef="LENGTH" value="10" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SALES" id="106"/>
+      <elementValue elementRef="LENGTH" value="10" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV" id="108"/>
+      <elementValue elementRef="LENGTH" value="10" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SPLIT" id="110"/>
+      <elementValue elementRef="LENGTH" value="10" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRICE_PER_1000" id="112"/>
+      <elementValue elementRef="LENGTH" value="10" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMIS_PRCNT" id="114"/>
+      <elementValue elementRef="LENGTH" value="10" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNQUE_DATE_IN" id="116"/>
+      <elementValue elementRef="LENGTH" value="10" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE" id="118"/>
+      <elementValue elementRef="LENGTH" value="10" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECODE" id="120"/>
+      <elementValue elementRef="LENGTH" value="10" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EID" id="122"/>
+      <elementValue elementRef="LENGTH" value="10" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EDATE_TIME" id="124"/>
+      <elementValue elementRef="LENGTH" value="10" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECOPY" id="126"/>
+      <elementValue elementRef="LENGTH" value="10" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PPV" id="128"/>
+      <elementValue elementRef="LENGTH" value="10" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_OH_DISPO" id="130"/>
+      <elementValue elementRef="LENGTH" value="10" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_LABOR_DISPO" id="132"/>
+      <elementValue elementRef="LENGTH" value="10" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_HOLDING" id="134"/>
+      <elementValue elementRef="LENGTH" value="10" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM_TYPE_ID" id="136"/>
+      <elementValue elementRef="LENGTH" value="10" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NMFC_ID" id="138"/>
+      <elementValue elementRef="LENGTH" value="10" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VOLUME" id="140"/>
+      <elementValue elementRef="LENGTH" value="10" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_REORD_POINT" id="142"/>
+      <elementValue elementRef="LENGTH" value="10" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_ORDER_QTY" id="144"/>
+      <elementValue elementRef="LENGTH" value="10" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_LEAD_DAYS" id="146"/>
+      <elementValue elementRef="LENGTH" value="10" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EPLANT_ID" id="148"/>
+      <elementValue elementRef="LENGTH" value="10" id="149"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSIONS_ID" id="150"/>
+      <elementValue elementRef="LENGTH" value="10" id="151"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STD_COST_CONTROL" id="152"/>
+      <elementValue elementRef="LENGTH" value="10" id="153"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SCOPE" id="154"/>
+      <elementValue elementRef="LENGTH" value="10" id="155"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_SAFETY" id="156"/>
+      <elementValue elementRef="LENGTH" value="10" id="157"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MOVE_RANGE" id="158"/>
+      <elementValue elementRef="LENGTH" value="10" id="159"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_IMAGE_FILENAME" id="160"/>
+      <elementValue elementRef="LENGTH" value="10" id="161"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_CODE" id="162"/>
+      <elementValue elementRef="LENGTH" value="10" id="163"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER4" id="164"/>
+      <elementValue elementRef="LENGTH" value="10" id="165"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER5" id="166"/>
+      <elementValue elementRef="LENGTH" value="10" id="167"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER6" id="168"/>
+      <elementValue elementRef="LENGTH" value="10" id="169"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER7" id="170"/>
+      <elementValue elementRef="LENGTH" value="10" id="171"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER8" id="172"/>
+      <elementValue elementRef="LENGTH" value="10" id="173"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER9" id="174"/>
+      <elementValue elementRef="LENGTH" value="10" id="175"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSER10" id="176"/>
+      <elementValue elementRef="LENGTH" value="10" id="177"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER4" id="178"/>
+      <elementValue elementRef="LENGTH" value="10" id="179"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER5" id="180"/>
+      <elementValue elementRef="LENGTH" value="10" id="181"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER6" id="182"/>
+      <elementValue elementRef="LENGTH" value="10" id="183"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER7" id="184"/>
+      <elementValue elementRef="LENGTH" value="10" id="185"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER8" id="186"/>
+      <elementValue elementRef="LENGTH" value="10" id="187"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER9" id="188"/>
+      <elementValue elementRef="LENGTH" value="10" id="189"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUSER10" id="190"/>
+      <elementValue elementRef="LENGTH" value="10" id="191"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MX_GROUP_ID" id="192"/>
+      <elementValue elementRef="LENGTH" value="10" id="193"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESS_SAFETY_STOCK" id="194"/>
+      <elementValue elementRef="LENGTH" value="10" id="195"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_GROUP_ID" id="196"/>
+      <elementValue elementRef="LENGTH" value="10" id="197"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SETUP_CHARGE" id="198"/>
+      <elementValue elementRef="LENGTH" value="10" id="199"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOVE_TIME" id="200"/>
+      <elementValue elementRef="LENGTH" value="10" id="201"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CARTONS_PALLET" id="202"/>
+      <elementValue elementRef="LENGTH" value="10" id="203"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PIECES_CARTON" id="204"/>
+      <elementValue elementRef="LENGTH" value="10" id="205"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_FIRM_WO" id="206"/>
+      <elementValue elementRef="LENGTH" value="10" id="207"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FLOOR_BACKFLUSH" id="208"/>
+      <elementValue elementRef="LENGTH" value="10" id="209"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MPS" id="210"/>
+      <elementValue elementRef="LENGTH" value="10" id="211"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUM_LEADTIME" id="212"/>
+      <elementValue elementRef="LENGTH" value="10" id="213"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM" id="214"/>
+      <elementValue elementRef="LENGTH" value="10" id="215"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRITICAL_FENCE" id="216"/>
+      <elementValue elementRef="LENGTH" value="10" id="217"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USER_NAME" id="218"/>
+      <elementValue elementRef="LENGTH" value="10" id="219"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HIDE" id="220"/>
+      <elementValue elementRef="LENGTH" value="10" id="221"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PRODVAR" id="222"/>
+      <elementValue elementRef="LENGTH" value="10" id="223"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_ONHAND" id="224"/>
+      <elementValue elementRef="LENGTH" value="10" id="225"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LM_LABELS_ID" id="226"/>
+      <elementValue elementRef="LENGTH" value="10" id="227"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DRIVE_PHANTOM_NEGATIVE" id="228"/>
+      <elementValue elementRef="LENGTH" value="10" id="229"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_STDCOST_RECALC" id="230"/>
+      <elementValue elementRef="LENGTH" value="10" id="231"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INTPLANT_SALES" id="232"/>
+      <elementValue elementRef="LENGTH" value="10" id="233"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_FILENAME" id="234"/>
+      <elementValue elementRef="LENGTH" value="10" id="235"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_ALLOCATE_TOTAL" id="236"/>
+      <elementValue elementRef="LENGTH" value="10" id="237"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_THRES" id="238"/>
+      <elementValue elementRef="LENGTH" value="10" id="239"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_RECEIPT_COUNT" id="240"/>
+      <elementValue elementRef="LENGTH" value="10" id="241"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FUTURE" id="242"/>
+      <elementValue elementRef="LENGTH" value="10" id="243"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID" id="244"/>
+      <elementValue elementRef="LENGTH" value="10" id="245"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FUTURE" id="246"/>
+      <elementValue elementRef="LENGTH" value="10" id="247"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP" id="248"/>
+      <elementValue elementRef="LENGTH" value="10" id="249"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FUTURE" id="250"/>
+      <elementValue elementRef="LENGTH" value="10" id="251"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE" id="252"/>
+      <elementValue elementRef="LENGTH" value="10" id="253"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI" id="254"/>
+      <elementValue elementRef="LENGTH" value="10" id="255"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROD_CODE_ID" id="256"/>
+      <elementValue elementRef="LENGTH" value="10" id="257"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_DISPO_FLOOR_PARTIAL" id="258"/>
+      <elementValue elementRef="LENGTH" value="10" id="259"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_SO" id="260"/>
+      <elementValue elementRef="LENGTH" value="10" id="261"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_PO" id="262"/>
+      <elementValue elementRef="LENGTH" value="10" id="263"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_RECEIPT_TIME_PPV" id="264"/>
+      <elementValue elementRef="LENGTH" value="10" id="265"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_ID" id="266"/>
+      <elementValue elementRef="LENGTH" value="10" id="267"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_DATE" id="268"/>
+      <elementValue elementRef="LENGTH" value="10" id="269"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NON_MATERIAL" id="270"/>
+      <elementValue elementRef="LENGTH" value="10" id="271"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MIN_QTY" id="272"/>
+      <elementValue elementRef="LENGTH" value="10" id="273"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_MULTIPLE" id="274"/>
+      <elementValue elementRef="LENGTH" value="10" id="275"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUYER_CODE_ID" id="276"/>
+      <elementValue elementRef="LENGTH" value="10" id="277"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_BATCH" id="278"/>
+      <elementValue elementRef="LENGTH" value="10" id="279"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INTRASTAT_CODE" id="280"/>
+      <elementValue elementRef="LENGTH" value="10" id="281"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FAB_START" id="282"/>
+      <elementValue elementRef="LENGTH" value="10" id="283"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MFG_SAFETY_QTY" id="284"/>
+      <elementValue elementRef="LENGTH" value="10" id="285"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLANNER_CODE_ID" id="286"/>
+      <elementValue elementRef="LENGTH" value="10" id="287"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_MANDATORY" id="288"/>
+      <elementValue elementRef="LENGTH" value="10" id="289"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WEIGHT" id="290"/>
+      <elementValue elementRef="LENGTH" value="10" id="291"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_PTSPER" id="292"/>
+      <elementValue elementRef="LENGTH" value="10" id="293"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DO_NOT_SCHED_FORECAST_WO" id="294"/>
+      <elementValue elementRef="LENGTH" value="10" id="295"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_PALLET" id="296"/>
+      <elementValue elementRef="LENGTH" value="10" id="297"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_AUTO_RT_LABELS" id="298"/>
+      <elementValue elementRef="LENGTH" value="10" id="299"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LINKED_TO_SERIAL" id="300"/>
+      <elementValue elementRef="LENGTH" value="10" id="301"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_INCLUDE" id="302"/>
+      <elementValue elementRef="LENGTH" value="10" id="303"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_CPK" id="304"/>
+      <elementValue elementRef="LENGTH" value="10" id="305"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_LAST_PRINT" id="306"/>
+      <elementValue elementRef="LENGTH" value="10" id="307"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_ASSIST_PRINT_INTERVAL" id="308"/>
+      <elementValue elementRef="LENGTH" value="10" id="309"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COC_EXCLUDE" id="310"/>
+      <elementValue elementRef="LENGTH" value="10" id="311"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REORD_POINT" id="312"/>
+      <elementValue elementRef="LENGTH" value="10" id="313"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_REPLENISH_SCOPE_DAYS" id="314"/>
+      <elementValue elementRef="LENGTH" value="10" id="315"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_LEAD_DAYS" id="316"/>
+      <elementValue elementRef="LENGTH" value="10" id="317"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_TO_ID" id="318"/>
+      <elementValue elementRef="LENGTH" value="10" id="319"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_KANBAN_LOT_SIZE" id="320"/>
+      <elementValue elementRef="LENGTH" value="10" id="321"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_FIRE_TRIGGER" id="322"/>
+      <elementValue elementRef="LENGTH" value="10" id="323"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLOR_GROUP_ID" id="324"/>
+      <elementValue elementRef="LENGTH" value="10" id="325"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_TIME_FENCE" id="326"/>
+      <elementValue elementRef="LENGTH" value="10" id="327"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_LENGTH" id="328"/>
+      <elementValue elementRef="LENGTH" value="10" id="329"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_WIDTH" id="330"/>
+      <elementValue elementRef="LENGTH" value="10" id="331"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_HEIGHT" id="332"/>
+      <elementValue elementRef="LENGTH" value="10" id="333"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_LENGTH" id="334"/>
+      <elementValue elementRef="LENGTH" value="10" id="335"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WIDTH" id="336"/>
+      <elementValue elementRef="LENGTH" value="10" id="337"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_HEIGHT" id="338"/>
+      <elementValue elementRef="LENGTH" value="10" id="339"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_VOLUME" id="340"/>
+      <elementValue elementRef="LENGTH" value="10" id="341"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PTSPER" id="342"/>
+      <elementValue elementRef="LENGTH" value="10" id="343"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_WEIGHT" id="344"/>
+      <elementValue elementRef="LENGTH" value="10" id="345"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LENGTH" id="346"/>
+      <elementValue elementRef="LENGTH" value="10" id="347"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WIDTH" id="348"/>
+      <elementValue elementRef="LENGTH" value="10" id="349"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GAUGE" id="350"/>
+      <elementValue elementRef="LENGTH" value="10" id="351"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_BY_PRODUCT" id="352"/>
+      <elementValue elementRef="LENGTH" value="10" id="353"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_FROM_COMMISSIONS" id="354"/>
+      <elementValue elementRef="LENGTH" value="10" id="355"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_RT_LABELS_PK_SEQ" id="356"/>
+      <elementValue elementRef="LENGTH" value="10" id="357"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_PATTERN_ID" id="358"/>
+      <elementValue elementRef="LENGTH" value="10" id="359"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEB_SALABLE" id="360"/>
+      <elementValue elementRef="LENGTH" value="10" id="361"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_MULTIPLE" id="362"/>
+      <elementValue elementRef="LENGTH" value="10" id="363"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO_THRESHOLD" id="364"/>
+      <elementValue elementRef="LENGTH" value="10" id="365"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_FORECAST" id="366"/>
+      <elementValue elementRef="LENGTH" value="10" id="367"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_STANDARD_ID_BUDGET" id="368"/>
+      <elementValue elementRef="LENGTH" value="10" id="369"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_FORECAST" id="370"/>
+      <elementValue elementRef="LENGTH" value="10" id="371"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_DESCRIP_BUDGET" id="372"/>
+      <elementValue elementRef="LENGTH" value="10" id="373"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_FORECAST" id="374"/>
+      <elementValue elementRef="LENGTH" value="10" id="375"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_DATE_BUDGET" id="376"/>
+      <elementValue elementRef="LENGTH" value="10" id="377"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEEP_LABEL_BOM_INTERPLANT_TRAN" id="378"/>
+      <elementValue elementRef="LENGTH" value="10" id="379"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ECO_ORIG_CLASS" id="380"/>
+      <elementValue elementRef="LENGTH" value="10" id="381"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_WIP" id="382"/>
+      <elementValue elementRef="LENGTH" value="10" id="383"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IRV32_NO_PLAN_WO" id="384"/>
+      <elementValue elementRef="LENGTH" value="10" id="385"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFO_REC" id="386"/>
+      <elementValue elementRef="LENGTH" value="10" id="387"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_DATE_MANDATORY" id="388"/>
+      <elementValue elementRef="LENGTH" value="10" id="389"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_THIS_UOM_FOR_MRP" id="390"/>
+      <elementValue elementRef="LENGTH" value="10" id="391"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WAIT_TIME" id="392"/>
+      <elementValue elementRef="LENGTH" value="10" id="393"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BOL_CALC_OVERRIDE" id="394"/>
+      <elementValue elementRef="LENGTH" value="10" id="395"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RFQ_USE_STD_COST" id="396"/>
+      <elementValue elementRef="LENGTH" value="10" id="397"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_PHYS_VAR" id="398"/>
+      <elementValue elementRef="LENGTH" value="10" id="399"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_INV_COST_REV" id="400"/>
+      <elementValue elementRef="LENGTH" value="10" id="401"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCLUDE_BACKFLUSH" id="402"/>
+      <elementValue elementRef="LENGTH" value="10" id="403"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE" id="404"/>
+      <elementValue elementRef="LENGTH" value="10" id="405"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCT_ID_SHIPMENT" id="406"/>
+      <elementValue elementRef="LENGTH" value="10" id="407"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_EXCLUDE_HARD_ALLOC" id="408"/>
+      <elementValue elementRef="LENGTH" value="10" id="409"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_PPK" id="410"/>
+      <elementValue elementRef="LENGTH" value="10" id="411"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_RULES" id="412"/>
+      <elementValue elementRef="LENGTH" value="10" id="413"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RTPM_TRG_RTLABEL" id="414"/>
+      <elementValue elementRef="LENGTH" value="10" id="415"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REBATE_PARAMS_ID" id="416"/>
+      <elementValue elementRef="LENGTH" value="10" id="417"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TARIFF_CODE_ID" id="418"/>
+      <elementValue elementRef="LENGTH" value="10" id="419"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEBDIRECT_LEAD_DAYS" id="420"/>
+      <elementValue elementRef="LENGTH" value="10" id="421"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_COST_DEFAULT_STANDARD_ID" id="422"/>
+      <elementValue elementRef="LENGTH" value="10" id="423"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_GROUP_ID" id="424"/>
+      <elementValue elementRef="LENGTH" value="10" id="425"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CLONED_FROM_ARINVT_ID" id="426"/>
+      <elementValue elementRef="LENGTH" value="10" id="427"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USE_LOT_CHARGE" id="428"/>
+      <elementValue elementRef="LENGTH" value="10" id="429"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_CHARGE" id="430"/>
+      <elementValue elementRef="LENGTH" value="10" id="431"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNIQUE_DISPO_LOC" id="432"/>
+      <elementValue elementRef="LENGTH" value="10" id="433"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEIJUNKA_SINCE_SCHED_DEMAND" id="434"/>
+      <elementValue elementRef="LENGTH" value="10" id="435"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIG_CODE" id="436"/>
+      <elementValue elementRef="LENGTH" value="10" id="437"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_INCLUDE_VMI_MFG_CALC" id="438"/>
+      <elementValue elementRef="LENGTH" value="10" id="439"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FR_WO_SCOPE" id="440"/>
+      <elementValue elementRef="LENGTH" value="10" id="441"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_MRP_APPLY_TO_SCHED_ALLOC" id="442"/>
+      <elementValue elementRef="LENGTH" value="10" id="443"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_COMPONENTS_ON_SO" id="444"/>
+      <elementValue elementRef="LENGTH" value="10" id="445"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SCHED_CASCADE_PARENT_MTO" id="446"/>
+      <elementValue elementRef="LENGTH" value="10" id="447"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_POP_SERV_CTR" id="448"/>
+      <elementValue elementRef="LENGTH" value="10" id="449"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_MARK_WO_MAT_XCPT" id="450"/>
+      <elementValue elementRef="LENGTH" value="10" id="451"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_ALC" id="452"/>
+      <elementValue elementRef="LENGTH" value="10" id="453"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MARK_ORD_DETAIL_MTO" id="454"/>
+      <elementValue elementRef="LENGTH" value="10" id="455"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_AUTHORABLE" id="456"/>
+      <elementValue elementRef="LENGTH" value="10" id="457"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_MSDS" id="458"/>
+      <elementValue elementRef="LENGTH" value="10" id="459"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MSDS_UPLOAD" id="460"/>
+      <elementValue elementRef="LENGTH" value="10" id="461"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NONTAXABLE_PO" id="462"/>
+      <elementValue elementRef="LENGTH" value="10" id="463"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OVERRIDE_REC_LOC" id="464"/>
+      <elementValue elementRef="LENGTH" value="10" id="465"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LBL_LAST_PRINT" id="466"/>
+      <elementValue elementRef="LENGTH" value="10" id="467"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_DROP_SHIP" id="468"/>
+      <elementValue elementRef="LENGTH" value="10" id="469"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_PALLET_STACK" id="470"/>
+      <elementValue elementRef="LENGTH" value="10" id="471"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_INV_MOVE_CLASS_ID" id="472"/>
+      <elementValue elementRef="LENGTH" value="10" id="473"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_INV_MOVE_CLASS_ID" id="474"/>
+      <elementValue elementRef="LENGTH" value="10" id="475"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_INV_MOVE_CLASS_ID" id="476"/>
+      <elementValue elementRef="LENGTH" value="10" id="477"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PK_UNIT_TYPE" id="478"/>
+      <elementValue elementRef="LENGTH" value="10" id="479"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_COUNT" id="480"/>
+      <elementValue elementRef="LENGTH" value="10" id="481"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_COUNT" id="482"/>
+      <elementValue elementRef="LENGTH" value="10" id="483"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_COUNT" id="484"/>
+      <elementValue elementRef="LENGTH" value="10" id="485"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_WORKORDER_MAT" id="486"/>
+      <elementValue elementRef="LENGTH" value="10" id="487"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIFO" id="488"/>
+      <elementValue elementRef="LENGTH" value="10" id="489"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPANY_ID" id="490"/>
+      <elementValue elementRef="LENGTH" value="10" id="491"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECV_LOCATION_ID" id="492"/>
+      <elementValue elementRef="LENGTH" value="10" id="493"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPC_INSPECTION_ID" id="494"/>
+      <elementValue elementRef="LENGTH" value="10" id="495"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AR_DISCOUNT_WATERFALL_ID" id="496"/>
+      <elementValue elementRef="LENGTH" value="10" id="497"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMS_INV_GROUP_ID" id="498"/>
+      <elementValue elementRef="LENGTH" value="10" id="499"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_MOVE_RANK_LOCK" id="500"/>
+      <elementValue elementRef="LENGTH" value="10" id="501"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACK_MOVE_RANK_LOCK" id="502"/>
+      <elementValue elementRef="LENGTH" value="10" id="503"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PALLET_MOVE_RANK_LOCK" id="504"/>
+      <elementValue elementRef="LENGTH" value="10" id="505"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXCL_FROM_CTP_EXCEPTION" id="506"/>
+      <elementValue elementRef="LENGTH" value="10" id="507"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CORE_SIZE" id="508"/>
+      <elementValue elementRef="LENGTH" value="10" id="509"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OD" id="510"/>
+      <elementValue elementRef="LENGTH" value="10" id="511"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PS_CONVERT_INFO" id="512"/>
+      <elementValue elementRef="LENGTH" value="10" id="513"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CYCLE_COUNT_RANK_LOCK" id="514"/>
+      <elementValue elementRef="LENGTH" value="10" id="515"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MIN_SELL_QTY" id="516"/>
+      <elementValue elementRef="LENGTH" value="10" id="517"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSP_LEAD_DAYS" id="518"/>
+      <elementValue elementRef="LENGTH" value="10" id="519"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WEIGHT" id="520"/>
+      <elementValue elementRef="LENGTH" value="10" id="521"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_VOLUME" id="522"/>
+      <elementValue elementRef="LENGTH" value="10" id="523"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_LENGTH" id="524"/>
+      <elementValue elementRef="LENGTH" value="10" id="525"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_WIDTH" id="526"/>
+      <elementValue elementRef="LENGTH" value="10" id="527"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOOSE_HEIGHT" id="528"/>
+      <elementValue elementRef="LENGTH" value="10" id="529"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IS_LOT_EXPIRY_DATE_MANDATORY" id="530"/>
+      <elementValue elementRef="LENGTH" value="10" id="531"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_TRUCK_PTSPER" id="532"/>
+      <elementValue elementRef="LENGTH" value="10" id="533"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAFETY_STOCK2" id="534"/>
+      <elementValue elementRef="LENGTH" value="10" id="535"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COST_CALC_USER_NAME" id="536"/>
+      <elementValue elementRef="LENGTH" value="10" id="537"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE2" id="538"/>
+      <elementValue elementRef="LENGTH" value="10" id="539"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_AUTO_MRP_ORDER_QTY" id="540"/>
+      <elementValue elementRef="LENGTH" value="10" id="541"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ICT_SHIP_PULL_DEMAND" id="542"/>
+      <elementValue elementRef="LENGTH" value="10" id="543"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_USE_QC" id="544"/>
+      <elementValue elementRef="LENGTH" value="10" id="545"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLT_WRP_LOC_ID" id="546"/>
+      <elementValue elementRef="LENGTH" value="10" id="547"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HARD_ALLOC_ROUND_PRECISION" id="548"/>
+      <elementValue elementRef="LENGTH" value="10" id="549"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BACKFLUSH_BY_SERIAL" id="550"/>
+      <elementValue elementRef="LENGTH" value="10" id="551"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GROUP_CODE" id="552"/>
+      <elementValue elementRef="LENGTH" value="10" id="553"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_EFFECT_DATE" id="554"/>
+      <elementValue elementRef="LENGTH" value="10" id="555"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PROPRIETARY_DEACTIVE_DATE" id="556"/>
+      <elementValue elementRef="LENGTH" value="10" id="557"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEMAND_CHANGE" id="558"/>
+      <elementValue elementRef="LENGTH" value="10" id="559"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAX_CLASS_ID" id="560"/>
+      <elementValue elementRef="LENGTH" value="10" id="561"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISCOUNT_GROUPS_ID" id="562"/>
+      <elementValue elementRef="LENGTH" value="10" id="563"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHYS_CHAR_VOLUME" id="564"/>
+      <elementValue elementRef="LENGTH" value="10" id="565"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHANTOM_KIT_USE_COMP_PRICE" id="566"/>
+      <elementValue elementRef="LENGTH" value="10" id="567"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ASSY1_EXCLUDE_FORECAST_WO" id="568"/>
+      <elementValue elementRef="LENGTH" value="10" id="569"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_DEMAND_CHANGE" id="570"/>
+      <elementValue elementRef="LENGTH" value="10" id="571"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARINVT_RECIPE_ID" id="572"/>
+      <elementValue elementRef="LENGTH" value="10" id="573"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOM" id="574"/>
+      <elementValue elementRef="LENGTH" value="10" id="575"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONV_VALUE" id="576"/>
+      <elementValue elementRef="LENGTH" value="10" id="577"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_ITEMNO" id="578"/>
+      <elementValue elementRef="LENGTH" value="10" id="579"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -3684,7 +3679,7 @@
       <column comment="" key="false" length="50" name="CUST_ITEMNO" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="384">
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.connection_wamas_WAMAS_Out + &quot;/hold/itm-extract.xml&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
@@ -3719,9 +3714,9 @@
   </connection>
   <connection connectorName="FLOW" label="arinvt_uom_aka" lineStyle="0" metaname="tReplicate_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tReplicate_2" target="tXMLMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="BRAND_CODE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BRAND_CODE" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="arinvt_uom_aka" show="false"/>
@@ -3737,7 +3732,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="itemMaster3" show="false"/>
   </connection>
-  <note opaque="true" posX="640" posY="0" sizeHeight="193" sizeWidth="289" text="WAMAS Item Master extract&#xD;&#xA;from IQMS 8/5/2019 16:25&#xD;&#xA;3/11/2020 - Temporarily push to&#xD;&#xA;./hold directory so we can manually &#xD;&#xA;copy to out directory&#xD;&#xA;7/21/2020 - add filters for master data ready&#xD;&#xA;add wamas assortment field&#xD;&#xA;add update to new ims-item-master sql table"/>
+  <note opaque="true" posX="840" posY="40" sizeHeight="193" sizeWidth="289" text="WAMAS Item Master extract&#xD;&#xA;from IQMS 8/5/2019 16:25&#xD;&#xA;3/11/2020 - Temporarily push to&#xD;&#xA;./hold directory so we can manually &#xD;&#xA;copy to out directory&#xD;&#xA;7/21/2020 - add filters for master data ready&#xD;&#xA;add wamas assortment field&#xD;&#xA;add update to new ims-item-master sql table"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
