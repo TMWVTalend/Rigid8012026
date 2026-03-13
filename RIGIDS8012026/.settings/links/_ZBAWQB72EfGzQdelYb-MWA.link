@@ -1,0 +1,29 @@
+{
+  "itemId" : "_ZBAWQB72EfGzQdelYb-MWA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Ru0XgB71EfGzQdelYb-MWA",
+    "parameterList" : [ {
+      "id" : "_RvDoER71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_host"
+    }, {
+      "id" : "_RvDoEh71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_port"
+    }, {
+      "id" : "_RvDoEx71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_schema"
+    }, {
+      "id" : "_RvDoFB71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_database"
+    }, {
+      "id" : "_RvDoFR71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_username"
+    }, {
+      "id" : "_RvDoFh71EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_password"
+    }, {
+      "id" : "_PpsBkB72EfGzQdelYb-MWA",
+      "name" : "connection_sqlserver_additionalparameters"
+    } ]
+  } ]
+}

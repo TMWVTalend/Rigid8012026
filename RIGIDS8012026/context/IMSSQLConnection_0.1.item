@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_RvDoEB71EfGzQdelYb-MWA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_RvDoER71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_host" prompt="connection_sqlserver_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DALTALEND04"/>
+  <contextParameter xmi:id="_RvDoEh71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_port" prompt="connection_sqlserver_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_RvDoEx71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_schema" prompt="connection_sqlserver_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_RvDoFB71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_database" prompt="connection_sqlserver_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Talend-Rigids"/>
+  <contextParameter xmi:id="_RvDoFR71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_username" prompt="connection_sqlserver_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa"/>
+  <contextParameter xmi:id="_RvDoFh71EfGzQdelYb-MWA" comment="" name="connection_sqlserver_password" prompt="connection_sqlserver_password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Lb7uaj"/>
+  <contextParameter xmi:id="_PpsBkB72EfGzQdelYb-MWA" comment="" name="connection_sqlserver_additionalparameters" prompt="connection_sqlserver_additionalparameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
